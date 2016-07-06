@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accessibility | Survey</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/font-awesome.min.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+<header class="row" role="banner">
+    <div class="container">
+        <h1 class="red">Survey 1001 [number to be provided by Heather] </h1>
+        <p>The best way to meet or exceed your expectations is to understand your needs and how we can best serve you.  Only by listening to your feedback can we provide you with the best service.
+        <p>First, please answer a few questions about your personal experience with [LOB]. </p>
+    </div>
+</header>
+<section class="row" role="main">
+    <div class="container">
+            <form method="post" action="" role="application">
+                <fieldset class="form-group">
+                    <legend>
+                        How <u >satisfied</u> are you with [LOB]? <span>*</span>
+                    </legend>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="satisfaction" id="option1" value="1">
+                            Vary dissatisfied
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="satisfaction" id="option2" value="2">
+                            Somewhat dissatisfied
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="satisfaction" id="option3" value="3">
+                            Neither dissatisfied or satisfied
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="satisfaction" id="option4" value="4">
+                            Somewhat satisfied
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label for="very-satisfied">
+                            <input type="radio" name="satisfaction" id="very-satisfied" value="5">
+                            Very satisfied
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset class="form-group">
+                    <legend>
+                        How likely are you to <u>continue doing business</u> with [LOB] for the next 12 months? (Select one.)
+                    </legend>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="business" id="bOption1" value="1">
+                            Vary dissatisfied
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="business" id="bOption2" value="2">
+                            Somewhat dissatisfied
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="business" id="bOption3" value="3">
+                            Neither dissatisfied or satisfied
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="business" id="bOption4" value="4">
+                            Somewhat satisfied
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label for="very-satisfied">
+                            <input type="radio" name="business" id="bOption5" value="5">
+                            Very satisfied
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset class="form-group">
+                    <legend>
+                        If a friend or business associate were interested in [product], how likely are you to
+                        <u> recommend </u> (Select one.)
+                    </legend>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="friend" id="fOption1" value="1">
+                            Vary dissatisfied
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="friend" id="fOption2" value="2">
+                            Somewhat dissatisfied
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="friend" id="fOption3" value="3">
+                            Neither dissatisfied or satisfied
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="friend" id="fOption4" value="4">
+                            Somewhat satisfied
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label for="very-satisfied">
+                            <input type="radio" name="friend" id="fOption5" value="5">
+                            Very satisfied
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset class="form-group">
+                    <label for="wellness" class="control-label">
+                        4.	If you are very or somewhat satisfied (see question 1), please describe areas that [LOB] does well? (Please type in response.)
+                    </label>
+                    <textarea id="wellness" class="form-control" name="wellness" placeholder="Please state what areas we did well"></textarea>
+                </fieldset>
+                <fieldset class="form-group">
+                    <label class="control-label" for="improvements">
+                        5.	If you are neither satisfied nor dissatisfied, somewhat dissatisfied or very dissatisfied (see question 1), please describe areas where [LOB] could improve upon?  (Please type in response.)
+                    </label>
+                    <textarea id="improvements" class="form-control" name="improvements" placeholder="Please indicate areas we could improve on"></textarea>
+                </fieldset>
+                <fieldset>
+                    <p>	Please rate [LOB] on each of the following factors.  </p>
+                    <p>Rating Scale: </p>
+                    <ul class="ratingScale">
+                        <li>A. Very dissatisfied</li>
+                        <li>B. Somewhat dissatisfied</li>
+                        <li>C. Neither satisfied nor dissatisfied</li>
+                        <li>D. Somewhat satisfied</li>
+                        <li>E. Very satisfied</li>
+                    </ul>
+                    <ul class="listQuestions">
+                        <li>Client Team is Responsive:<br>
+                            <label for="responsive" class="control-label">Your selection (A-E)</label>
+                            <input type="text" id="responsive" class="" size="2" name="responsive">
+                        </li>
+                        <li>Client team answers my questions clearly <br>
+                            <label for="clearQuestions" class="control-label">Your selection (A-E): </label>
+                            <input type="text" id="clearQuestions" name="clearQuestions" size="2">
+                        </li>
+                        <li>Client Team... <br>
+                            <label for="team" class="control-label">Your selection (A-E): </label>
+                            <input type="text" id="team" name="team" size="2">
+                        </li>
+                    </ul>
+                </fieldset>
+                <h3>Alternative Format</h3>
+                <p> Please rate [LOB] on each of the following factors.  Please mark your answer for each factor with an “X”.</p>
+                <!-- Narrator and screen reader aren't picking up the radio buttons in the table -->
+                <table class="table table-bordered">
+                    <thead aria-hidden="true">
+                        <tr>
+                            <th></th>
+                            <th>Very dissatisfied</th>
+                            <th>Somewhat dissatisfied</th>
+                            <th>Neither satisfied nor dissatisfied</th>
+                            <th>Somewhat satisfied</th>
+                            <th>Very Satisfied</th>
+                            <th>Not Applicable</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Client team is responsive</td>
+                            <td>
+                                <input type="radio" name="responsive" value="1" aria-label="1 - very dissatisfied" >
+                            </td>
+                            <td>
+                                <input type="radio" value="2" name="responsive" aria-label="2 - somewhat dissatisfied">
+                            </td>
+                            <td>
+                                <input type="radio" name="responsive" value="3" aria-label="3 - Neither satisfied nor dissatisfied">
+                            </td>
+                            <td>
+                                <input type="radio" name="responsive" value="4" aria-label="4 - somewhat satisfied">
+                            </td>
+                            <td>
+                                <input type="radio" name="responsive" value="5" aria-label="5 - Very Satisfied">
+                            </td>
+                            <td>
+                                <input type="radio" name="responsive" value="6" aria-label="6 - Not applicable">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Client team answers my questions clearly</td>
+                            <td>
+                                <input type="radio" name="answers" value="1" aria-label="1 - Very Dissatisfied">
+                            </td>
+                            <td>
+                                <input type="radio" name="answers" value="2" aria-label="2 - Somewhat Dissatisfied">
+                            </td>
+                            <td>
+                                <input type="radio" name="answers" value="3" aria-label="3 - Neither satisfied nor dissatisfied">
+                            </td>
+                            <td>
+                                <input type="radio" name="answers" value="4" aria-label="4 - somewhat satisfied">
+                            </td>
+                            <td>
+                                <input type="radio" name="answers" value="5" aria-label="5 - Very Satisfied">
+                            </td>
+                            <td>
+                                <input type="radio" name="answers" value="6" aria-label="6 - Not Applicable" >
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <fieldset class="form-group">
+                    <legend >
+                        	In which ways has your [team] proactively contacted you in the past 12 months? (Select all that apply.)
+                    </legend>
+                    <input type="checkbox" id="phone" value="phone" name="contactMethod">
+                    <label for="phone">Phone</label> <br>
+                    <input type="checkbox" id="email" value="email" name="contactMethod">
+                    <label for="email">Email</label> <br>
+                    <input type="checkbox" id="mail" value="mail" name="contactMethod">
+                    <label for="mail">Mail</label> <br>
+                    <input type="checkbox" id="other" value="other" name="contactMethod">
+                    <label for="other">Other</label> <br>
+                </fieldset>
+                <fieldset class="from-group">
+                    <label for="otherConnections" class="control-label">
+                        If you selected d. Other, how else were you contacted?
+                    </label>
+                    <input type="text" id="otherConnections" name="otherConnections" class="form-control" >
+                </fieldset>
+                <fieldset class="form-group">
+                    <legend>Would you like someone at [LOB] to contact you about your experience working with us? (Select one.)</legend>
+                    <input type="radio" name="contact" id="yes" value="yes">
+                    <label for="yes">Yes</label> <br>
+                    <input type="radio" name="contact" id="no" value="no">
+                    <label for="no">No</label>
+                </fieldset>
+                <fieldset class="form-group">
+                    <legend>
+                        	If you would like to be contacted, please provide your preferred method of contact below.
+                    </legend>
+                    <label for="contactName" class="control-label">Name</label>
+                    <input type="text" id="contactName" name="contactName">
+                </fieldset>
+                <fieldset class="form-group">
+                    <label class="control-label" for="tel">Telephone to best Reach you</label>
+                    <input type="tel" id="tel" name="tel"  >
+                </fieldset>
+                <p>- OR - </p>
+                <fieldset class="form-group">
+                    <label class="control-label" for="emailAddress">Email to best Reach you</label>
+                    <input type="email" id="emailAddress" name="emailAddress">
+                </fieldset>
+                <fieldset class="form-group">
+                    <button class="btn btn-primary center-block" type="submit">Submit Form</button>
+                </fieldset>
+            </form>
+    </div>
+</section>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>

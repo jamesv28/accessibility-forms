@@ -1,0 +1,37 @@
+.red {
+    color: #ff0000;
+}
+
+tbody  td {
+    text-align: center;
+}
+
+.radio  input[type="radio"]:checked + label  {
+    background:#000000;
+    color: #ffffff;
+}
+
+.ratingScale {
+    list-style: none;
+    padding-left:0;
+}
+
+.listQuestions {
+    padding-left:0;
+}
+
+legend {
+    border:0;
+    font-size: 16px;
+    margin-bottom:0;
+    font-weight: 700;
+}
+
+#otherConnections {
+    width:50%;
+    margin-bottom: 10px;
+}
+
+/*.radio input {*/
+    /*padding-left: 20px;*/
+/*}*/
