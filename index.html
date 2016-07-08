@@ -18,9 +18,9 @@
     <div class="container">
             <form method="post" action="" role="application">
                 <fieldset class="form-group">
-                    <p> May we include your responses, including your name, with Wells Fargo?</p>
                     <legend>
-                        Please Select One
+                        May we include your responses, including your name, with Wells Fargo? <br>
+                        <i>Please select one response</i>
                     </legend>
                     <div class="radio">
                         <label>
@@ -57,7 +57,15 @@
                     <input type="checkbox" id="activation" value="activation" name="purpose">
                     <label for="activation">Card activation</label> <br>
                     <input type="checkbox" id="late-fee" value="late" name="purpose">
-                    <label for="late-fee">Late fee charges</label>
+                    <label for="late-fee">Late fee charges</label><br>
+                    <input type="checkbox" id="other-phone" value="other" name="purpose">
+                    <label for="other-phone">Other</label>
+                </fieldset>
+                <fieldset class="from-group">
+                    <label for="otherConnections" class="control-label">
+                        If you selected d. Other, how else were you contacted?
+                    </label>
+                    <input type="text" id="otherConnections" name="otherConnections" class="form-control" >
                 </fieldset>
                 <!--<fieldset class="form-group">-->
                     <!--<legend>-->
@@ -228,12 +236,7 @@
                     <!--</tbody>-->
                 <!--</table>-->
 
-                <!--<fieldset class="from-group">-->
-                    <!--<label for="otherConnections" class="control-label">-->
-                        <!--If you selected d. Other, how else were you contacted?-->
-                    <!--</label>-->
-                    <!--<input type="text" id="otherConnections" name="otherConnections" class="form-control" >-->
-                <!--</fieldset>-->
+
                 <!--<fieldset class="form-group">-->
                     <!--<legend>Would you like someone at [LOB] to contact you about your experience working with us? (Select one.)</legend>-->
                     <!--<input type="radio" name="contact" id="yes" value="yes">-->
