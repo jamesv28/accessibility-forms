@@ -9,6 +9,11 @@ strong {
     font-weight: 700;
 }
 
+.logo {
+    height: 100px;
+    width: 100px;
+}
+
 ::selection {
     background: #515151;
     color: #ffffff;
@@ -56,7 +61,14 @@ legend {
     width:50%;
     margin-bottom: 10px;
 }
+.likert-header {
+    background: #c0c0c0;
+    margin-top: 20px;
+}
 
+.button-group {
+    margin-top: 20px;
+}
 /*.radio input {*/
     /*padding-left: 20px;*/
 /*}*/

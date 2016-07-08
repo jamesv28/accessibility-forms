@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accessibility Surveys | Checkbox Question</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/font-awesome.min.css">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+<header id="header-top" class="row" role="banner">
+    <div class="container">
+        <img src="../img/logo.png" alt="wells fargo logo" class="img-responsive logo">
+        <hr class="top-line">
+    </div>
+</header>
+<main class="row" role="main">
+    <div class="container">
+        <form action="input.html">
+            <fieldset class="form-group">
+                <legend >
+                    Which of the following best describes the purpose of your most recent phone call with a Wells Fargo Business Elite Team representative?
+                    <br>
+                    <i>(Please Select all that apply.)</i>
+                </legend>
+                <input type="checkbox" id="online-assistance" value="online" name="purpose">
+                <label for="online-assistance">Online assistance</label> <br>
+                <input type="checkbox" id="reallocation" value="reallocation" name="purpose">
+                <label for="reallocation">Reallocation of credit line / credit limit inquiries </label> <br>
+                <input type="checkbox" id="unable-card" value="unable" name="purpose">
+                <label for="unable-card">Unable to use card</label> <br>
+                <input type="checkbox" id="activation" value="activation" name="purpose">
+                <label for="activation">Card activation</label> <br>
+                <input type="checkbox" id="late-fee" value="late" name="purpose">
+                <label for="late-fee">Late fee charges</label><br>
+                <input type="checkbox" id="other-phone" value="other" name="purpose">
+                <label for="other-phone">Other</label>
+            </fieldset>
+            <fieldset class="form-group text-center button-group">
+                <a href="textarea.html" class="btn btn-success">Previous Question</a>
+                <button type="submit" class="btn btn-primary ">Next Question</button>
+            </fieldset>
+        </form>
+    </div>
+</main>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
+</body>
+</html>
