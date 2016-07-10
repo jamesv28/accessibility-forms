@@ -20,18 +20,19 @@
             <fieldset class="form-group">
                 <p>Please share with us why you disagree with the following statement</p>
                 <blockquote><strong>"The agent followed through and kept promises."</strong></blockquote>
+                <p class="errorMsg" id="textAreaError"></p>
                 <label class="control-label" for="quote-response">Please enter a response</label>
                 <textarea class="form-control" id="quote-response" name="quote-response" rows="5" required aria-required="true"></textarea>
             </fieldset>
             <fieldset class="form-group text-center button-group">
                 <a href="../index.html" class="btn btn-success">Previous Question</a>
-                <button type="submit" class="btn btn-primary ">Next Question</button>
+                <button type="submit" onclick="textAreaValidation()" class="btn btn-primary ">Next Question</button>
             </fieldset>
         </form>
     </div>
 </main>
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
 </body>
 </html>

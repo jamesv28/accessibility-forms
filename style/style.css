@@ -69,6 +69,11 @@ legend {
 .button-group {
     margin-top: 20px;
 }
-/*.radio input {*/
-    /*padding-left: 20px;*/
-/*}*/
+
+
+/********** Error messages ************/
+.errorMsg {
+    background-color: #f2dede;
+    color: #a94442;
+    border-color: #ebccd1;
+}

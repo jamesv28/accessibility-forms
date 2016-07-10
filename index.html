@@ -24,6 +24,7 @@
                         May we include your responses, including your name, with Wells Fargo? <br>
                         <i>Please select one response</i>
                     </legend>
+                    <p id="radioError" class="errorMsg"></p>
                     <div class="radio">
                         <label>
                             <input type="radio" name="information" id="no-information" value="0">
@@ -39,8 +40,7 @@
                 </fieldset>
                 <p>Click the 'Next Question" button to move forward in this survey.</p>
                 <fieldset class="form-group">
-                    <button role="button" class="btn btn-primary center-block" type="submit">Next Question</button>
-
+                    <button role="button" class="btn btn-primary center-block" type="submit" onclick="return validateRadio()">Next Question</button>
                 </fieldset>
             </form>
     </div>
