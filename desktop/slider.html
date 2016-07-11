@@ -17,7 +17,7 @@
 <main class="row" role="main">
     <div class="container">
         <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
-            <form>
+            <form action="dropdown.html">
                 <fieldset>
                     <p>For how many years have you been with company X?</p>
                     <label for="years-worked" class="control-label col-md-2 col-sm-2">Years </label>
@@ -31,9 +31,13 @@
                             <option>5</option>
                         </datalist>
                     </div>
-                    <div class="col-md-2 col-sm-2">
-                        <output for="value" id="output">1</output>
+                    <div class="col-md-1 col-sm-1" >
+                        <output  for="value" id="rangeOutput">1</output>
                     </div>
+                </fieldset>
+                <fieldset class="form-group text-center button-group">
+                    <a href="likert.html" class="btn btn-success">Previous Question</a>
+                    <button type="submit" class="btn btn-primary ">Next Question</button>
                 </fieldset>
             </form>
         </div>

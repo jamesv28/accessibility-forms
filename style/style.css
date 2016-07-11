@@ -77,3 +77,12 @@ legend {
     color: #a94442;
     border-color: #ebccd1;
 }
+
+
+/********** input = range **********/
+#rangeOutput {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 700;
+}

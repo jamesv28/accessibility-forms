@@ -1,6 +1,6 @@
 
 function outputUpdate(num) {
-    document.querySelector('#output').value = num;
+    document.querySelector('#rangeOutput').value = num;
 }
 
 /**
