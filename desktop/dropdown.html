@@ -17,18 +17,22 @@
 <main class="row" role="main">
     <div class="container">
         <p></p>
-        <form>
+        <form action="sum.html">
             <fieldset>
                 <label for="favorite-city" class="control-label col-md-2 col-sm-2">Select City</label>
                 <div class="col-md-4 col-sm-4">
                     <select id="favorite-city" class="form-control">
-                        <option value="1">Denver</option>
-                        <option value="2">New York City</option>
-                        <option value="3">Chicago</option>
-                        <option value="4">Miami</option>
-                        <option value="5">London</option>
+                        <option value="denver">Denver</option>
+                        <option value="nyc">New York City</option>
+                        <option value="chicago">Chicago</option>
+                        <option value="miami">Miami</option>
+                        <option value="london">London</option>
                     </select>
                 </div>
+            </fieldset>
+            <fieldset class="form-group text-center button-group">
+                <a href="slider.html" class="btn btn-success">Previous Question</a>
+                <button type="submit" class="btn btn-primary ">Next Question</button>
             </fieldset>
         </form>
     </div>
