@@ -30,9 +30,15 @@ strong {
 #header-top {
     margin-top: 40px;
 }
+/******** Remove border from fieldset **********/
 
 .fieldset-no-border {
     border:0;
+}
+
+/******** Style textare **********/
+#quote-response {
+    width: 80%;
 }
 
 .radio  input[type="radio"]:checked + label  {

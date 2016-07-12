@@ -26,14 +26,14 @@
                         <i>Please select one response</i>
                     </legend>
                     <p id="radioError" class="errorMsg"></p>
-                    <input type="radio" name="information" id="no-information" value="0">
-                    <label for="no-information">Yes you may share my responses with my name</label> <br>
-
                     <input type="radio" name="information" id="yes-information" value="1">
-                    <label for="yes-information"> No you may not use my responses with my name</label> <br>
+                    <label for="yes-information">Yes you may share my responses with my name</label> <br>
+
+                    <input type="radio" name="information" id="no-information" value="0">
+                    <label for="no-information"> No you may not use my responses with my name</label> <br>
                 </fieldset>
                 <p>Click the 'Next Question" button to move forward in this survey.</p>
-                <button role="button" class="btn btn-primary center-block" type="submit" onclick="return validateRadio()">Next Question</button>
+                    <button role="button" type="submit" onclick="return validateRadio()">Next Question</button>
             </form>
     </div>
 </main>

@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Accessibility Forms | Text area question</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../style/font-awesome.min.css">
     <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
@@ -14,20 +12,17 @@
         <hr class="top-line">
     </div>
 </header>
-<main class="row" role="main">
+<main  role="main">
     <div class="container">
         <form action="checkbox.html">
-            <fieldset class="form-group">
-                <p>Please share with us why you disagree with the following statement</p>
-                <blockquote><strong>"The agent followed through and kept promises."</strong></blockquote>
+            <p>Please share with us why you disagree with the following statement</p>
+            <blockquote><strong>"The agent followed through and kept promises."</strong></blockquote>
+            <fieldset class="fieldset-no-border">
                 <p class="errorMsg" id="textAreaError"></p>
-                <label class="control-label" for="quote-response">Please enter a response</label>
-                <textarea class="form-control" id="quote-response" name="quote-response" rows="5" required aria-required="true"></textarea>
+                <label for="quote-response">Please enter a response</label> <br>
+                <textarea  id="quote-response" name="quote-response" rows="10" required aria-required="true"></textarea>
             </fieldset>
-            <fieldset class="form-group text-center button-group">
-                <a href="../index.html" class="btn btn-success">Previous Question</a>
                 <button type="submit" onclick="textAreaValidation()" class="btn btn-primary ">Next Question</button>
-            </fieldset>
         </form>
     </div>
 </main>
