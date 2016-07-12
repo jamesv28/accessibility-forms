@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Accessibility Surveys | Checkbox Question</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../style/font-awesome.min.css">
     <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
@@ -17,7 +15,7 @@
 <main class="row" role="main">
     <div class="container">
         <form action="input.html">
-            <fieldset class="form-group">
+            <fieldset class="fieldset-no-border">
                 <legend >
                     Which of the following best describes the purpose of your most recent phone call with a Wells Fargo Business Elite Team representative?
                     <br>
@@ -35,12 +33,10 @@
                 <label for="late-fee">Late fee charges</label><br>
                 <input type="checkbox" id="other-phone" value="other" name="purpose">
                 <label for="other-phone">Other</label> <label for="otherText" class="control-label">(Please specify)</label><br>
-                &nbsp; &nbsp;<textarea id="otherText"></textarea>
+                &nbsp; &nbsp; &nbsp; <textarea id="otherText"></textarea>
             </fieldset>
-            <fieldset class="form-group text-center button-group">
-                <a href="textarea.html" class="btn btn-success">Previous Question</a>
+
                 <button type="submit" class="btn btn-primary ">Next Question</button>
-            </fieldset>
         </form>
     </div>
 </main>
