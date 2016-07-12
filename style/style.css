@@ -31,7 +31,7 @@ strong {
     margin-top: 40px;
 }
 
- .fieldset-no-border {
+.fieldset-no-border {
     border:0;
 }
 
@@ -70,13 +70,13 @@ strong {
 }
 
 
-/********** Error messages ************/
+/********** Error messages: remember color contrast must be 4.5:1 ************/
 .errorMsg {
-    background-color: #f2dede;
-    color: #a94442;
-    border-color: #ebccd1;
+    background-color: #df0000;
+    color: #ffffff;
+    border-color: #ffffff;
+    font-weight:bold;
 }
-
 
 /********** input = range output field  **********/
 #rangeOutput {
