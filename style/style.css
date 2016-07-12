@@ -1,7 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+/****** General *******/
 
 html, body {
-    font-family: 'Open Sans', sans-serif;
     font-size:100%;
 }
 
@@ -24,16 +23,16 @@ strong {
     color: #ffffff;
 }
 
-.red {
-    color: #ff0000;
+.container {
+    padding: 0 15px 0 15px;
 }
 
 #header-top {
     margin-top: 40px;
 }
 
-tbody  td {
-    text-align: center;
+ .fieldset-no-border {
+    border:0;
 }
 
 .radio  input[type="radio"]:checked + label  {
@@ -50,12 +49,12 @@ tbody  td {
     padding-left:0;
 }
 
-legend {
-    border:0;
-    font-size: 16px;
-    margin-bottom:0;
-    font-weight: 700;
-}
+/*legend {*/
+    /*border:0;*/
+    /*font-size: 16px;*/
+    /*margin-bottom:0;*/
+    /*font-weight: 700;*/
+/*}*/
 
 #otherConnections {
     width:50%;
@@ -79,7 +78,7 @@ legend {
 }
 
 
-/********** input = range **********/
+/********** input = range output field  **********/
 #rangeOutput {
     background-color: #000000;
     color: #ffffff;

@@ -12,7 +12,7 @@ function textAreaValidation() {
     var x, text;
     x = document.getElementById("quote-response").value;
     
-    if(x === '') {
+    if(x === '' || x.indexOf('\n') > 0 || x === null) {
         text = "Please enter something";
     }
 
