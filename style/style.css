@@ -152,9 +152,10 @@ and (max-device-width: 480px)
     }
 
     input[type=checkbox] {
-        width: 44px; height: 44px;
-        -webkit-border-radius: 22px; -moz-border-radius: 22px; border-radius: 22px;
-        border: 1px solid #bbb;
+        width: 22px;
+        height: 22px;
+        /*-webkit-border-radius: 22px; -moz-border-radius: 22px; border-radius: 22px;*/
+        /*border: 1px solid #bbb;*/
     }
 
     button[type=submit] {
@@ -163,10 +164,13 @@ and (max-device-width: 480px)
         margin: 1.5em 0;
         font-size: 1em;
         line-height: 2.5em;
-        color: #333;
         font-weight: bold;
         height: 2.5em;
         width: 100%;
+    }
+    textarea {
+        width:80%;
+        margin: 0 auto;
     }
 
 } /* end of first media query */
