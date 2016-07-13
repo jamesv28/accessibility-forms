@@ -3,24 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Accessibility Forms | Select or dropdown menu</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../style/font-awesome.min.css">
     <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
-<header id="header-top" class="row" role="banner">
+<header id="header-top" role="banner">
     <div class="container">
         <img src="../img/logo.png" alt="wells fargo logo" class="img-responsive logo">
         <hr class="top-line">
     </div>
 </header>
-<main class="row" role="main">
+<main role="main">
     <div class="container">
         <p></p>
         <form action="sum.html">
-            <fieldset>
-                <label for="favorite-city" class="control-label col-md-2 col-sm-2">Select City</label>
-                <div class="col-md-4 col-sm-4">
+            <fieldset class="fieldset-no-border">
+                <label for="favorite-city" >Select City</label>
                     <select id="favorite-city" class="form-control">
                         <option>--Please Select One--</option>
                         <option value="denver">Denver</option>
@@ -29,12 +26,8 @@
                         <option value="miami">Miami</option>
                         <option value="london">London</option>
                     </select>
-                </div>
             </fieldset>
-            <fieldset class="form-group text-center button-group">
-                <a href="slider.html" class="btn btn-success">Previous Question</a>
                 <button type="submit" class="btn btn-primary ">Next Question</button>
-            </fieldset>
         </form>
     </div>
 </main>
