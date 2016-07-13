@@ -53,6 +53,6 @@ function validateRadio() {
      * Below is a way of giving a role of alert to the error message so after i click
      * next question it immediately goes to the error and reads it out loud
      */
-    document.getElementById('radioError').setAttribute('role','alert');
+    // document.getElementById('radioError').setAttribute('role','alert');
     return false;
 }

@@ -29,33 +29,34 @@ strong {
 #header-top {
     margin-top: 40px;
 }
-/******** Remove border from fieldset **********/
 
+/******** focus on input type = checkbox and input = radio on focus ***********/
+input[type="checkbox"]:focus {
+    outline: rgb(68,70,74) solid 2px;
+}
+
+input[type="radio"]:focus {
+    outline: rgb(68,70,74) solid 2px;
+}
+
+/******** Remove border from fieldset **********/
 .fieldset-no-border {
     border:0;
 }
 
-/******** Style textare **********/
+/******** Style textarea **********/
 #quote-response {
     width: 80%;
 }
 
-.radio  input[type="radio"]:checked + label  {
-    background:#000000;
-    color: #ffffff;
-}
 
-.ratingScale {
-    list-style: none;
-    padding-left:0;
-}
 
 #otherConnections {
     width:50%;
     margin-bottom: 10px;
 }
 
-/************ likert scale *********/
+/************ likert scale, also used in grid with multiple rows *********/
 .likert-header {
     background: #c0c0c0;
     margin-top: 20px;
@@ -82,7 +83,6 @@ strong {
 #years-worked {
     width:50%;
     margin-left:10px;
-
 }
 
 /********** input = range output field  **********/
@@ -128,5 +128,11 @@ strong {
 .dark-blue {
     color: #ffffff;
     background-color: #00008b;
+}
+
+/************ Bold Line ***********/
+.line {
+    height: 2px;
+    background-color: #000;
 }
 
