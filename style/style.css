@@ -96,7 +96,7 @@ input[type="radio"]:focus {
 
 /********** Error messages: remember color contrast must be 4.5:1 ************/
 .errorMsg {
-    background-color: #df0000;
+    background-color: rgb(187,8,38);
     color: #ffffff;
     border-color: #ffffff;
     font-weight:bold;
@@ -125,9 +125,9 @@ input[type="radio"]:focus {
     border-radius: 4px;
 }
 
-.dark-blue {
+.dark-plum {
     color: #ffffff;
-    background-color: #00008b;
+    background-color: rgb(77,59,101);
 }
 
 /************ Bold Line ***********/
