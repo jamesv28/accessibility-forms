@@ -151,4 +151,22 @@ and (max-device-width: 480px)
         border: 1px solid #bbb;
     }
 
+    input[type=checkbox] {
+        width: 44px; height: 44px;
+        -webkit-border-radius: 22px; -moz-border-radius: 22px; border-radius: 22px;
+        border: 1px solid #bbb;
+    }
+
+    button[type=submit] {
+        -webkit-appearance: none; -moz-appearance: none;
+        display: block;
+        margin: 1.5em 0;
+        font-size: 1em;
+        line-height: 2.5em;
+        color: #333;
+        font-weight: bold;
+        height: 2.5em;
+        width: 100%;
+    }
+
 } /* end of first media query */
