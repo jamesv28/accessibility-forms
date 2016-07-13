@@ -78,12 +78,11 @@ strong {
     clear: both;
 }
 
-/********** Error messages: remember color contrast must be 4.5:1 ************/
-.errorMsg {
-    background-color: #df0000;
-    color: #ffffff;
-    border-color: #ffffff;
-    font-weight:bold;
+/********* input = range aka slider ************/
+#years-worked {
+    width:50%;
+    margin-left:10px;
+
 }
 
 /********** input = range output field  **********/
@@ -92,4 +91,14 @@ strong {
     color: #ffffff;
     text-align: center;
     font-weight: 700;
+    padding: 5px 10px;
 }
+
+/********** Error messages: remember color contrast must be 4.5:1 ************/
+.errorMsg {
+    background-color: #df0000;
+    color: #ffffff;
+    border-color: #ffffff;
+    font-weight:bold;
+}
+
