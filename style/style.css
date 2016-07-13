@@ -132,7 +132,8 @@ input[type="radio"]:focus {
 
 /************ Bold Line ***********/
 .line {
-    height: 2px;
-    background-color: #000;
+    height: 1px;
+    background-color: rgb(68,70,74);
+    margin-bottom: 20px;
 }
 
