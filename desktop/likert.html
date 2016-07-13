@@ -23,33 +23,33 @@
                     <!--<span class="likert-section">Very Dissatisfied</span>-->
                     <!--<span class="likert-section">Somewhat Dissatisfied</span>-->
                     <ul>
-                        <li class="likert-section">Very Dissatisfied</li>
-                        <li class="likert-section">Somewhat Dissatisfied</li>
-                        <li class="likert-section">Neither Satisfied nor Dissatisfied</li>
-                        <li class="likert-section">Somewhat Satisfied</li>
-                        <li class="likert-section">Very Satisfied</li>
+                        <li class="likert-section" id="very-dissatisfied">Very Dissatisfied</li>
+                        <li class="likert-section" id="somewhat-dissatisfied">Somewhat Dissatisfied</li>
+                        <li class="likert-section" id="neither">Neither Satisfied nor Dissatisfied</li>
+                        <li class="likert-section" id="somewhat-satisfied">Somewhat Satisfied</li>
+                        <li class="likert-section" id="very-satisfied">Very Satisfied</li>
                     </ul>
                 </div>
                 <div class="likert-inputs">
-                    <label class="likert-section">
-                        <input type="radio" name="satisfied" value="1">
+                    <label class="likert-section" >
+                        <input type="radio" name="satisfied" value="1" aria-describedby="very-dissatisfied">
                         1
                     </label>
                     <label class="likert-section">
-                        <input type="radio" name="satisfied" value="2">
+                        <input type="radio" name="satisfied" value="2" aria-describedby="somewhat-dissatisfied">
                         2
                     </label>
 
                     <label class="likert-section">
-                        <input type="radio" name="satisfied" value="3">
+                        <input type="radio" name="satisfied" value="3" aria-describedby="neither">
                         3
                     </label>
                     <label class="likert-section">
-                        <input type="radio" name="satisfied" value="4">
+                        <input type="radio" name="satisfied" value="4" aria-describedby="somewhat-satisfied">
                         4
                     </label>
                     <label class="likert-section">
-                        <input type="radio" name="satisfied" value="5">
+                        <input type="radio" name="satisfied" value="5" aria-describedby="very-satisfied">
                         5
                     </label>
                 </div>
