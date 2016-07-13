@@ -49,8 +49,6 @@ input[type="radio"]:focus {
     width: 80%;
 }
 
-
-
 #otherConnections {
     width:50%;
     margin-bottom: 10px;
@@ -64,6 +62,7 @@ input[type="radio"]:focus {
 .likert-header ul {
     list-style-type: none;
     width:100%;
+    padding-left:0;
 }
 .likert-section {
     width:20%;
@@ -78,6 +77,7 @@ input[type="radio"]:focus {
 .likert-inputs {
     clear: both;
 }
+
 
 /********* input = range aka slider ************/
 #years-worked {
