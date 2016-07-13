@@ -1,5 +1,4 @@
 /****** General *******/
-
 html, body {
     font-size:100%;
 }
@@ -51,30 +50,33 @@ strong {
     padding-left:0;
 }
 
-.listQuestions {
-    padding-left:0;
-}
-
-/*legend {*/
-    /*border:0;*/
-    /*font-size: 16px;*/
-    /*margin-bottom:0;*/
-    /*font-weight: 700;*/
-/*}*/
-
 #otherConnections {
     width:50%;
     margin-bottom: 10px;
 }
+
+/************ likert scale *********/
 .likert-header {
     background: #c0c0c0;
     margin-top: 20px;
 }
-
-.button-group {
-    margin-top: 20px;
+.likert-header ul {
+    list-style-type: none;
+    width:100%;
+}
+.likert-section {
+    width:20%;
+    display: inline-block;
+    text-align: center;
+    float: left;
 }
 
+.likert-section::after {
+    clear: both;
+}
+.likert-inputs {
+    clear: both;
+}
 
 /********** Error messages: remember color contrast must be 4.5:1 ************/
 .errorMsg {

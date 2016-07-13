@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Accessibility Forms | Single Input</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../style/font-awesome.min.css">
     <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
@@ -14,25 +12,22 @@
         <hr class="top-line">
     </div>
 </header>
-<main class="row" role="main">
+<main  role="main">
     <div class="container">
         <form action="likert.html">
-            <fieldset class="from-group">
+            <fieldset class="fieldset-no-border">
                 <p class="errorMsg" id="textAreaError"></p>
                 <label for="otherConnections" class="control-label">
                     If you selected other, how else were you contacted?
-                </label>
+                </label><br>
                 <input type="text" id="otherConnections" name="otherConnections" class="form-control" required aria-required="true" >
             </fieldset>
-            <fieldset class="form-group text-center button-group">
-                <a href="checkbox.html" class="btn btn-success">Previous Question</a>
+
                 <button type="submit" onclick="inputValidation()" class="btn btn-primary">Next Question</button>
-            </fieldset>
         </form>
     </div>
 </main>
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="../js/main.js"></script>
 </body>
 </html>

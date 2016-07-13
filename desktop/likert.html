@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Accessibility Forms | Likert Scale</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../style/font-awesome.min.css">
     <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
@@ -14,62 +12,51 @@
         <hr class="top-line">
     </div>
 </header>
-<main class="row" role="main">
+<main role="main">
     <div class="container">
-        <div class="col-md-10 col-sm-10 col-sm-offset-1 col-md-offset-1">
         <form action="slider.html">
-            <fieldset>
+            <fieldset class="fieldset-no-border">
                 <legend>
                     Overall, how satisfied were you with the service in the most recent call you received from the Business Elite Team representative?
                 </legend>
-                <div class="row likert-header">
-                    <div class="col-md-2">
-                        <span>Not at all satisfied</span>
-                    </div>
-                    <div class="col-md-2 pull-right">
-                        <span>Very Satisfied</span>
-                    </div>
+                <div class="likert-header">
+                    <!--<span class="likert-section">Very Dissatisfied</span>-->
+                    <!--<span class="likert-section">Somewhat Dissatisfied</span>-->
+                    <ul>
+                        <li class="likert-section">Very Dissatisfied</li>
+                        <li class="likert-section">Somewhat Dissatisfied</li>
+                        <li class="likert-section">Neither Satisfied nor Dissatisfied</li>
+                        <li class="likert-section">Somewhat Satisfied</li>
+                        <li class="likert-section">Very Satisfied</li>
+                    </ul>
                 </div>
-                <div class="row">
-                    <div class="col-md-2">
-                        <label class="radio-inline">
-                            <input type="radio" name="satisfied" value="1">
-                            1
-                        </label>
-                    </div>
-                    <div class="col-md-2 col-md-offset-1">
-                        <label class="radio-inline">
-                            <input type="radio" name="satisfied" value="2">
-                            2
-                        </label>
-                    </div>
-                    <div class="col-md-2 col-md-offset-1">
-                        <label class="radio-inline">
-                            <input type="radio" name="satisfied" value="3">
-                            3
-                        </label>
-                    </div>
-                    <div class="col-md-2">
-                        <label class="radio-inline">
-                            <input type="radio" name="satisfied" value="4">
-                            4
-                        </label>
-                    </div>
-                    <div class="col-md-2">
-                        <label class="radio-inline">
-                            <input type="radio" name="satisfied" value="5">
-                            5
-                        </label>
-                    </div>
+                <div class="likert-inputs">
+                    <label class="likert-section">
+                        <input type="radio" name="satisfied" value="1">
+                        1
+                    </label>
+                    <label class="likert-section">
+                        <input type="radio" name="satisfied" value="2">
+                        2
+                    </label>
+
+                    <label class="likert-section">
+                        <input type="radio" name="satisfied" value="3">
+                        3
+                    </label>
+                    <label class="likert-section">
+                        <input type="radio" name="satisfied" value="4">
+                        4
+                    </label>
+                    <label class="likert-section">
+                        <input type="radio" name="satisfied" value="5">
+                        5
+                    </label>
                 </div>
             </fieldset>
-            <fieldset class="form-group text-center button-group">
-                <a href="input.html" class="btn btn-success">Previous Question</a>
-                <button type="submit" class="btn btn-primary ">Next Question</button>
-            </fieldset>
+            <button type="submit" class="btn btn-primary ">Next Question</button>
         </form>
         </div>
-    </div>
 </main>
 </body>
 </html>
