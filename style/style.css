@@ -152,8 +152,8 @@ and (max-device-width: 480px)
     }
 
     input[type=checkbox] {
-        width: 22px;
-        height: 22px;
+        /*width: 22px;*/
+        /*height: 22px;*/
         /*-webkit-border-radius: 22px; -moz-border-radius: 22px; border-radius: 22px;*/
         /*border: 1px solid #bbb;*/
     }
