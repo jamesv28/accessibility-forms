@@ -94,9 +94,11 @@ input[type="radio"]:focus {
 
 /********** Error messages: remember color contrast must be 4.5:1 ************/
 .errorMsg {
-    background-color: rgb(187,8,38);
-    color: #ffffff;
-    border-color: #ffffff;
+    /*background-color: rgb(187,8,38);*/
+    /*color: #ffffff;*/
+    color: rgb(187, 8, 38);
+    /*border:1px solid rgb(187, 8, 38);*/
+    /*border-color: #ffffff;*/
     font-weight:bold;
     clear: both;
 }
