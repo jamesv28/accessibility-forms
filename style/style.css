@@ -71,9 +71,7 @@ input[type="radio"]:focus {
     float: left;
 }
 
-.likert-section::after {
-    clear: both;
-}
+
 .likert-inputs {
     clear: both;
 }
@@ -100,6 +98,7 @@ input[type="radio"]:focus {
     color: #ffffff;
     border-color: #ffffff;
     font-weight:bold;
+    clear: both;
 }
 
 /********** Button **********/

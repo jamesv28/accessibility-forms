@@ -29,6 +29,7 @@
                         <li class="likert-section" id="very-satisfied">Very Satisfied</li>
                     </ul>
                 </div>
+                <p id="errorMsg" class="errorMsg" role="alert"></p>
                 <div class="likert-inputs">
                     <label class="likert-section" >
                         <input type="radio" name="satisfied" value="1" aria-describedby="very-dissatisfied">
@@ -54,9 +55,10 @@
                 </div>
             </fieldset>
             <p>Click the "Next Question" button to move forward in the survey</p>
-            <button type="submit" class="button dark-plum ">Next Question</button>
+            <button type="submit" class="button dark-plum " onclick="return likertValidation()">Next Question</button>
         </form>
         </div>
 </main>
+<script type="text/javascript" src="../js/main.js"></script>
 </body>
 </html>

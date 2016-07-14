@@ -56,3 +56,34 @@ function validateRadio() {
     // document.getElementById('radioError').setAttribute('role','alert');
     return false;
 }
+
+/**
+ *likert validation
+ **/
+
+function likertValidation() {
+    var text = "You must select one of the options";
+
+    var radios = document.getElementsByName('satisfied');
+    
+    for(var i = 0; i < radios.length; i++ ) {
+        if(radios[i].checked) {
+            return true;
+        }
+    }
+    document.getElementById('errorMsg').innerText= text;
+    return false;
+}
+
+/**
+ * dropdown validation
+ **/
+function dropdownValidation() {
+    var input = document.getElementById('favorite-city').value;
+    var txt = "you must select one option from the dropdown menu";
+    
+    if (input === '' || input === null) {
+        document.getElementById('selectErr').innerText = txt;
+    }
+    
+}

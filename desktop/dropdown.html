@@ -18,9 +18,10 @@
         <p></p>
         <form action="grid-with-multiple-rows.html">
             <fieldset class="fieldset-no-border">
+                <p id="selectErr" class="errorMsg" role="alert"></p>
                 <label for="favorite-city" >Select City</label>
-                    <select id="favorite-city" class="form-control">
-                        <option>--Please Select One--</option>
+                    <select name="favorite-city" id="favorite-city" class="form-control" required aria-required="true">
+                        <option value="">--Please Select One--</option>
                         <option value="denver">Denver</option>
                         <option value="nyc">New York City</option>
                         <option value="chicago">Chicago</option>
@@ -28,9 +29,11 @@
                         <option value="london">London</option>
                     </select>
             </fieldset>
-            <button type="submit" class="button dark-plum">Next Question</button>
+            <button type="submit" class="button dark-plum" onclick="dropdownValidation()">Next Question</button>
         </form>
     </div>
 </main>
+
+<script type="text/javascript" src="../js/main.js"></script>
 </body>
 </html>
