@@ -79,7 +79,7 @@ function likertValidation() {
  * dropdown validation
  **/
 function dropdownValidation() {
-    var input = document.getElementById('favorite-city').value;
+    var input = document.getElementById('age-demographic').value;
     var txt = "you must select one option from the dropdown menu";
     
     if (input === '' || input === null) {
