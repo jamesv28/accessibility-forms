@@ -174,7 +174,7 @@ and (max-device-width: 480px)
         /*border: 1px solid #bbb;*/
     }
 
-    button[type=submit] {
+    button[type=submit], #begin {
         -webkit-appearance: none; -moz-appearance: none;
         display: block;
         margin: 1.5em 0;
