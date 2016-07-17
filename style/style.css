@@ -231,6 +231,7 @@ and (max-device-width: 480px)
     .company {
         display: block;
         width: 100%;
+        text-align: left;
     }
     .company label {
         display: inline-block;
