@@ -34,6 +34,10 @@ strong {
     margin-top: 40px;
 }
 
+.clear {
+    clear: both;
+}
+
 /******** focus on input type = checkbox and input = radio on focus ***********/
 input[type="checkbox"]:focus {
     outline: rgb(68,70,74) solid 2px;
@@ -56,6 +60,35 @@ input[type="radio"]:focus {
 #otherConnections {
     width:50%;
     margin-bottom: 10px;
+}
+
+/******* 05-multiple-select-grid *******/
+.horizontal-grid {
+    width: 100%;
+    margin:0;
+    padding: 0;
+}
+
+.company {
+    width:19%;
+    display: inline-block;
+    padding:0;
+    margin:0;
+    border:0;
+    text-align: center;
+}
+
+.first-item {
+    margin-left:40%;
+}
+
+.horizontal-grid-legend {
+    width:40%;
+    float: left;
+}
+
+.desktop-hide {
+    display: none;
 }
 
 /************ likert scale, also used in grid with multiple rows *********/
@@ -194,5 +227,19 @@ and (max-device-width: 480px)
         width:100%;
         margin: 0 auto;
     }
+    /**** 05-multi-grid ****/
+    .company {
+        display: block;
+    }
+    .company label {
+        display: inline-block;
+    }
+    .horizontal-grid {
+        display: none;
+    }
+    .horizontal-grid-legend {
+        width:100%;
+    }
+
 
 } /* end of first media query */
