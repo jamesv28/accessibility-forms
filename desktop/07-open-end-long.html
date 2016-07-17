@@ -15,9 +15,14 @@
 </header>
 <main role="main">
     <div class="container">
-        <h2>There is nothing here, please go to the next question</h2>
         <form action="08-open-end-short.html">
-
+            <fieldset class="fieldset-no-border">
+                <legend>
+                    Why do you rate your overall satisfaction with Wells Fargo a 4?  <br>
+                    <i id="description">(Enter your response in the box below. Please do not include any personal information in the blank fields in this survey).</i>
+                </legend>
+                <textarea id="quote-response" rows="10" placeholder="Basic open ended question" name="question" aria-describedby="description"></textarea>
+            </fieldset>
 
             <button type="submit" class="button dark-plum">Next Question</button>
         </form>
