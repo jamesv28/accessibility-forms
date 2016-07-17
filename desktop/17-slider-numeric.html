@@ -15,8 +15,19 @@
 </header>
 <main role="main">
     <div class="container">
-        <h2>Nothing here, please go to the next question button</h2>
         <form action="18-dropdown-question.html">
+            <fieldset class="fieldset-no-border">
+                <legend>For how many years have you been with company X?</legend>
+                <label for="years-worked">Years </label>
+                <input  id="years-worked" type="range" min="1" max="5" value="1" step="1" list="rangeList" ">
+                <datalist id="rangeList">
+                    <option label="1">1</option>
+                    <option >2</option>
+                    <option >3</option>
+                    <option >4</option>
+                    <option>5</option>
+                </datalist>
+            </fieldset>
 
             <button type="submit" class="button dark-plum">Next Question</button>
         </form>
