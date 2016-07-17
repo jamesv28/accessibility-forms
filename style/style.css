@@ -230,6 +230,7 @@ and (max-device-width: 480px)
     /**** 05-multi-grid ****/
     .company {
         display: block;
+        width: 100%;
     }
     .company label {
         display: inline-block;
