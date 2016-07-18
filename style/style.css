@@ -114,10 +114,14 @@ input[type="radio"]:focus {
 }
 /****** Question 13, 14, 15 placeholder-image *****/
 .placeholder-image {
-    width: 60vw;
+    width: 100%;
     height:60vh;
     background-color: lightgray;
     margin-bottom: 20px;;
+}
+/***** large textarea *****/
+.lg-textarea {
+    width:60%;
 }
 
 /********* input = range aka slider ************/

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Accessibility Forms | drag and drop part 2</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+<header id="header-top" class="row" role="banner">
+    <div class="container">
+        <img src="../img/logo.png" alt="wells fargo logo" class="img-responsive logo">
+        <hr class="top-line" aria-hidden="true">
+    </div>
+</header>
+<main role="main">
+    <div class="container">
+        <form action="16-slider-nominal.html">
+            <fieldset class="fieldset-no-border">
+                <label for="text-question">Text Description: </label> <br>
+                <textarea id="text-question" class="lg-textarea" rows="5"></textarea>
+            </fieldset>
+            <fieldset class="fieldset-no-border">
+                <label for="dropdown-question">Dropdown Options: </label>
+                &nbsp; &nbsp;<select id="dropdown-question" name="dropdown">
+                    <option>Please Select One</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </fieldset>
+
+            <button type="submit" class="button dark-plum">Next Question</button>
+        </form>
+    </div>
+</main>
+</body>
+</html>
