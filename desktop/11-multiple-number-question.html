@@ -15,9 +15,25 @@
 </header>
 <main role="main">
     <div class="container">
-        <h2>Nothing here, please go to the next question</h2>
-        <form action="12-ranking-question.html">
-
+        <p>We are interested in knowing the percent<abbr>(pct)</abbr> fo how you purchase items.
+            Please fill out all of the inputs to where they add up to 100.</p>
+        <form action="12-ranking-question.html" oninput="total.value =check.value + creditCard.value + debitCard.value + autoDeduct.value + cash.value + other.value">
+            <label for="check">Check</label>
+            <input id="check" name="check" type="number">  <span>%</span>  <br>
+            <label for="creditCard">Credit Card</label>
+            <input id="creditCard" name="credit-card" type="number">  <span>%</span> <br>
+            <label for="debitCard">Debit Card: </label>
+            <input id="debitCard" name="credit-card" type="number">  <span>%</span>  <br>
+            <label for="autoDeduct">Auto deduction</label>
+            <input id="autoDeduct" name="auto-deduction" type="number"> <span>%</span> <br>
+            <label for="cash">Cash or money order</label>
+            <input type="number" id="cash" name="cash"><span>%</span> <br>
+            <label for="other">Other</label>
+            <input id="other" name="other" type="number"> <span>%</span>    <br>
+            <span>Total</span>
+            <output id="percent-sum" name="total" for="cash credit-card check debit-card other autoDeduct"></output>
+            <span>%</span>    <br>
+            <a href="12-ranking-question.html" class="button default" role="button">Prefer not to answer</a>
             <button type="submit" class="button dark-plum">Next Question</button>
         </form>
     </div>

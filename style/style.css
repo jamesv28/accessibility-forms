@@ -192,7 +192,11 @@ input[type="radio"]:focus {
     display: inline-block;
 
 }
-
+/************ 11 styling *************/
+#percent-sum {
+    padding: 5px 10px;
+    text-align: center;
+}
 /******* Responsive Design ofr inputs ************/
 @media only screen
 and (min-device-width: 320px)
