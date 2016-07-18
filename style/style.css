@@ -112,7 +112,13 @@ input[type="radio"]:focus {
 .likert-inputs {
     clear: both;
 }
-
+/****** Question 13, 14, 15 placeholder-image *****/
+.placeholder-image {
+    width: 60vw;
+    height:60vh;
+    background-color: lightgray;
+    margin-bottom: 20px;;
+}
 
 /********* input = range aka slider ************/
 #years-worked {
