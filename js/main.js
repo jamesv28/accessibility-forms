@@ -90,21 +90,6 @@ function dropdownValidation() {
     
 }
 
-
-/***** Validating question 11 *********/
-function validateMultinumber() {
-    
-    var outputTotal = parseInt(document.getElementById('percent-sum').value);
-
-    var tooLow = "The total should equal 100, please change an input to total 100 ";
-    console.log('output', outputTotal);
-    if (outputTotal < 100) {
-        document.getElementById('errorMsg').innerText = tooLow;
-    } else if (outputTotal === "" || outputTotal === null) {
-        document.getElementById('errorMsg').innerText = "The total should qual 100";
-    }
-}
-
 /***** 04 - checkboxes - remove if non is selected *******/
 function getChecked() {
     var inputs = document.getElementsByTagName("input"); //or document.forms[0].elements;
@@ -139,6 +124,25 @@ function validateCheckbox() {
     }
     document.getElementById('alertMsg').innerText = txt;
     return false;
+}
 
+/****** Validate Question 11 *******/
+function getTotal() {
+    var inputs = document.getElementsByTagName('input');
+    var sum = 0;
+    var alertMessage = document.getElementById('errorMsg');
+    
+    for(var i = 0; i < inputs.length; i++) {
+        sum += parseInt(inputs[i].value);
+        if(sum < 100) {
+            alertMessage.innerText = "The total is too low, all of the inputs must add up to 100";
+            return false;
+        } else if (sum > 100) {
+            alertMessage.innerText = "The total is too high, all of the inputs must add up to 100";
+            return false;
+        }
+    }
+    return true;
+    // console.log('this is the sum', sum);
 }
  

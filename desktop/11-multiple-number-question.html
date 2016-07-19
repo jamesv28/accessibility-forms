@@ -18,7 +18,7 @@
         <p>We are interested in knowing the percent<abbr>(pct)</abbr> fo how you purchase items.
             Please fill out all of the inputs to where they add up to 100.</p>
         <form action="12-ranking-question.html" oninput="total.value = parseInt(document.getElementById('check').value) + parseInt(document.getElementById('creditCard').value) + parseInt(document.getElementById('debitCard').value) + parseInt(document.getElementById('autoDeduct').value) + parseInt(document.getElementById('cash').value)+ parseInt(document.getElementById('other').value)">
-            <p id="errorMsg" role="alert"></p>
+            <p id="errorMsg" class="errorMsg" role="alert"></p>
             <label class="multi-number-label" for="check">Check</label>
             <input id="check" name="check" value="0" type="number">  <span>%</span>  <br>
 
@@ -42,7 +42,7 @@
                 <span>%</span>
             </div><br>
             <a href="12-ranking-question.html" class="button default" role="button">Prefer not to answer</a>
-            <button type="submit" class="button dark-plum" onclick="return validateMultinumber()">Next Question</button>
+            <button type="submit" class="button dark-plum" onclick="return getTotal()">Next Question</button>
         </form>
     </div>
 </main>
