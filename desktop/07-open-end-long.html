@@ -21,10 +21,10 @@
                     Why do you rate your overall satisfaction with Wells Fargo a 4?  <br>
                     <i id="description">(Enter your response in the box below. Please do not include any personal information in the blank fields in this survey).</i>
                 </legend>
-                <textarea id="quote-response" rows="10" placeholder="Basic open ended question" name="question" aria-describedby="description"></textarea>
+                <p class="errorMsg" id="textAreaError" role="alert"></p>
+                <textarea id="response" class="lg-textarea" rows="10" placeholder="Basic open ended question" name="question" aria-describedby="description" required aria-required="true"></textarea>
             </fieldset>
-
-            <button type="submit" class="button dark-plum">Next Question</button>
+            <button type="submit" class="button dark-plum" onclick="textAreaValidation()">Next Question</button>
         </form>
     </div>
 </main>

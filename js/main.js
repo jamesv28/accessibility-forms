@@ -10,13 +10,15 @@ function outputUpdate(num) {
 function textAreaValidation() {
     
     var x, text;
-    x = document.getElementById("quote-response").value;
+    x = document.getElementById("response").value;
     
     if(x === '' || x.indexOf('\n') > 0 || x === null) {
         text = "Please enter something";
     }
-
+    
     document.getElementById('textAreaError').innerText = text;
+
+
 }
 
 /**
