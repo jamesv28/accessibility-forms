@@ -172,7 +172,11 @@ input[type="radio"]:focus {
     border: 1px solid transparent;
     border-radius: 4px;
 }
-
+.default {
+    text-decoration: none;
+    color: #000;
+    background-color: lightgray;
+}
 .dark-plum {
     color: #ffffff;
     background-color: rgb(77,59,101);
@@ -193,9 +197,16 @@ input[type="radio"]:focus {
 
 }
 /************ 11 styling *************/
+.multi-number-label {
+    width:20%;
+    display: inline-block;
+}
 #percent-sum {
-    padding: 5px 10px;
+    /*padding: 5px 10px;*/
     text-align: center;
+}
+.total-Sum {
+    margin-left:20%;
 }
 /******* Responsive Design ofr inputs ************/
 @media only screen
