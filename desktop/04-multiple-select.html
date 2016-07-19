@@ -22,6 +22,7 @@
                     <br>
                     <i>(Please Select all that apply.)</i>
                 </legend>
+                <p class="errorMsg" id="alertMsg" role="alert"></p>
                 <input type="checkbox" id="online-assistance" value="online" name="purpose">
                 <label for="online-assistance">Online assistance</label> <br>
                 <input type="checkbox" id="reallocation" value="reallocation" name="purpose">
@@ -36,7 +37,7 @@
                 <label for="none">None of the above</label><br>
             </fieldset>
             <!--<button type="button" onclick="getChecked()">button</button>-->
-            <button type="submit" class="button dark-plum ">Next Question</button>
+            <button type="submit" class="button dark-plum " onclick="return validateCheckbox()">Next Question</button>
         </form>
     </div>
 </main>

@@ -39,6 +39,7 @@ strong {
 }
 
 /******** focus on input type = checkbox and input = radio on focus ***********/
+/******** take not that this is not implemented in all browsers ********/
 input[type="checkbox"]:focus {
     outline: rgb(68,70,74) solid 2px;
 }

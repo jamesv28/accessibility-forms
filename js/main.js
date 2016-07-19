@@ -118,4 +118,21 @@ function getChecked() {
     }
     console.log(checked);
 }
+
+
+/***** Validate to see if at least one checkbox is selected *****/
+function validateCheckbox() {
+
+    var checkboxes = document.getElementsByName('purpose');
+    var txt = 'You must select aat least one checkbox';
+
+    for(var i = 0; i < checkboxes.length; i++) {
+        if (checkboxes[i].checked) {
+            return true;
+        }
+    }
+    document.getElementById('alertMsg').innerText = txt;
+    return false;
+
+}
  
