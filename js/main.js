@@ -15,7 +15,7 @@ function textAreaValidation() {
     if(x === '' || x.indexOf('\n') > 0 || x === null) {
         text = "Please enter something";
     }
-    
+
     document.getElementById('textAreaError').innerText = text;
 
 
@@ -115,10 +115,14 @@ function getChecked() {
             cbs.push(inputs[i]);
             if (inputs[i].checked) {
                 checked.push(inputs[i]);
+                for(var j = 0; j < checked.length; j++) {
+                    checked[j].checked = false;
+                }
+                document.getElementById('none').checked = true;
+                console.log('please unchec', checked);
             }
         }
     }
-    console.log(checked);
 }
 
 

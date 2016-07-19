@@ -33,10 +33,9 @@
                 <label for="activation">Card activation</label> <br>
                 <input type="checkbox" id="late-fee" value="late" name="purpose">
                 <label for="late-fee">Late fee charges</label><br>
-                <input type="checkbox" id="none" value="none" name="purpose">
+                <input type="checkbox" id="none" value="none" name="purpose" onclick="getChecked()">
                 <label for="none">None of the above</label><br>
             </fieldset>
-            <!--<button type="button" onclick="getChecked()">button</button>-->
             <button type="submit" class="button dark-plum " onclick="return validateCheckbox()">Next Question</button>
         </form>
     </div>
