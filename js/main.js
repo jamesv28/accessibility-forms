@@ -91,12 +91,14 @@ function dropdownValidation() {
 
 /***** Validating question 11 *********/
 function validateMultinumber() {
-    var rawOutput = document.getElementById('percent-sum').value;
-    var outputTotal = parseInt(rawOutput);
-    console.log('output', rawOutput);
+    
+    var outputTotal = parseInt(document.getElementById('percent-sum').value);
+
+    var tooLow = "The total should equal 100, please change an input to total 100 ";
+    console.log('output', outputTotal);
     if (outputTotal < 100) {
-        document.getElementById('errorMsg').innerText = "The total should equal 100, please change an input to total 100 ";
-    } else if (outputTotal === '' || outputTotal === null) {
+        document.getElementById('errorMsg').innerText = tooLow;
+    } else if (outputTotal === "" || outputTotal === null) {
         document.getElementById('errorMsg').innerText = "The total should qual 100";
     }
 }

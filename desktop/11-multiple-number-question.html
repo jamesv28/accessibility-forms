@@ -17,23 +17,28 @@
     <div class="container">
         <p>We are interested in knowing the percent<abbr>(pct)</abbr> fo how you purchase items.
             Please fill out all of the inputs to where they add up to 100.</p>
-        <form action="12-ranking-question.html" oninput="total.value =check.value + creditCard.value + debitCard.value + autoDeduct.value + cash.value + other.value">
+        <form action="12-ranking-question.html" oninput="total.value = parseInt(document.getElementById('check').value) + parseInt(document.getElementById('creditCard').value) + parseInt(document.getElementById('debitCard').value) + parseInt(document.getElementById('autoDeduct').value) + parseInt(document.getElementById('cash').value)+ parseInt(document.getElementById('other').value)">
             <p id="errorMsg" role="alert"></p>
             <label class="multi-number-label" for="check">Check</label>
-            <input id="check" name="check" type="number">  <span>%</span>  <br>
+            <input id="check" name="check" value="0" type="number">  <span>%</span>  <br>
+
             <label class="multi-number-label" for="creditCard">Credit Card</label>
-            <input  id="creditCard" name="credit-card" type="number">  <span>%</span> <br>
+            <input  id="creditCard" name="creditCard" value="0" type="number">  <span>%</span> <br>
+
             <label class="multi-number-label" for="debitCard">Debit Card: </label>
-            <input  id="debitCard" name="credit-card" type="number">  <span>%</span>  <br>
+            <input  id="debitCard" name="debitCard" value="0" type="number">  <span>%</span>  <br>
+
             <label class="multi-number-label" for="autoDeduct">Auto deduction</label>
-            <input id="autoDeduct" name="auto-deduction" type="number"> <span>%</span> <br>
+            <input id="autoDeduct" name="autoDeduct" value="0" type="number"> <span>%</span> <br>
+
             <label class="multi-number-label" for="cash">Cash or money order</label>
-            <input type="number" id="cash" name="cash"><span>%</span> <br>
+            <input type="number" id="cash" name="cash" value="0"><span>%</span> <br>
+
             <label class="multi-number-label" for="other">Other</label>
-            <input id="other" name="other" type="number"> <span>%</span>    <br>
+            <input id="other" name="other" value="0" type="number"> <span>%</span>    <br>
             <div class="total-Sum">
                 <span>Total</span>
-                <output id="percent-sum" name="total" for="cash credit-card check debit-card other autoDeduct"></output>
+                <output id="percent-sum" name="total" for="cash creditCard check debitCard other autoDeduct"></output>
                 <span>%</span>
             </div><br>
             <a href="12-ranking-question.html" class="button default" role="button">Prefer not to answer</a>
