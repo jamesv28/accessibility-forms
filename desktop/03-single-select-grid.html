@@ -18,7 +18,7 @@
         <h2>Which of the following best describes your investment in the...?</h2>
         <form action="04-multiple-select.html">
             <section class="grid-selection-options">
-                <p class="single-selection first-item">
+                <p class="single-selection first">
                     I am the primary decision maker
                 </p>
                 <p class="single-selection">
@@ -28,6 +28,7 @@
                     I am not allowed
                 </p>
             </section>
+            <p class="errorMsg" id="question-1-error" role="alert"></p>
             <fieldset class="fieldset-no-border horizontal-grid">
                 <legend class="gird-question">
                     Selection of financial services companies (banks, payment card companies, etc.)
@@ -38,133 +39,50 @@
                     <label for="question-1-single" class="desktop-hide">Primary Decision Maker</label>
                 </div>
                 <div class="option">
-                    <input id="question-1-joint" type="radio" name="question-1" value="multiple">
-                    <label id="question-1-multiple" class="desktop-hide"></label>
+                    <input id="question-1-multiple" type="radio" name="question-1" value="multiple">
+                    <label for="question-1-multiple" class="desktop-hide">Joint decision</label>
+                </div>
+                <div class="option">
+                    <input id="question-1-no" type="radio" name="question-1" value="no">
+                    <label for="question-1-no" class="desktop-hide">I am not allowed</label>
                 </div>
             </fieldset>
-
-
-
-
-        <!--<fieldset class="fieldset-no-border">-->
-            <!--<legend>-->
-                <!--How satisfied are you with Wells Fargo <strong>overall</strong> <br>-->
-                <!--<i>(Please Select One).</i>-->
-            <!--</legend>-->
-            <!--<div class="likert-header">-->
-                <!--<ul>-->
-                    <!--<li class="likert-section" id="very-dissatisfied">Very Dissatisfied</li>-->
-                    <!--<li class="likert-section" id="somewhat-dissatisfied">Somewhat Dissatisfied</li>-->
-                    <!--<li class="likert-section" id="neither">Neither Satisfied nor Dissatisfied</li>-->
-                    <!--<li class="likert-section" id="somewhat-satisfied">Somewhat Satisfied</li>-->
-                    <!--<li class="likert-section" id="very-satisfied">Very Satisfied</li>-->
-                <!--</ul>-->
-            <!--</div>-->
-            <!--<div class="likert-inputs">-->
-                <!--<label class="likert-section" >-->
-                    <!--<input type="radio" name="satisfied" value="1" aria-describedby="very-dissatisfied">-->
-                    <!--1-->
-                <!--</label>-->
-                <!--<label class="likert-section">-->
-                    <!--<input type="radio" name="satisfied" value="2" aria-describedby="somewhat-dissatisfied">-->
-                    <!--2-->
-                <!--</label>-->
-
-                <!--<label class="likert-section">-->
-                    <!--<input type="radio" name="satisfied" value="3" aria-describedby="neither">-->
-                    <!--3-->
-                <!--</label>-->
-                <!--<label class="likert-section">-->
-                    <!--<input type="radio" name="satisfied" value="4" aria-describedby="somewhat-satisfied">-->
-                    <!--4-->
-                <!--</label>-->
-                <!--<label class="likert-section">-->
-                    <!--<input type="radio" name="satisfied" value="5" aria-describedby="very-satisfied">-->
-                    <!--5-->
-                <!--</label>-->
-            <!--</div>-->
-        <!--</fieldset>-->
-        <!--<hr class="line">-->
-        <!--<fieldset class="fieldset-no-border">-->
-            <!--<legend>-->
-                <!--How likely are you to consider Wells Fargo the next time you are in the market for a new financial account or product?<br>-->
-                <!--<i>(Please select one.)</i>-->
-            <!--</legend>-->
-            <!--<div class="likert-header">-->
-                <!--<ul>-->
-                    <!--<li class="likert-section" id="very-unlikely">Very Unlikely</li>-->
-                    <!--<li class="likert-section" id="somewhat-unlikely">Somewhat Unlikely</li>-->
-                    <!--<li class="likert-section" id="neither-unlikely">Neither Likely nor Dissatisfied</li>-->
-                    <!--<li class="likert-section" id="somewhat-likely">Somewhat Likely</li>-->
-                    <!--<li class="likert-section" id="very-likely">Very Likely</li>-->
-                <!--</ul>-->
-            <!--</div>-->
-            <!--<div class="likert-inputs">-->
-                <!--<label class="likert-section" >-->
-                    <!--<input type="radio" name="likely" value="1" aria-describedby="very-unlikely">-->
-                    <!--1-->
-                <!--</label>-->
-                <!--<label class="likert-section">-->
-                    <!--<input type="radio" name="likely" value="2" aria-describedby="somewhat-unlikely">-->
-                    <!--2-->
-                <!--</label>-->
-
-                <!--<label class="likert-section">-->
-                    <!--<input type="radio" name="likely" value="3" aria-describedby="neither-unlikely">-->
-                    <!--3-->
-                <!--</label>-->
-                <!--<label class="likert-section">-->
-                    <!--<input type="radio" name="likely" value="4" aria-describedby="somewhat-likely">-->
-                    <!--4-->
-                <!--</label>-->
-                <!--<label class="likert-section">-->
-                    <!--<input type="radio" name="likely" value="5" aria-describedby="very-likely">-->
-                    <!--5-->
-                <!--</label>-->
-            <!--</div>-->
-        <!--</fieldset>-->
-        <!--<hr class="line">-->
-        <!--<fieldset class="fieldset-no-border">-->
-            <!--<legend>-->
-                <!--How likely are you to recommend a friend or associate? <br>-->
-                <!--<i>(Please select one response.)</i>-->
-            <!--</legend>-->
-            <!--<div class="likert-header">-->
-                <!--<ul>-->
-                    <!--<li class="likert-section" id="very-unlikely-2">Very Unlikely</li>-->
-                    <!--<li class="likert-section" id="somewhat-unlikely-2">Somewhat Unlikely</li>-->
-                    <!--<li class="likert-section" id="neither-unlikely-2">Neither Likely nor Dissatisfied</li>-->
-                    <!--<li class="likert-section" id="somewhat-likely-2">Somewhat Likely</li>-->
-                    <!--<li class="likert-section" id="very-likely-2">Very Likely</li>-->
-                <!--</ul>-->
-            <!--</div>-->
-            <!--<div class="likert-inputs">-->
-                <!--<label class="likert-section" >-->
-                    <!--<input type="radio" name="likely-2" value="1" aria-describedby="very-unlikely-2">-->
-                    <!--1-->
-                <!--</label>-->
-                <!--<label class="likert-section">-->
-                    <!--<input type="radio" name="likely-2" value="2" aria-describedby="somewhat-unlikely-2">-->
-                    <!--2-->
-                <!--</label>-->
-
-                <!--<label class="likert-section">-->
-                    <!--<input type="radio" name="likely-2" value="3" aria-describedby="neither-unlikely-2">-->
-                    <!--3-->
-                <!--</label>-->
-                <!--<label class="likert-section">-->
-                    <!--<input type="radio" name="likely-2" value="4" aria-describedby="somewhat-likely-2">-->
-                    <!--4-->
-                <!--</label>-->
-                <!--<label class="likert-section">-->
-                    <!--<input type="radio" name="likely-2" value="5" aria-describedby="very-likely-2">-->
-                    <!--5-->
-                <!--</label>-->
-            <!--</div>-->
-        <!--</fieldset>-->
-        <!--<hr class="line">-->
-
-
+            <p class="errorMsg" id="question-2-error" role="alert"></p>
+            <fieldset class="fieldset-no-border horizontal-grid">
+                <legend class="gird-question">
+                    Day to day financial decisions for this business
+                </legend>
+                <div class="option">
+                    <input id="question-2-single" type="radio" name="question-1" value="single">
+                    <label for="question-2-single" class="desktop-hide">Primary Decision Maker</label>
+                </div>
+                <div class="option">
+                    <input id="question-2-multiple" type="radio" name="question-1" value="multiple">
+                    <label for="question-2-multiple" class="desktop-hide">Joint decision</label>
+                </div>
+                <div class="option">
+                    <input id="question-2-no" type="radio" name="question-1" value="no">
+                    <label for="question-2-no" class="desktop-hide">I am not allowed</label>
+                </div>
+            </fieldset>
+            <p class="errorMsg" id="question-3-error" role="alert"></p>
+            <fieldset class="fieldset-no-border horizontal-grid">
+                <legend class="gird-question">
+                    Major financial decisions for the business
+                </legend>
+                <div class="option">
+                    <input id="question-3-single" type="radio" name="question-1" value="single">
+                    <label for="question-3-single" class="desktop-hide">Primary Decision Maker</label>
+                </div>
+                <div class="option">
+                    <input id="question-3-multiple" type="radio" name="question-1" value="multiple">
+                    <label for="question-3-multiple" class="desktop-hide">Joint decision</label>
+                </div>
+                <div class="option">
+                    <input id="question-3-no" type="radio" name="question-1" value="no">
+                    <label for="question-3-no" class="desktop-hide">I am not allowed</label>
+                </div>
+            </fieldset>
         <p>Click the "Next Question" button to move forward in the survey</p>
         <button type="submit" class="button purple ">Next Question</button>
         </form>

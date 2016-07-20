@@ -16,8 +16,6 @@ strong {
     width: 100px;
 }
 
-
-
 .container {
     padding: 0 15px 0 15px;
 }
@@ -61,7 +59,9 @@ input[type="radio"]:focus {
     width:100%;
     margin:0;
 }
-
+.first {
+    margin-left:25%;
+}
 .single-selection {
     width:24%;
     text-align: center;
@@ -78,7 +78,7 @@ input[type="radio"]:focus {
 
 }
 .option {
-    width: 25%;
+    width: 24%;
     padding:0;
     margin:0;
     border:0;
