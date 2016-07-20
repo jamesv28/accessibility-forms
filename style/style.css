@@ -275,6 +275,16 @@ and (max-device-width: 480px)
         width:100%;
         margin: 0 auto;
     }
+    /***** 03-select-grid ***/
+    /*.option {*/
+        /*display: block;*/
+        /*width: 100%;*/
+        /*text-align: left;*/
+    /*}*/
+    /*.option label {*/
+        /*display: inline-block;*/
+    /*}*/
+
     /**** 05-multi-grid ****/
     .company {
         display: block;
