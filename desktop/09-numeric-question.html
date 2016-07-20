@@ -15,27 +15,18 @@
 </header>
 <main role="main">
     <div class="container">
-        <form action="10-numeric-question-date.html">
+        <form action="10-numeric-question-date.html" onsubmit="return numValidate()">
             <fieldset class="fieldset-no-border">
-                <legend>
+                <legend aria-describedby="numInput">
                     Including yourself. how manny employees does your company have? <br>
                     Please include the number of full and part time.
                 </legend>
-                <input type="number" aria-label="amount of employees" aria-describedby="span-label">
-                <span id="span-label"># of employees</span>
+                <p class="errorMsg" id="errMsg" role="alert"></p>
+                <input id="numInput" type="number"  >
+                <label for="numInput"># of employees</label>
             </fieldset>
-            <!--<p>here is another example to see which one works better</p>-->
-            <!--<fieldset class="fieldset-no-border">-->
-                <!--<legend>-->
-                    <!--Including yourself. how manny employees does your company have? <br>-->
-                    <!--Please include the number of full and part time.-->
-                <!--</legend>-->
-                <!--<label>-->
-                <!--<input type="number" aria-label="input for amount of employees" aria-describedby="span-label">-->
-                <!--# of employees-->
-                <!--</label>-->
-            <!--</fieldset>-->
-            <button type="submit" class="button purple">Next Question</button>
+
+            <button type="submit" class="button purple" >Next Question</button>
         </form>
     </div>
 </main>

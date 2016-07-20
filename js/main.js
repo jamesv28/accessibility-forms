@@ -180,4 +180,20 @@ function getRangeValues() {
 
 }
 
-getRangeValues();
+// getRangeValues();
+
+/** numeric standard **/
+function numValidate() {
+
+    var x, text;
+
+    x = document.getElementById('numInput').value;
+    if(x === '') {
+        document.getElementById('errMsg').innerText = "please enter in a value";
+        return false;
+    } else if (isNaN(x)) {
+        document.getElementById('errMsg').innerText = "Input must be a number";
+        return false;
+    }
+
+}
