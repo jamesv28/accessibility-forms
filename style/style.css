@@ -16,15 +16,7 @@ strong {
     width: 100px;
 }
 
-::selection {
-    background: rgb(187,8,38);
-    color: #ffffff;
-}
 
-::-moz-selection {
-    background: rgb(187,8,38);
-    color: #ffffff;
-}
 
 .container {
     padding: 0 15px 0 15px;
@@ -62,7 +54,37 @@ input[type="radio"]:focus {
     width:50%;
     margin-bottom: 10px;
 }
+/******* 03 single Select gird *********/
+.grid-selection-options {
+    padding:0;
+    border:0;
+    width:100%;
+    margin:0;
+}
 
+.single-selection {
+    width:24%;
+    text-align: center;
+    display: inline-block;
+}
+
+.gird-question {
+    width:25%;
+    display: inline-block;
+    float: left;
+    margin:0;
+    padding:0;
+    border:0;
+
+}
+.option {
+    width: 25%;
+    padding:0;
+    margin:0;
+    border:0;
+    display: inline-block;
+    text-align: center;
+}
 /******* 05-multiple-select-grid *******/
 .horizontal-grid {
     width: 100%;
@@ -178,7 +200,7 @@ input[type="radio"]:focus {
     color: #000;
     background-color: lightgray;
 }
-.dark-plum {
+.purple {
     color: #ffffff;
     background-color: rgb(77,59,101);
 }

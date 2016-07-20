@@ -160,4 +160,24 @@ document.addEventListener('keyup', key_short, false);
 function addFocus() {
     document.getElementById('not-answer').focus();
 }
- 
+
+
+/**** try to indicate likert scale with input type = range ***/
+function getRangeValues() {
+
+    var range = document.getElementById('years-worked');
+
+    // if(range.value === '1') {
+    //     range.setAttribute('aria-label', 'very-dissatisfied');
+    // } else if(range.value === '5') {
+    //     range.setAttribute('aria-label', 'very-satisfied');
+    // } else if(range.value === '3') {
+    //     range.setAttribute('aria-describedby', 'neither');
+    // }
+
+    //tooltip is not supported for cross-browser compatibility
+    
+
+}
+
+getRangeValues();
