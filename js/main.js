@@ -203,11 +203,29 @@ function numValidate() {
 function validateDate() {
     
     var month = document.getElementById('month').value;
-    var day = document.getElementById('day');
-    var year = document.getElementById('year');
+    var day = document.getElementById('day').value;
+    var year = document.getElementById('year').value;
     
     if(month === "" || day === "" || year === "") {
-        document.getElementById('errMsg').innerText = "Mmonth, day, and year are required fields";
+        document.getElementById('errMsg').innerText = "Month, day, and year are required fields";
         return false;
     }
+}
+
+/** 03-validate **/
+function validateSelectGrid() {
+    var err1 = document.getElementById('question-1-error');
+    var err2 = document.getElementById('question-2-error');
+    var err3 = document.getElementById('question-3-error');
+
+    var group1 = document.getElementsByName('question-1');
+    var group2 = document.getElementsByName('question-2');
+    var group3 = document.getElementsByName('question-3');
+
+    for (var i = 0; i < group1.length; i++) {
+        if (group1[i].checked === false)
+            err1.innerText = "You must enter a value";
+            return true;
+    }
+
 }
