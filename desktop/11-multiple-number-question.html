@@ -18,7 +18,7 @@
         <p>We are interested in knowing the percent<abbr>(pct)</abbr> fo how you purchase items.
             Please fill out all of the inputs to where they add up to 100.</p>
         <!-- where to let users know if they would like to skp the question, it needs to be provided and how to do it -->
-        <p>If you prefer not to answer the question, you you click "prefer not to answer" or you can hit control + r <abbr>(ctrl + r).</abbr></p>
+        <p>If you prefer not to answer the question, you you click "prefer not to answer" link</p>
         <form action="12-ranking-question.html" oninput="total.value = parseInt(document.getElementById('check').value) + parseInt(document.getElementById('creditCard').value) + parseInt(document.getElementById('debitCard').value) + parseInt(document.getElementById('autoDeduct').value) + parseInt(document.getElementById('cash').value)+ parseInt(document.getElementById('other').value)">
             <p id="errorMsg" class="errorMsg" role="alert"></p>
             <label class="multi-number-label" for="check">Check</label>
@@ -43,7 +43,7 @@
                 <output id="percent-sum" name="total" for="cash creditCard check debitCard other autoDeduct"></output>
                 <span>%</span>
             </div><br>
-            <a href="12-ranking-question.html" id="not-answer" class="button default" role="button">Prefer not to answer</a>
+            <a href="12-ranking-question.html" id="not-answer" class="button default" >Prefer not to answer</a>
             <button type="submit" class="button purple" onclick="return getTotal()">Next Question</button>
         </form>
     </div>
