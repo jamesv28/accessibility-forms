@@ -15,16 +15,17 @@
 </header>
 <main role="main">
     <div class="container">
-        <form action="14-heat-map.html">
-            <p>Please read the following quote and then type in a response on how it made you feel.</p>
-            <blockquote>
-                "Friendship is a plant of slow growth and must undergo and withstand the shocks of adversity before it is entitled to the appellation." <br>
-                --George Washington
-
-            </blockquote>
+        <form action="14-heat-map.html" onsubmit="return textAreaValidation()">
             <fieldset class="fieldset-no-border">
-                <label for="open-end-question">Response:</label><br>
-                <textarea class="lg-textarea" rows="5" id="open-end-question"></textarea>
+                <legend>
+                    Please read the following quote and then type in a response on how it made you feel <br>
+                        "Friendship is a plant of slow growth and must undergo and withstand the shocks of adversity before it is entitled to the appellation." <br>
+                        --George Washington
+
+                </legend>
+                <p class="errorMsg" id="textAreaError" role="alert"></p>
+                <label for="response">Response:</label><br>
+                <textarea class="lg-textarea" rows="5" id="response"></textarea>
             </fieldset>
             <button type="submit" class="button purple">Next Question</button>
         </form>

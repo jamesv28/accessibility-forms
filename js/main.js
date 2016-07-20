@@ -12,11 +12,12 @@ function textAreaValidation() {
     var x, text;
     x = document.getElementById("response").value;
     
-    if(x === '' || x.indexOf('\n') > 0 || x === null) {
-        text = "Please enter something";
+    if(x === '' || x === null) {
+        // text = "Please enter something";
+        document.getElementById('textAreaError').innerText = "Please type a response ";
+        return false;
     }
 
-    document.getElementById('textAreaError').innerText = text;
 
 
 }
