@@ -197,3 +197,16 @@ function numValidate() {
     }
 
 }
+
+/** Validate 10 - date **/
+function validateDate() {
+    
+    var month = document.getElementById('month').value;
+    var day = document.getElementById('day');
+    var year = document.getElementById('year');
+    
+    if(month === "" || day === "" || year === "") {
+        document.getElementById('errMsg').innerText = "Mmonth, day, and year are required fields";
+        return false;
+    }
+}

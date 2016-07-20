@@ -15,11 +15,12 @@
 </header>
 <main role="main">
     <div class="container">
-        <form action="11-multiple-number-question.html">
+        <form action="11-multiple-number-question.html" onsubmit="return validateDate()">
                 <fieldset class="fieldset-no-border">
                     <legend>
                         Please select the date you last spoke with a Wells Fargo rep representative?
                     </legend>
+                    <p class="errorMsg" id="errMsg" role="alert"></p>
                     <label for="month">Month: </label>
                     <select id="month" name="month">
                         <option></option>
