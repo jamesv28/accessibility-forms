@@ -17,12 +17,12 @@
     <div class="container">
         <form action="08-open-end-short.html">
             <fieldset class="fieldset-no-border">
-                <legend>
+                <label for="response">
                     Why do you rate your overall satisfaction with Wells Fargo a 4?  <br>
                     <i id="description">(Enter your response in the box below. Please do not include any personal information in the blank fields in this survey).</i>
-                </legend>
+                </label>
                 <p class="errorMsg" id="textAreaError" role="alert"></p>
-                <textarea id="response" class="lg-textarea" rows="10" placeholder="Basic open ended question" name="question" aria-describedby="description" required aria-required="true"></textarea>
+                <textarea id="response" class="lg-textarea" rows="10"  name="question" aria-describedby="description" required aria-required="true"></textarea>
             </fieldset>
             <button type="submit" class="button purple" onclick="textAreaValidation()">Next Question</button>
         </form>
