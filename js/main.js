@@ -143,6 +143,21 @@ function getTotal() {
         }
     }
     return true;
-    // console.log('this is the sum', sum);
+}
+
+/**** handling keyboard shortcut - for people who prefer not to anser the question *****/
+function key_short(e) {
+    if(e.ctrlKey && e.keyCode === 70) {
+        //  function you would like to add
+        addFocus();
+    }
+}
+
+// register the handler
+document.addEventListener('keyup', key_short, false);
+
+//simply decide which elements you would like focu on
+function addFocus() {
+    document.getElementById('not-answer').focus();
 }
  
