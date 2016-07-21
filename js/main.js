@@ -196,17 +196,17 @@ function getRangeValues() {
 /** numeric standard **/
 function numValidate() {
 
-    var x, text;
-
-    x = document.getElementById('numInput').value;
+    var x = document.getElementById('numInput').value;
+    var txt = document.getElementById('errMsg');
+    txt.innerText = "";
+    
     if(x === '') {
-        document.getElementById('errMsg').innerText = "please enter in a value";
+        txt.innerText = "please enter in a value";
         return false;
     } else if (isNaN(x)) {
-        document.getElementById('errMsg').innerText = "Input must be a number";
+        txt.innerText = "Input must be a number";
         return false;
     }
-
 }
 
 /** Validate 10 - date **/

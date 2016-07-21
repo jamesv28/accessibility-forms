@@ -17,11 +17,11 @@
     <div class="container">
         <form action="10-numeric-question-date.html" onsubmit="return numValidate()">
             <fieldset class="fieldset-no-border">
-                <legend aria-describedby="numInput">
+                <legend id="num-instructions">
                     Including yourself. how manny employees does your company have? <br>
                     Please include the number of full and part time.
                 </legend>
-                <p class="errorMsg" id="errMsg" role="alert"></p>
+                <p class="errorMsg" aria-describedby="num-instructions" id="errMsg" role="alert"></p>
                 <input id="numInput" type="number"  >
                 <!-- # instead of number causes issues -- comes across as pound sign -->
                 <label for="numInput">number of employees</label>
