@@ -234,6 +234,7 @@ function validateDate() {
 
 /** 19 validation **/
 function validateMultiDrop() {
+    document.getElementById('errMsg').innerText = "";
     var q1 = document.getElementById('question-1').value;
     var q2 = document.getElementById('question-2').value;
     var q3 = document.getElementById('question-3').value;
