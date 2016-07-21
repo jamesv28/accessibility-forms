@@ -35,6 +35,14 @@ button::-moz-focus-inner {
 button::-moz-focus-outer {
     border:1px solid #000000;
 }
+input[type="checkbox"]::-moz-focus-outer {
+    border: 1px solid #000000;
+}
+
+input[type="radio"]::-moz-focus-outer {
+    border: 1px solid #000000;
+}
+
 /******** focus on input type = checkbox and input = radio on focus ***********/
 /******** take not that this is not implemented in all browsers ********/
 input[type="checkbox"]:focus {
