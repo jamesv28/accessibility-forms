@@ -128,6 +128,20 @@ input[type="radio"]:focus {
 .desktop-hide {
     display: none;
 }
+/******* question 12 *********/
+section.left {
+    float: left;
+}
+section.left, section.right {
+    display: inline;
+    width:50%;
+
+}
+
+.not-decorated {
+    list-style-type: none;
+    padding-bottom: 10px;
+}
 
 /************ likert scale, also used in grid with multiple rows *********/
 .likert-header {
@@ -233,7 +247,6 @@ input[type="radio"]:focus {
     margin:0;
     width:20%;
     display: inline-block;
-
 }
 /************ 11 styling *************/
 .multi-number-label {
