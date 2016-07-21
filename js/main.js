@@ -8,17 +8,14 @@ function outputUpdate(num) {
  */
 
 function textAreaValidation() {
-    
-    var x, text;
-    x = document.getElementById("response").value;
+    var txt = document.getElementById('textAreaError');
+    txt.innerText = "";
+    var x = document.getElementById("response").value;
     
     if(x === '' || x === null) {
-        // text = "Please enter something";
-        document.getElementById('textAreaError').innerText = "Please type a response ";
+        txt.innerText = "Please type a response ";
         return false;
     }
-
-
 
 }
 
@@ -90,7 +87,18 @@ function dropdownValidation() {
     }
     
 }
+/** revamped checkbox **/
+function getCheckedNew() {
+    var none = document.getElementById('none');
+    var inputs = document.getElementsByClassName('check');
 
+    for(var i = 0; i < inputs.length; i++) {
+        if (none.checked === true) {
+            inputs[i].checked = false;
+        }
+    }
+}
+getCheckedNew();
 /***** 04 - checkboxes - remove if non is selected *******/
 function getChecked() {
     var inputs = document.getElementsByTagName("input"); //or document.forms[0].elements;
@@ -234,6 +242,8 @@ function validateDate() {
 
 /** 19 validation **/
 function validateMultiDrop() {
+
+    document.getElementById('errMsg').innerText = "";
     document.getElementById('errMsg').innerText = "";
     var q1 = document.getElementById('question-1').value;
     var q2 = document.getElementById('question-2').value;
