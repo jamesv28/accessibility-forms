@@ -105,7 +105,6 @@ function getChecked() {
                     checked[j].checked = false;
                 }
                 document.getElementById('none').checked = true;
-                console.log('please unchec', checked);
             }
         }
     }
