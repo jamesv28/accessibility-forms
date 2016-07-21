@@ -15,14 +15,16 @@
 </header>
 <main role="main">
     <div class="container">
-        <form action="16-slider-nominal.html">
+        <form action="16-slider-nominal.html" onsubmit="return textAreaValidation()">
             <fieldset class="fieldset-no-border">
-                <label for="text-question">Text Description: </label> <br>
-                <textarea id="text-question" class="lg-textarea" rows="5" aria-required="true" required></textarea>
+                <p class="errorMsg" id="textAreaError" role="alert"></p>
+                <label for="response">Text Description: </label> <br>
+                <textarea id="response" class="lg-textarea" rows="5" aria-required="true" ></textarea>
             </fieldset>
             <fieldset class="fieldset-no-border">
+                <p class="errorMsg" id=""
                 <label for="dropdown-question">Dropdown Options: </label>
-                &nbsp; &nbsp;<select id="dropdown-question" name="dropdown" required aria-required="true">
+                &nbsp; &nbsp;<select id="dropdown-question" name="dropdown"  aria-required="true">
                     <option>Please Select One</option>
                     <option value="1">1</option>
                     <option value="2">2</option>

@@ -14,12 +14,12 @@
     </div>
 </header>
 <main role="main">
-        <form action="15-drag-and-drop.html">
+        <form action="15-drag-and-drop.html" onsubmit="return textAreaValidation()">
             <fieldset class="fieldset-no-border">
-                <label for="open-end-question">Question Label</label>   <br>
-                <textarea class="lg-textarea" id="open-end-question" rows="10" aria-required="true" required></textarea>
+                <p class="errorMsg" id="textAreaError" role="alert"></p>
+                <label for="response">Question Label</label>   <br>
+                <textarea class="lg-textarea" id="response" rows="10" aria-required="true" ></textarea>
             </fieldset>
-
             <button type="submit" class="button purple">Next Question</button>
         </form>
 </main>
