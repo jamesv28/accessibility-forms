@@ -14,11 +14,12 @@
 </header>
 <main class="role">
     <div class="container">
-        <form action="">
+        <form action="" >
+            <p class="errorMsg" id="errMsg" role="alert"></p>
             <fieldset class="fieldset-no-border dropdown-grid">
                 <label for="question-1">Iteration One</label>   <br>
                 <select id="question-1">
-                    <option>Please Select</option>
+                    <option></option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -27,7 +28,7 @@
             <fieldset class="fieldset-no-border dropdown-grid">
                 <label for="question-2">Iteration Two</label>   <br>
                 <select id="question-2">
-                    <option>Please Select</option>
+                    <option></option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -36,7 +37,7 @@
             <fieldset class="fieldset-no-border dropdown-grid">
                 <label for="question-3">Iteration Three</label>   <br>
                 <select id="question-3">
-                    <option>Please Select</option>
+                    <option></option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -45,12 +46,13 @@
             <fieldset class="fieldset-no-border dropdown-grid">
                 <label for="question-4">Iteration Four</label>   <br>
                 <select id="question-4">
-                    <option>Please Select</option>
+                    <option></option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                 </select>
             </fieldset>
+            <button type="submit" class="button purple" onclick="return validateMultiDrop()">All done!</button>
         </form>
     </div>
 </main>

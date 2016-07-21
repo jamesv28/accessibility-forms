@@ -213,19 +213,34 @@ function validateDate() {
 }
 
 /** 03-validate **/
-function validateSelectGrid() {
-    var err1 = document.getElementById('question-1-error');
-    var err2 = document.getElementById('question-2-error');
-    var err3 = document.getElementById('question-3-error');
+// function validateSelectGrid() {
+//     var err1 = document.getElementById('question-1-error');
+//     var err2 = document.getElementById('question-2-error');
+//     var err3 = document.getElementById('question-3-error');
+//
+//     var group1 = document.getElementsByName('question-1');
+//     var group2 = document.getElementsByName('question-2');
+//     var group3 = document.getElementsByName('question-3');
+//
+//     for (var i = 0; i < group1.length; i++) {
+//         if (group1[i].checked === false)
+//             err1.innerText = "You must enter a value";
+//             return false;
+//     }
+//
+// }
 
-    var group1 = document.getElementsByName('question-1');
-    var group2 = document.getElementsByName('question-2');
-    var group3 = document.getElementsByName('question-3');
-
-    for (var i = 0; i < group1.length; i++) {
-        if (group1[i].checked === false)
-            err1.innerText = "You must enter a value";
-            return true;
+/** 19 validation **/
+function validateMultiDrop() {
+    var q1 = document.getElementById('question-1').value;
+    var q2 = document.getElementById('question-2').value;
+    var q3 = document.getElementById('question-3').value;
+    var q4 = document.getElementById('question-4').value;
+    
+    if (q1 === "" || q2 === "" || q3 === "" || q4 === "") {
+        document.getElementById('errMsg').innerText = "All inputs are required";
+        return false;
     }
+    return true;
 
 }
