@@ -300,19 +300,27 @@ and (max-device-width: 480px)
     }
 
 
-    textarea {
+    textarea.lg-textarea {
         width:100%;
         margin: 0 auto;
     }
     /***** 03-select-grid ***/
-    /*.option {*/
+    .option {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+    .option label {
+        display: inline-block;
+    }
+    .grid-selection-options {
+        display: none;
+    }
+    .gird-question {
+        width:100%;
         /*display: block;*/
-        /*width: 100%;*/
-        /*text-align: left;*/
-    /*}*/
-    /*.option label {*/
-        /*display: inline-block;*/
-    /*}*/
+
+    }
 
     /**** 05-multi-grid ****/
     .company {

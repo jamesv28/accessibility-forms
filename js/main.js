@@ -215,9 +215,11 @@ function validateDate() {
     var month = document.getElementById('month').value;
     var day = document.getElementById('day').value;
     var year = document.getElementById('year').value;
+    var text = document.getElementById('errMsg');
+    text.innerText = "";
     
     if(month === "" || day === "" || year === "") {
-        document.getElementById('errMsg').innerText = "Month, day, and year are required fields";
+        text.innerText = "Month, day, and year are required fields";
         return false;
     }
 }
