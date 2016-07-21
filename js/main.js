@@ -105,6 +105,7 @@ function getChecked() {
                     checked[j].checked = false;
                 }
                 document.getElementById('none').checked = true;
+                console.log('please unchec', checked);
             }
         }
     }
@@ -238,6 +239,40 @@ function validateMultiDrop() {
     
     if (q1 === "" || q2 === "" || q3 === "" || q4 === "") {
         document.getElementById('errMsg').innerText = "All inputs are required";
+        return false;
+    }
+    return true;
+
+}
+
+
+/** 08 inputs **/
+function validateInputs() {
+//needs work
+    var q1 = document.getElementById('question-1').value;
+    var q2 = document.getElementById('question-2').value;
+    var q3 = document.getElementById('question-3').value;
+    var q4 = document.getElementById('question-4').value;
+    var q5 = document.getElementById('question-5').value;
+
+    if(q1 === "" || q1 === null) {
+        document.getElementById('err-1').innerText = "Please fill out question 1";
+        return false;
+    }
+    if(q2 === "" || q2 === null) {
+        document.getElementById('err-2').innerText = "Please fill out question 2";
+        return false;
+    }
+    if(q3 === "" || q3 === null) {
+        document.getElementById('err-3').innerText = "Please fill out question 3";
+        return false;
+    }
+    if(q4 === "" || q4 === null) {
+        document.getElementById('err-4').innerText = "Please fill out question 4";
+        return false;
+    }
+    if(q5 === "" || q5 === null) {
+        document.getElementById('err-5').innerText = "Please fill out question 5";
         return false;
     }
     return true;
