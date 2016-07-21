@@ -15,36 +15,41 @@
 </header>
 <main role="main">
     <div class="container">
-        <p>We are interested in knowing the percent<abbr>(pct)</abbr> fo how you purchase items.
-            Please fill out all of the inputs to where they add up to 100.</p>
-        <!-- where to let users know if they would like to skp the question, it needs to be provided and how to do it -->
-        <p>If you prefer not to answer the question, you you click "prefer not to answer" link</p>
-        <form action="12-ranking-question.html" oninput="total.value = parseInt(document.getElementById('check').value) + parseInt(document.getElementById('creditCard').value) + parseInt(document.getElementById('debitCard').value) + parseInt(document.getElementById('autoDeduct').value) + parseInt(document.getElementById('cash').value)+ parseInt(document.getElementById('other').value)">
-            <p id="errorMsg" class="errorMsg" role="alert"></p>
-            <label class="multi-number-label" for="check">Check</label>
-            <input id="check" name="check" value="0" type="number" aria-describedby="percent">  <span>%</span>  <br>
 
-            <label class="multi-number-label" for="creditCard">Credit Card</label>
-            <input  id="creditCard" name="creditCard" value="0" type="number" aria-describedby="percent">  <span id="percent">%</span> <br>
+        <form action="12-ranking-question.html" onsubmit="return getTotal()" oninput="total.value = parseInt(document.getElementById('check').value) + parseInt(document.getElementById('creditCard').value) + parseInt(document.getElementById('debitCard').value) + parseInt(document.getElementById('autoDeduct').value) + parseInt(document.getElementById('cash').value)+ parseInt(document.getElementById('other').value)">
+            <fieldset class="fieldset-no-border">
+                <legend>
+                    We are interested in knowing the percent<abbr>(pct)</abbr> fo how you purchase items.
+                        Please fill out all of the inputs to where they add up to 100.<br>
+                    <!-- where to let users know if they would like to skp the question, it needs to be provided and how to do it -->
+                    If you prefer not to answer the question, you you click "prefer not to answer" link
+                </legend>
+                <p id="errorMsg" class="errorMsg" role="alert"></p>
+                <label class="multi-number-label" for="check">Check</label>
+                <input class="toAdd" id="check" name="check" value="0" type="number" aria-describedby="percent">  <span>%</span>  <br>
 
-            <label class="multi-number-label" for="debitCard">Debit Card: </label>
-            <input  id="debitCard" name="debitCard" value="0" type="number" aria-describedby="percent">  <span>%</span>  <br>
+                <label class="multi-number-label" for="creditCard">Credit Card</label>
+                <input class="toAdd"  id="creditCard" name="creditCard" value="0" type="number" aria-describedby="percent">  <span id="percent">%</span> <br>
 
-            <label class="multi-number-label" for="autoDeduct">Auto deduction</label>
-            <input id="autoDeduct" name="autoDeduct" value="0" type="number" aria-describedby="percent"> <span>%</span> <br>
+                <label class="multi-number-label" for="debitCard">Debit Card: </label>
+                <input  id="debitCard" name="debitCard" value="0" type="number" aria-describedby="percent">  <span>%</span>  <br>
 
-            <label class="multi-number-label" for="cash">Cash or money order</label>
-            <input type="number" id="cash" name="cash" value="0" aria-describedby="percent"><span>%</span> <br>
+                <label class="multi-number-label" for="autoDeduct">Auto deduction</label>
+                <input class="toAdd" id="autoDeduct" name="autoDeduct" value="0" type="number" aria-describedby="percent"> <span>%</span> <br>
 
-            <label class="multi-number-label" for="other">Other</label>
-            <input id="other" name="other" value="0" type="number" aria-describedby="percent"> <span>%</span>    <br>
-            <div class="total-Sum">
-                <span>Total</span>
-                <output id="percent-sum" name="total" for="cash creditCard check debitCard other autoDeduct"></output>
-                <span>%</span>
-            </div><br>
+                <label class="multi-number-label" for="cash">Cash or money order</label>
+                <input class="toAdd" type="number" id="cash" name="cash" value="0" aria-describedby="percent"><span>%</span> <br>
+
+                <label class="multi-number-label" for="other">Other</label>
+                <input class="toAdd" id="other" name="other" value="0" type="number" aria-describedby="percent"> <span>%</span>    <br>
+                <div class="total-Sum">
+                    <span>Total</span>
+                    <output id="percent-sum" name="total" for="cash creditCard check debitCard other autoDeduct"></output>
+                    <span>%</span>
+                </div><br>
+            </fieldset>
             <a href="12-ranking-question.html" id="not-answer" class="button default" >Prefer not to answer</a>
-            <button type="submit" class="button purple" onclick="return getTotal()">Next Question</button>
+            <button type="submit" class="button purple" >Next Question</button>
         </form>
     </div>
 </main>

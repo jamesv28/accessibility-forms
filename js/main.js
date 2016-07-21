@@ -129,21 +129,23 @@ function validateCheckbox() {
 
 /****** Validate Question 11 *******/
 function getTotal() {
-    var inputs = document.getElementsByTagName('input');
-    var sum = 0;
-    var alertMessage = document.getElementById('errorMsg');
-    
-    for(var i = 0; i < inputs.length; i++) {
-        sum += parseInt(inputs[i].value);
-        if(sum < 100) {
-            alertMessage.innerText = "The total is too low, all of the inputs must add up to 100";
-            return false;
-        } else if (sum > 100) {
-            alertMessage.innerText = "The total is too high, all of the inputs must add up to 100";
-            return false;
-        }
+    var total = 0;
+    var toAdds = document.getElementsByClassName("toAdd");
+    for (var i = 0; i < toAdds.length; i++) {
+        total += parseInt(toAdds[i].value);
     }
-    return true;
+    if (total == 100) {
+        return true
+    } else  if(total < 100){
+        var toChange = 100 - total;
+        document.getElementById('errorMsg').innerText = "number is too low, please increase the amount by " + toChange;
+        console.log('sum',total);
+        return false;
+    } else {
+        var toReduce = total - 100;
+        document.getElementById('errorMsg').innerText = 'Number is too high please reduce the total by ' + toReduce;
+        return false;
+    }
 }
 
 /**** handling keyboard shortcut - for people who prefer not to anser the question *****/
