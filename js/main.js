@@ -208,11 +208,11 @@ function validateSelectGrid() {
     err2.innerText = "";
     err3.innerText = "";
 
-    var group1 = document.getElementsByName('question-1');
+    var group1 = document.getElementsByName('q1');
     var group2 = document.getElementsByName('question-2');
     var group3 = document.getElementsByName('question-3');
 
-    var okay = true;
+    var ok = true;
 
     // var errorMessages = document.getElementsByClassName('errMsg');
     // for(var c = 0; c < errorMessages.length;c++ )  {
@@ -222,28 +222,26 @@ function validateSelectGrid() {
     for (var i = 0; i < group1.length; i++) {
         if (group1[i].checked === false) {
             err1.innerText = "You must enter a value for question onpe";
-            okay =  false;
-        } else {
-            okay = true;
+            ok = false;
         }
     }
-    for(var j = 0; j < group2.length; j++) {
-        if (group2[j].checked === false) {
-            err2.innerText = "You must enter a value for question 2";
-            okay = false;
-        } else  {
-            okay = true;
-        }
-    }
-    for(var k = 0; k < group3.length; k++) {
-        if (group3[k].checked === false) {
-            err3.innerText = "You must enter a value for question 3";
-            okay = false;
-        } else {
-            okay = true;
-        }
-    }
-    return okay;
+    // for(var j = 0; j < group2.length; j++) {
+    //     if (group2[j].checked === false) {
+    //         err2.innerText = "You must enter a value for question 2";
+    //         okay = false;
+    //     } else  {
+    //         okay = true;
+    //     }
+    // }
+    // for(var k = 0; k < group3.length; k++) {
+    //     if (group3[k].checked === false) {
+    //         err3.innerText = "You must enter a value for question 3";
+    //         okay = false;
+    //     } else {
+    //         okay = true;
+    //     }
+    // }
+    return ok;
 
 }
 
