@@ -276,7 +276,11 @@ and (max-device-width: 480px)
         /*font-size: 17px;*/
         /*border: 1px solid #bbb;*/
     }
-
+    #years-worked {
+        width:100%;
+        display: block;
+        margin:0;
+    }
     input[type=checkbox] {
         /*width: 22px;*/
         /*height: 22px;*/
