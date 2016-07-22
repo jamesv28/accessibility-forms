@@ -49,18 +49,12 @@ function validateRadio() {
     }
 
     document.getElementById('radioError').innerText = text;
-    /**
-     * Below is a way of giving a role of alert to the error message so after i click
-     * next question it immediately goes to the error and reads it out loud
-     */
-    // document.getElementById('radioError').setAttribute('role','alert');
     return false;
 }
 
 /**
  *likert validation
  **/
-
 function likertValidation() {
     var text = "You must select one of the options";
 
@@ -205,9 +199,14 @@ function validateDate() {
 
 /** 03-validate **/
 function validateSelectGrid() {
+
     var err1 = document.getElementById('question-1-error');
     var err2 = document.getElementById('question-2-error');
     var err3 = document.getElementById('question-3-error');
+
+    err1.innerText = "";
+    err2.innerText = "";
+    err3.innerText = "";
 
     var group1 = document.getElementsByName('question-1');
     var group2 = document.getElementsByName('question-2');
@@ -215,20 +214,36 @@ function validateSelectGrid() {
 
     var okay = true;
 
-    var errorMessages = document.getElementsByClassName('errMsg');
-    for(var c = 0; c < errorMessages.length;c++ )  {
-        errorMessages[c].innerText = "";
-    }
-    
+    // var errorMessages = document.getElementsByClassName('errMsg');
+    // for(var c = 0; c < errorMessages.length;c++ )  {
+    //     errorMessages[c].innerText = "";
+    // }
+    //
     for (var i = 0; i < group1.length; i++) {
         if (group1[i].checked === false) {
-            err1.innerText = "You must enter a value";
+            err1.innerText = "You must enter a value for question onpe";
             okay =  false;
+        } else {
+            okay = true;
         }
     }
-    // for(var j = 0; j < group2.length; j++) {
-    //     if (group2[i].checked)
-    // }
+    for(var j = 0; j < group2.length; j++) {
+        if (group2[j].checked === false) {
+            err2.innerText = "You must enter a value for question 2";
+            okay = false;
+        } else  {
+            okay = true;
+        }
+    }
+    for(var k = 0; k < group3.length; k++) {
+        if (group3[k].checked === false) {
+            err3.innerText = "You must enter a value for question 3";
+            okay = false;
+        } else {
+            okay = true;
+        }
+    }
+    return okay;
 
 }
 

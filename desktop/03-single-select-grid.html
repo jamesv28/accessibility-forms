@@ -16,7 +16,7 @@
 <main role="main">
     <div class="container">
         <h2>Which of the following best describes your investment in the...?</h2>
-        <form action="04-multiple-select.html">
+        <form action="04-multiple-select.html" >
             <section class="grid-selection-options">
                 <p class="single-selection first">
                     I am the primary decision maker
@@ -28,30 +28,30 @@
                     I am not allowed
                 </p>
             </section>
-            <fieldset class="fieldset-no-border ">
+            <fieldset class="fieldset-no-border question-block">
+                <p class="errorMsg" id="question-1-error" role="alert"></p>
                 <legend class="gird-question">
                     Selection of financial services companies (banks, payment card companies, etc.)
                     your business uses
                 </legend>
-                <p class="errorMsg" id="question-1-error" role="alert"></p>
                 <div class="option">
                     <input id="question-1-single" type="radio" name="question-1" value="single">
-                    <label for="question-1-single" class="desktop-hide">Primary Decision Maker</label>
+                    <label for="question-1-single" class="desktop-hide" aria-label="primary decision maker">Primary Decision Maker</label>
                 </div>
                 <div class="option">
                     <input id="question-1-multiple" type="radio" name="question-1" value="multiple">
-                    <label for="question-1-multiple" class="desktop-hide">Joint decision</label>
+                    <label for="question-1-multiple" class="desktop-hide" aria-label="joint decision">Joint decision</label>
                 </div>
                 <div class="option">
                     <input id="question-1-no" type="radio" name="question-1" value="no">
-                    <label for="question-1-no" class="desktop-hide">I am not allowed</label>
+                    <label for="question-1-no" class="desktop-hide" aria-label="i am not allowed">I am not allowed</label>
                 </div>
             </fieldset>
-            <fieldset class="fieldset-no-border ">
+            <fieldset class="fieldset-no-border question-block">
+                <p class="errorMsg" id="question-2-error" role="alert"></p>
                 <legend class="gird-question">
                     Day to day financial decisions for this business
                 </legend>
-                <p class="errorMsg" id="question-2-error" role="alert"></p>
                 <div class="option">
                     <input id="question-2-single" type="radio" name="question-2" value="single">
                     <label for="question-2-single" class="desktop-hide">Primary Decision Maker</label>
@@ -61,15 +61,15 @@
                     <label for="question-2-multiple" class="desktop-hide">Joint decision</label>
                 </div>
                 <div class="option">
-                    <input id="question-2-no" type="radio" name="question-2" value="no">
+                    <input id="question-2-no" type="radio" name="question-2" value="not-allowed">
                     <label for="question-2-no" class="desktop-hide">I am not allowed</label>
                 </div>
             </fieldset>
-            <fieldset class="fieldset-no-border ">
+            <fieldset class="fieldset-no-border question-block">
+                <p class="errorMsg" id="question-3-error" role="alert"></p>
                 <legend class="gird-question">
                     Major financial decisions for the business
                 </legend>
-                <p class="errorMsg" id="question-3-error" role="alert"></p>
                 <div class="option">
                     <input id="question-3-single" type="radio" name="question-3" value="single">
                     <label for="question-3-single" class="desktop-hide">Primary Decision Maker</label>
@@ -79,7 +79,7 @@
                     <label for="question-3-multiple" class="desktop-hide">Joint decision</label>
                 </div>
                 <div class="option">
-                    <input id="question-3-no" type="radio" name="question-3" value="no">
+                    <input id="question-3-no" type="radio" name="question-3" value="not-allowed">
                     <label for="question-3-no" class="desktop-hide">I am not allowed</label>
                 </div>
             </fieldset>
