@@ -87,12 +87,15 @@ function getCheckedNew() {
     var inputs = document.getElementsByClassName('check');
 
     for(var i = 0; i < inputs.length; i++) {
-        if (none.checked === true) {
+        if (none.checked) {
             inputs[i].checked = false;
+            inputs[i].disabled = true;
+        } else {
+            inputs[i].disabled = false;
         }
     }
 }
-getCheckedNew();
+
 /***** 04 - checkboxes - remove if non is selected *******/
 function getChecked() {
     var inputs = document.getElementsByTagName("input"); //or document.forms[0].elements;
@@ -105,9 +108,10 @@ function getChecked() {
                 checked.push(inputs[i]);
                 for(var j = 0; j < checked.length; j++) {
                     checked[j].checked = false;
+                    checked[j].attr('disabled', true);
                 }
                 document.getElementById('none').checked = true;
-                console.log('please unchec', checked);
+                console.log('please uncheck', checked);
             }
         }
     }
