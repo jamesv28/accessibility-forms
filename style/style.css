@@ -196,8 +196,6 @@ section.left, section.right {
     /*background-color: rgb(187,8,38);*/
     /*color: #ffffff;*/
     color: rgb(187, 8, 38);
-    /*border:1px solid rgb(187, 8, 38);*/
-    /*border-color: #ffffff;*/
     font-weight:bold;
     clear: both;
 }
@@ -225,16 +223,60 @@ section.left, section.right {
     border-radius: 4px;
     text-decoration: none;
 }
+
 .default {
     text-decoration: none;
     color: #000;
     background-color: lightgray;
 }
+
 .purple {
     color: #ffffff;
     background-color: rgb(77,59,101);
 }
+/**** Toggle Switch *****/
+.toggle-btn-group label {
+    padding: .5em;
+    display: inline-block;
+    width: 8em;
+    height: 40px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    color: #000;
+    background-color: #ffffff;
+    border: rgb(68,70,74) 2px solid;
+}
 
+.toggle-btn-group input[type="radio"]:checked+label {
+    background-color: rgb(0, 115, 55);
+    border: rgb(68,70,74) 2px solid;
+    /*color: #000;*/
+    color: #ffffff;
+}
+.toggle-btn-group input[type="radio"]:focus+label {
+    outline: 2px #999 dotted;
+}
+
+.toggle-btn-group label:hover,
+.toggle-btn-group label:focus {
+    background-color: #ccc;
+    border: #000 2px solid;
+    color: #000;
+}
+/* hide visually */
+.accessAid {
+    position: absolute!important;
+    clip: rect(1px,1px,1px,1px);
+    overflow: hidden;
+}
+
+/* clear float */
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
 /************ Bold Line ***********/
 .line {
     height: 1px;

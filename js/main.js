@@ -172,27 +172,6 @@ function addFocus() {
     document.getElementById('not-answer').focus();
 }
 
-
-/**** try to indicate likert scale with input type = range ***/
-function getRangeValues() {
-
-    var range = document.getElementById('years-worked');
-
-    // if(range.value === '1') {
-    //     range.setAttribute('aria-label', 'very-dissatisfied');
-    // } else if(range.value === '5') {
-    //     range.setAttribute('aria-label', 'very-satisfied');
-    // } else if(range.value === '3') {
-    //     range.setAttribute('aria-describedby', 'neither');
-    // }
-
-    //tooltip is not supported for cross-browser compatibility
-    
-
-}
-
-// getRangeValues();
-
 /** numeric standard **/
 function numValidate() {
 
@@ -225,22 +204,33 @@ function validateDate() {
 }
 
 /** 03-validate **/
-// function validateSelectGrid() {
-//     var err1 = document.getElementById('question-1-error');
-//     var err2 = document.getElementById('question-2-error');
-//     var err3 = document.getElementById('question-3-error');
-//
-//     var group1 = document.getElementsByName('question-1');
-//     var group2 = document.getElementsByName('question-2');
-//     var group3 = document.getElementsByName('question-3');
-//
-//     for (var i = 0; i < group1.length; i++) {
-//         if (group1[i].checked === false)
-//             err1.innerText = "You must enter a value";
-//             return false;
-//     }
-//
-// }
+function validateSelectGrid() {
+    var err1 = document.getElementById('question-1-error');
+    var err2 = document.getElementById('question-2-error');
+    var err3 = document.getElementById('question-3-error');
+
+    var group1 = document.getElementsByName('question-1');
+    var group2 = document.getElementsByName('question-2');
+    var group3 = document.getElementsByName('question-3');
+
+    var okay = true;
+
+    var errorMessages = document.getElementsByClassName('errMsg');
+    for(var c = 0; c < errorMessages.length;c++ )  {
+        errorMessages[c].innerText = "";
+    }
+    
+    for (var i = 0; i < group1.length; i++) {
+        if (group1[i].checked === false) {
+            err1.innerText = "You must enter a value";
+            okay =  false;
+        }
+    }
+    // for(var j = 0; j < group2.length; j++) {
+    //     if (group2[i].checked)
+    // }
+
+}
 
 /** 19 validation **/
 function validateMultiDrop() {
