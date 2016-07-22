@@ -276,7 +276,7 @@ and (max-device-width: 480px)
         /*font-size: 17px;*/
         /*border: 1px solid #bbb;*/
     }
-    #years-worked {
+    #years-worked, .age-demographic {
         width:100%;
         display: block;
         margin:0;
