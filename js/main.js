@@ -39,7 +39,7 @@ function inputValidation() {
  * need to select one form the radio group
  **/
 function validateRadio() {
-    var text = 'You must select a value';
+    document.getElementById('radioError').innerText = "";
     var radios = document.getElementsByName('information');
 
     for(var i = 0; i < radios.length; i++) {
@@ -48,7 +48,7 @@ function validateRadio() {
         }
     }
 
-    document.getElementById('radioError').innerText = text;
+    document.getElementById('radioError').innerText = 'You must select a value';
     return false;
 }
 

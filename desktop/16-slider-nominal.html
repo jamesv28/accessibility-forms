@@ -15,19 +15,20 @@
 </header>
 <main role="main">
     <div class="container">
-        <form action="17-slider-numeric.html">
+        <form action="17-slider-numeric.html" onsubmit="return validateRadio()">
             <fieldset class="fieldset-no-border">
                 <legend>How would you rank your experience</legend>
+                <p class="errorMsg" id="radioError" role="alert"></p>
                 <div class="toggle-btn-group clearfix">
-                    <input type="radio" id="very-unlikely" name="opinion" value="very-unlikely" class="accessAid" checked="checked" />
+                    <input type="radio" id="very-unlikely" name="information" value="very-unlikely" class="accessAid"  />
                     <label for="very-unlikely">Very Unlikely</label>
-                    <input type="radio" id="somewhat-unlikely" name="opinion" value="somewhat-unlikely" class="accessAid" />
+                    <input type="radio" id="somewhat-unlikely" name="information" value="somewhat-unlikely" class="accessAid" />
                     <label for="somewhat-unlikely">Somewhat Unlikely</label>
-                    <input type="radio" id="neither" name="opinion" value="neither" class="accessAid" />
+                    <input type="radio" id="neither" name="information" value="neither" class="accessAid" />
                     <label for="neither">Neither unlikely nor likely</label>
-                    <input type="radio" id="somewhat-likely" name="opinion" value="somewhat-likely" class="accessAid" />
+                    <input type="radio" id="somewhat-likely" name="information" value="somewhat-likely" class="accessAid" />
                     <label for="somewhat-likely">Somewhat likely</label>
-                    <input type="radio" id="very-likely" name="opinion" value="very-likely" class="accessAid" />
+                    <input type="radio" id="very-likely" name="information" value="very-likely" class="accessAid" />
                     <label for="very-likely">Very likely</label>
                 </div>
             </fieldset>
