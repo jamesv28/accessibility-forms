@@ -19,7 +19,9 @@ strong {
 .container {
     padding: 0 15px 0 15px;
 }
-
+.check:disabled {
+    cursor: not-allowed;
+}
 #header-top {
     margin-top: 40px;
 }
