@@ -96,27 +96,6 @@ function getCheckedNew() {
     }
 }
 
-/***** 04 - checkboxes - remove if non is selected *******/
-function getChecked() {
-    var inputs = document.getElementsByTagName("input"); //or document.forms[0].elements;
-    var cbs = []; //will contain all checkboxes
-    var checked = []; //will contain all checked checkboxes
-    for (var i = 0; i < inputs.length; i++) {
-        if (inputs[i].type == "checkbox") {
-            cbs.push(inputs[i]);
-            if (inputs[i].checked) {
-                checked.push(inputs[i]);
-                for(var j = 0; j < checked.length; j++) {
-                    checked[j].checked = false;
-                    checked[j].attr('disabled', true);
-                }
-                document.getElementById('none').checked = true;
-                console.log('please uncheck', checked);
-            }
-        }
-    }
-}
-
 
 /***** Validate to see if at least one checkbox is selected *****/
 function validateCheckbox() {
@@ -136,22 +115,28 @@ function validateCheckbox() {
 /****** Validate Question 11 *******/
 function getTotal() {
     var total = 0;
+    var okay = false;
+    document.getElementById('errorMsg').innerText = "";
     var toAdds = document.getElementsByClassName("toAdd");
     for (var i = 0; i < toAdds.length; i++) {
         total += parseInt(toAdds[i].value);
     }
-    if (total == 100) {
-        return true
-    } else  if(total < 100){
+
+    if(total < 100){
         var toChange = 100 - total;
         document.getElementById('errorMsg').innerText = "number is too low, please increase the amount by " + toChange;
         console.log('sum',total);
-        return false;
-    } else {
+        okay =  false;
+    }
+    else if(total > 100) {
         var toReduce = total - 100;
         document.getElementById('errorMsg').innerText = 'Number is too high please reduce the total by ' + toReduce;
-        return false;
+        okay = false;
     }
+    else {
+        okay = true;
+    }
+    return okay;
 }
 
 /**** handling keyboard shortcut - for people who prefer not to anser the question *****/
