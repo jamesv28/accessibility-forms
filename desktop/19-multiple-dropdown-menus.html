@@ -16,10 +16,11 @@
     <div class="container">
         <form action="" >
             <p class="errorMsg" id="errMsg" role="alert" aria-atomic="true"></p>
-            <fieldset class="fieldset-no-border dropdown-grid">
+            <fieldset class="fieldset-no-border ">
                 <legend>
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                 </legend>
+                <div class="dropdown-grid">
                 <label for="question-1">Iteration One</label>   <br>
                 <select id="question-1" name="question-1" aria-required="true">
                     <option></option>
@@ -27,8 +28,8 @@
                     <option value="2">2</option>
                     <option value="3">3</option>
                 </select>
-            </fieldset>
-            <fieldset class="fieldset-no-border dropdown-grid">
+                </div>
+            <div class=" dropdown-grid">
                 <label for="question-2">Iteration Two</label>   <br>
                 <select id="question-2" name="question-2" aria-required="true">
                     <option></option>
@@ -36,8 +37,8 @@
                     <option value="2">2</option>
                     <option value="3">3</option>
                 </select>
-            </fieldset>
-            <fieldset class="fieldset-no-border dropdown-grid">
+            </div>
+            <div class=" dropdown-grid">
                 <label for="question-3">Iteration Three</label>   <br>
                 <select id="question-3" name="question-3" aria-required="true">
                     <option></option>
@@ -45,8 +46,8 @@
                     <option value="2">2</option>
                     <option value="3">3</option>
                 </select>
-            </fieldset>
-            <fieldset class="fieldset-no-border dropdown-grid">
+            </div>
+            <div class=" dropdown-grid">
                 <label for="question-4">Iteration Four</label>   <br>
                 <select id="question-4" name="question-4" aria-required="true">
                     <option></option>
@@ -54,6 +55,7 @@
                     <option value="2">2</option>
                     <option value="3">3</option>
                 </select>
+            </div>
             </fieldset>
             <div>
                 <button type="submit" class="button purple" onclick="return validateMultiDrop()">All done!</button>
