@@ -404,9 +404,11 @@ and (max-device-width: 480px)
     }
 
     /******* dropdown-grid class *******/
-    .dropdown-grid {
+    .dropdown-grid input {
         width: 100%;
     }
+
+
 
 
 } /* end of first media query */
