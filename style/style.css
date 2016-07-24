@@ -234,6 +234,23 @@ input[type="radio"]:focus {
     color: #ffffff;
     background-color: rgb(77,59,101);
 }
+
+/***** 16 ******/
+.radio-group {
+    width:100%;
+    margin: 0;
+    padding:0;
+    border:0;
+}
+.ind-radio {
+    display: inline-block;
+    text-align: center;
+    width:20%;
+    margin:0;
+    padding:0;
+    border:0;
+    float: left;
+}
 /**** Toggle Switch *****/
 .toggle-btn-group label {
     padding: .5em;

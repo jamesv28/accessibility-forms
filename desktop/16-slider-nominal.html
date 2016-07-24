@@ -16,20 +16,30 @@
 <main role="main">
     <div class="container">
         <form action="17-slider-numeric.html" onsubmit="return validateRadio()">
+            <p class="errorMsg" id="radioError" role="alert"></p>
             <fieldset class="fieldset-no-border">
                 <legend>How would you rank your experience</legend>
-                <p class="errorMsg" id="radioError" role="alert"></p>
-                <div class="toggle-btn-group clearfix">
-                    <input type="radio" id="very-unlikely" name="information" value="very-unlikely" class="accessAid"  />
-                    <label for="very-unlikely">Very Unlikely</label>
-                    <input type="radio" id="somewhat-unlikely" name="information" value="somewhat-unlikely" class="accessAid" />
-                    <label for="somewhat-unlikely">Somewhat Unlikely</label>
-                    <input type="radio" id="neither" name="information" value="neither" class="accessAid" />
-                    <label for="neither">Neither unlikely nor likely</label>
-                    <input type="radio" id="somewhat-likely" name="information" value="somewhat-likely" class="accessAid" />
-                    <label for="somewhat-likely">Somewhat likely</label>
-                    <input type="radio" id="very-likely" name="information" value="very-likely" class="accessAid" />
-                    <label for="very-likely">Very likely</label>
+                <div class="radio-group">
+                    <div class="ind-radio">
+                        <input type="radio" name="information" value="very-unlikely" id="very-unlikely"> <br>
+                        <label for="very-unlikely">Very Unlikely</label>
+                    </div>
+                    <div class="ind-radio">
+                        <input type="radio" name="information" value="somewhat-unlikely" id="somewhat-unlikely"> <br>
+                        <label for="somewhat-unlikely">Very Dissatisfied</label>
+                    </div>
+                    <div class="ind-radio">
+                        <input type="radio" name="information" value="neither" id="neither">    <br>
+                        <label for="neither">Neither Unlikely or Likely</label>
+                    </div>
+                    <div class="ind-radio">
+                        <input type="radio" name="information" value="somewhat-likely" id="somewhat-likely"> <br>
+                        <label for="somewhat-likely">Somewhat Likely</label>
+                    </div>
+                    <div class="ind-radio">
+                        <input type="radio" name="information" value="very-likely" id="very-likely">    <br>
+                        <label for="very-likely">Very Likely</label>
+                    </div>
                 </div>
             </fieldset>
             <button type="submit" class="button purple">Next Question</button>
