@@ -16,6 +16,7 @@
 <main role="main">
     <div class="container">
         <form action="14-heat-map.html" onsubmit="return textAreaValidation()">
+            <p class="errorMsg" id="textAreaError" role="alert"></p>
             <fieldset class="fieldset-no-border">
                 <legend>
                     Please read the following quote and then type in a response on how it made you feel <br>
@@ -23,9 +24,34 @@
                         --George Washington
 
                 </legend>
-                <p class="errorMsg" id="textAreaError" role="alert"></p>
-                <label for="response">Response:</label><br>
-                <textarea class="lg-textarea" rows="5" id="response"  aria-required="true"></textarea>
+                <div>
+                    <label for="response">Friendship is</label><br>
+                    <textarea class="lg-textarea" rows="2" id="response"  aria-required="true"></textarea>
+                </div>
+                <div>
+                    <label for="response-2">a plant</label> <br>
+                    <textarea name="response-2" class="lg-textarea" id="response-2" rows="2"></textarea>
+                </div>
+                <div>
+                    <label for="response-3">slow growth</label> <br>
+                    <textarea name="response-3" id="response-3" class="lg-textarea" rows="2"></textarea>
+                </div>
+                <div>
+                    <label for="response-4">must undergo and withstand</label>  <br>
+                    <textarea name="response-4" id="response-4" class="lg-textarea" rows="2"></textarea>
+                </div>
+                <div>
+                    <label for="response-5">the shocks of adversity</label> <br>
+                    <textarea name="response-5" id="response-5" class="lg-textarea" rows="2"></textarea>
+                </div>
+                <div>
+                    <label for="response-6">entitled</label>    <br>
+                    <textarea name="response-6" id="response-6" class="lg-textarea" rows="2"></textarea>
+                </div>
+                <div>
+                    <label for="response-7">appellation</label> <br>
+                    <textarea name="response-7" id="response-7" class="lg-textarea" rows="2"></textarea>
+                </div>
             </fieldset>
             <button type="submit" class="button purple">Next Question</button>
         </form>
