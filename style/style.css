@@ -409,10 +409,7 @@ and (max-device-width: 480px)
         margin:0;
         padding:0;
     }
-    .dropdown-grid label {
-        display: block;
-        width:100%;
-    }
+
 
     .multi-drop {
         display: block;
