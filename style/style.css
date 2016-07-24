@@ -403,16 +403,21 @@ and (max-device-width: 480px)
     }
 
     /******* dropdown-grid class *******/
-    .dropdown-grid > select{
+    .dropdown-grid {
         width: 100%;
         display: block;
         margin:0;
         padding:0;
     }
+    .dropdown-grid label {
+        display: block;
+        width:100%;
+    }
 
     .multi-drop {
         display: block;
         width:100%;
+        height: 40px;
     }
 
     #age-demographic {
