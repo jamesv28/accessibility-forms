@@ -16,7 +16,6 @@
 <main role="main">
     <div class="container">
         <form action="14-heat-map.html" onsubmit="return textAreaValidation()">
-            <p class="errorMsg" id="textAreaError" role="alert"></p>
             <fieldset class="fieldset-no-border">
                 <legend>
                     Please read the following quote and then type in a response on how it made you feel <br>
@@ -24,6 +23,7 @@
                         --George Washington
 
                 </legend>
+                <p class="errorMsg" id="textAreaError" role="alert"></p>
                 <div>
                     <label for="response">Friendship is</label><br>
                     <textarea class="lg-textarea" rows="2" id="response"  aria-required="true"></textarea>
