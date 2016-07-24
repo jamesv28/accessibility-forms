@@ -16,22 +16,186 @@
 <main role="main">
     <div class="container">
         <form action="16-slider-nominal.html" onsubmit="return textAreaValidation()">
+            <p class="errorMsg" id="textAreaError" role="alert"></p>
             <fieldset class="fieldset-no-border">
-                <p class="errorMsg" id="textAreaError" role="alert"></p>
-                <label for="response">Text Description: </label> <br>
-                <textarea id="response" class="lg-textarea" rows="5" aria-required="true" ></textarea>
+                <legend>
+                    This a love/hate scale for ranking the items below. -5 is hate it and 5 is love it
+                </legend>
+                <div>
+                <label class="multi-number-label" for="bananas">Bananas</label>
+                    <select id="bananas" name="bananas">
+                        <option ></option>
+                        <option value="-5">-5</option>
+                        <option value="-4">-4</option>
+                        <option value="-3">-3</option>
+                        <option value="-2">-2</option>
+                        <option value="-1">-1</option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="multi-number-label" for="blackberry">Blackberry</label>
+                    <select id="blackberry" name="blackberry">
+                        <option ></option>
+                        <option value="-5">-5</option>
+                        <option value="-4">-4</option>
+                        <option value="-3">-3</option>
+                        <option value="-2">-2</option>
+                        <option value="-1">-1</option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="multi-number-label" for="cherry">Cherry</label>
+                    <select id="cherry" name="cherry">
+                        <option ></option>
+                        <option value="-5">-5</option>
+                        <option value="-4">-4</option>
+                        <option value="-3">-3</option>
+                        <option value="-2">-2</option>
+                        <option value="-1">-1</option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="multi-number-label" for="grapes">Grapes</label>
+                    <select id="grapes" name="grapes">
+                        <option ></option>
+                        <option value="-5">-5</option>
+                        <option value="-4">-4</option>
+                        <option value="-3">-3</option>
+                        <option value="-2">-2</option>
+                        <option value="-1">-1</option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="multi-number-label" for="kiwi">Kiwi</label>
+                    <select id="kiwi" name="kiwi">
+                        <option ></option>
+                        <option value="-5">-5</option>
+                        <option value="-4">-4</option>
+                        <option value="-3">-3</option>
+                        <option value="-2">-2</option>
+                        <option value="-1">-1</option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="multi-number-label" for="mango">Mango</label>
+                    <select id="mango" name="mango">
+                        <option ></option>
+                        <option value="-5">-5</option>
+                        <option value="-4">-4</option>
+                        <option value="-3">-3</option>
+                        <option value="-2">-2</option>
+                        <option value="-1">-1</option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="multi-number-label" for="peach">Peach</label>
+                    <select id="peach" name="peach">
+                        <option ></option>
+                        <option value="-5">-5</option>
+                        <option value="-4">-4</option>
+                        <option value="-3">-3</option>
+                        <option value="-2">-2</option>
+                        <option value="-1">-1</option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="multi-number-label" for="pear">Pear</label>
+                    <select id="pear" name="pear">
+                        <option ></option>
+                        <option value="-5">-5</option>
+                        <option value="-4">-4</option>
+                        <option value="-3">-3</option>
+                        <option value="-2">-2</option>
+                        <option value="-1">-1</option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
             </fieldset>
+            <p class="errorMsg" id="errMsg" role="alert"></p>
             <fieldset class="fieldset-no-border">
-                <p class="errorMsg" id="errMsg" role="alert"></p>
-                <label for="dropdown-question">Dropdown Options: </label>
-                &nbsp; &nbsp;<select id="dropdown-question" name="dropdown"  aria-required="true">
-                    <option></option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
+                <legend>
+                    This is a love/hate scale. 0 is for hate and 5 is love.
+                </legend>
+                <div>
+                    <label for="bananas-2" class="multi-number-label">Bananas</label>
+                    <input type="number" id="bananas-2">
+                </div>
+                <div>
+                    <label for="blackberry-2" class="multi-number-label">Blackberry</label>
+                    <input type="number" id="blackberry-2">
+                </div>
+                <div>
+                    <label for="cherry-2" class="multi-number-label">Cherry</label>
+                    <input type="number" id="cherry-2">
+                </div>
+                <div>
+                    <label for="grapes-2" class="multi-number-label">Cherry</label>
+                    <input type="number" id="grapes-2">
+                </div>
+                <div>
+                    <label for="kiwi-2" class="multi-number-label">Kiwi</label>
+                    <input type="number" id="kiwi-2">
+                </div>
+                <div>
+                    <label for="mango-2" class="multi-number-label">Mango</label>
+                    <input type="number" id="mango-2">
+                </div>
+                <div>
+                    <label for="peach-2" class="multi-number-label">Peach</label>
+                    <input type="number" id="peach-2">
+                </div>
+                <div>
+                    <label for="pear-2" class="multi-number-label">Pear</label>
+                    <input type="number" id="pear-2">
+                </div>
+
             </fieldset>
 
             <button type="submit" class="button purple">Next Question</button>
