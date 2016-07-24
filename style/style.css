@@ -137,18 +137,10 @@ input[type="radio"]:focus {
     display: none;
 }
 /******* question 12 *********/
-section.left {
-    float: left;
-}
-section.left, section.right {
-    display: inline;
+.label-multi {
     width:50%;
+    display: inline-block;
 
-}
-
-.not-decorated {
-    list-style-type: none;
-    padding-bottom: 10px;
 }
 
 /************ likert scale, also used in grid with multiple rows *********/

@@ -22,117 +22,102 @@
                     most likely to consider? Please order 1 through 7. <br>
                     If you don't have an 'other' source of funding, please don't worry about rannking other.
                 </legend>
-                <section class="left">
-                    <ul class="not-decorated">
-                        <li>Use my personal savings</li>
-                        <li>Borrow from family or friends</li>
-                        <li>Get a loan from alternative lenders on the internet</li>
-                        <li>Offer equity to investors</li>
-                        <li>Get a home equity loan</li>
-                        <li>Get business financing from the bank</li>
-                        <li>Other</li>
-                    </ul>
-                </section>
-                <section class="right">
-                    <div>
-                        <label for="question-1">1.</label>
-                        <select id="question-1" name="question-1" aria-required="true">
-                            <option></option>
-                            <option value="personal-savings">Use my personal savings</option>
-                            <option value="borrow">Borrow from family or friends</option>
-                            <option value="alt-loan">Get a loan from alternative lenders</option>
-                            <option value="equity">Offer equity to investors</option>
-                            <option value="home-equity">Get a home equity loan</option>
-                            <option value="business-financing">Get business financing form the bank</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="question-2">2.</label>
-                        <select id="question-2" name="question-2" aria-required="true">
-                            <option></option>
-                            <option value="personal-savings">Use my personal savings</option>
-                            <option value="borrow">Borrow from family or friends</option>
-                            <option value="alt-loan">Get a loan from alternative lenders</option>
-                            <option value="equity">Offer equity to investors</option>
-                            <option value="home-equity">Get a home equity loan</option>
-                            <option value="business-financing">Get business financing form the bank</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="question-3">3.</label>
-                        <select id="question-3" name="question-3" aria-required="true">
-                            <option></option>
-                            <option value="personal-savings">Use my personal savings</option>
-                            <option value="borrow">Borrow from family or friends</option>
-                            <option value="alt-loan">Get a loan from alternative lenders</option>
-                            <option value="equity">Offer equity to investors</option>
-                            <option value="home-equity">Get a home equity loan</option>
-                            <option value="business-financing">Get business financing form the bank</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="question-4">4.</label>
-                        <select id="question-4" name="question-4" aria-required="true">
-                            <option></option>
-                            <option value="personal-savings">Use my personal savings</option>
-                            <option value="borrow">Borrow from family or friends</option>
-                            <option value="alt-loan">Get a loan from alternative lenders</option>
-                            <option value="equity">Offer equity to investors</option>
-                            <option value="home-equity">Get a home equity loan</option>
-                            <option value="business-financing">Get business financing form the bank</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="question-5">5.</label>
-                        <select id="question-5" name="question-5" aria-required="true">
-                            <option></option>
-                            <option value="personal-savings">Use my personal savings</option>
-                            <option value="borrow">Borrow from family or friends</option>
-                            <option value="alt-loan">Get a loan from alternative lenders</option>
-                            <option value="equity">Offer equity to investors</option>
-                            <option value="home-equity">Get a home equity loan</option>
-                            <option value="business-financing">Get business financing form the bank</option>
-                            <option value="other">Other</option>
-                        </select>
-                        <div>
-                            <label for="question-6">6.</label>
-                            <select id="question-6" name="question-6" aria-required="true">
-                                <option></option>
-                                <option value="personal-savings">Use my personal savings</option>
-                                <option value="borrow">Borrow from family or friends</option>
-                                <option value="alt-loan">Get a loan from alternative lenders</option>
-                                <option value="equity">Offer equity to investors</option>
-                                <option value="home-equity">Get a home equity loan</option>
-                                <option value="business-financing">Get business financing form the bank</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label for="question-6">7.</label>
-                            <select id="question-7" name="question-7" aria-required="true">
-                                <option></option>
-                                <option value="personal-savings">Use my personal savings</option>
-                                <option value="borrow">Borrow from family or friends</option>
-                                <option value="alt-loan">Get a loan from alternative lenders</option>
-                                <option value="equity">Offer equity to investors</option>
-                                <option value="home-equity">Get a home equity loan</option>
-                                <option value="business-financing">Get business financing form the bank</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                    </div>
-                </section>
+                <div>
+                    <label class="label-multi" for="personal-saving">Use my personal savings</label>
+                    <select class="rankings" id="personal-saving" name="personal-savings" aria-required="true">
+                        <option></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="label-multi" for="borrow">Borrow from family or friends</label>
+                    <select class="rankings" id="borrow" name="borrow" aria-required="true">
+                        <option></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="label-multi" for="alternative">Get a loan from alternative lenders on the internet</label>
+                    <select class="rankings" id="alternative" name="alternative" aria-required="true">
+                        <option></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="label-multi" for="equity">Offer equity to investors</label>
+                    <select class="rankings" name="equity" id="equity" aria-required="true">
+                        <option></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="label-multi" for="home-loan">Get a home equity loan</label>
+                    <select class="rankings" id="home-loan" name="home-loan" aria-required="true">
+                        <option></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="label-multi" for="financing">Get business financing from my bank</label>
+                    <select class="rankings" id="financing" name="financing" aria-required="true">
+                        <option></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="label-multi" for="other">Other</label>
+                    <select class="rankings" id="other" name="other">
+                        <option></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
+                </div>
             </fieldset>
             <button type="submit" class="button purple">Next Question</button>
         </form>
     </div>
 </main>
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-<script type="text/javascript" src="../js/vendor/jquery-ui.js"></script>
 <script type="text/javascript" src="../js/main.js"></script>
 </body>
 </html>
