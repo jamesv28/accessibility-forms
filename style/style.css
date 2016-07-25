@@ -21,7 +21,10 @@ strong {
 #header-top {
     margin-top: 40px;
 }
-
+#legend-instruct {
+    display: block;
+    margin-bottom: 10px;
+}
 .clear {
     clear: both;
 }
