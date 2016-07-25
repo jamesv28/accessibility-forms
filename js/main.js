@@ -288,5 +288,17 @@ function validateInputs() {
         ok = false;
     }
     return ok;
-
 }
+
+/** Look at media queries for adding or subtracting ARIA labelling **/
+function mediaLabelling() {
+    var mq = window.matchMedia('@media all and (max-width: 480px)');
+
+    if(mq.matches) {
+        var inputs = document.getElementsByClassName('option-input');
+        for(var i = 0; i < inputs.length; i++) {
+            inputs[i].removeAttribute('aria-label');
+        }
+    }
+}
+mediaLabelling();

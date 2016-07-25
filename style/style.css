@@ -251,6 +251,11 @@ input[type="radio"]:focus {
     border:0;
     float: left;
 }
+.ind-radio input {
+    display: block;
+    text-align: center;
+    margin:auto;
+}
 /**** Toggle Switch *****/
 .toggle-btn-group label {
     padding: .5em;
@@ -427,6 +432,16 @@ and (max-device-width: 480px)
         display: block;
         width:100%;
         height: 40px;
+    }
+
+    /* question 16 individual radio */
+    .ind-radio {
+        display: block;
+        width:100%;
+        text-align: left;
+    }
+    .ind-radio input {
+        display: inline-block;
     }
 
 
