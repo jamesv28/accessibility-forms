@@ -332,7 +332,7 @@ function checkRanking() {
     for(var j = 0; j < rankArr.length; j++) {
         for(var k = j + 1; k < rankArr.length; k++) {
             if(rankArr[j] === rankArr[k]) {
-                txt.innerText = "There are duplicate ranking, please change a selection";
+                txt.innerText = "There are duplicate rank numbers, please change a selection";
                 okay = false;
             }
         }
