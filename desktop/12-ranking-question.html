@@ -15,13 +15,14 @@
 </header>
 <main role="main">
     <div class="container">
-        <form action="13-clickable-phrases.html">
+        <form action="13-clickable-phrases.html" onsubmit="return checkRanking()">
             <fieldset class="fieldset-no-border">
                 <legend>
                     Next time you need additional funding for your business, which sources would you be
                     most likely to consider? Please order 1 through 7. <br>
                     If you don't have an 'other' source of funding, please don't worry about rannking other.
                 </legend>
+                <p class="errorMsg" id="errMsg"></p>
                 <div>
                     <label class="label-multi" for="personal-saving">Use my personal savings</label>
                     <select class="rankings" id="personal-saving" name="personal-savings" aria-required="true">

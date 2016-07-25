@@ -302,3 +302,40 @@ function mediaLabelling() {
     }
 }
 mediaLabelling();
+
+// /** function for getting and saying total **/
+// function sayTotal() {
+//     var adding = document.getElementsByClassName('toAdd');
+//     var text = document.getElementById('totalling');
+//     var sum = 0;
+//
+//     text.innerText = "";
+//
+//     for(var i = 0; i < adding.length; i++)  {
+//         sum += adding[i].value;
+//     }
+//
+//     text.innerText = "Total: " + sum + "%";
+// }
+
+function checkRanking() {
+    var txt = document.getElementById('errMsg');
+    txt.innerText = "";
+    var rankings = document.getElementsByClassName('rankings');
+    var rankArr = [];
+    var okay = true;
+
+    for(var i = 0; i < rankings.length; i++) {
+        rankArr.push(rankings[i].value);
+    }
+    console.log('array', rankArr);
+    for(var j = 0; j < rankArr.length; j++) {
+        for(var k = j + 1; k < rankArr.length; k++) {
+            if(rankArr[j] === rankArr[k]) {
+                txt.innerText = "There are duplicate ranking, please change a selection";
+                okay = false;
+            }
+        }
+    }
+    return okay;
+}
