@@ -339,3 +339,29 @@ function checkRanking() {
     }
     return okay;
 }
+
+/** Drag drop validation **/
+function dragDropValidation() {
+    var fruit1 = document.getElementsByClassName('fruitDrop');
+    var fruit2 = document.getElementsByClassName('fruits-2');
+    var err1 = document.getElementById('errMsg');
+    var err2 = document.getElementById('errMsg-2');
+    err2.innerText = "";
+    err1.innerText = "";
+    var okay = true;
+
+    for(var i = 0; i < fruit1.length; i++) {
+        if (fruit1[i].value === "" || fruit1[i].value === null) {
+            err1.innerText = "All fields are required";
+            okay = false;
+        }
+    }
+    for (var j = 0; j < fruit2.length; j++) {
+        if(fruit2[j].value === "" || fruit2[j].value === null) {
+            err2.innerText = "All fields are required";
+            okay = false;
+        }
+    }
+    return okay;
+
+}   //end of fruit validation

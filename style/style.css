@@ -320,6 +320,37 @@ input[type="radio"]:focus {
 .total-Sum {
     margin-left:20%;
 }
+
+
+/**** Question 15 new version *****/
+.fruits {
+    width:100%;
+    margin:0;
+    padding:0;
+    border:0;
+}
+.ind-fruit {
+    width:20%;
+    display: inline-block;
+    text-align: center;
+    margin:0;
+    padding: 0;
+    border:0;
+    float: left;
+}
+.ind-fruit input {
+    text-align: center;
+    display: block;
+    margin:auto;
+}
+.ind-fruit label {
+    display: block;
+    text-align: center;
+}
+.ind-fruit img {
+    width: 150px;
+    height: 150px;
+}
 /******* Responsive Design ofr inputs ************/
 @media only screen
 and (min-width: 320px)
