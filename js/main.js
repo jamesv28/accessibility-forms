@@ -202,37 +202,37 @@ function validateSelectGrid() {
     var group2 = document.getElementsByName('question-2');
     var group3 = document.getElementsByName('question-3');
 
-    var ok = true;
+    var ok = false;
 
-    // var errorMessages = document.getElementsByClassName('errMsg');
-    // for(var c = 0; c < errorMessages.length;c++ )  {
-    //     errorMessages[c].innerText = "";
-    // }
-    //
     for (var i = 0; i < group1.length; i++) {
-        if (group1[i].checked === false) {
+        if (group1[i].checked === true) {
+            ok = true;
+            break;
+        } else  {
             err1.innerText = "You must enter a value for question onpe";
             ok = false;
-        } else  {
-            ok = true;
         }
     }
-    // for(var j = 0; j < group2.length; j++) {
-    //     if (group2[j].checked === false) {
-    //         err2.innerText = "You must enter a value for question 2";
-    //         ok = false;
-    //     } else  {
-    //         ok = true;
-    //     }
-    // }
-    // for(var k = 0; k < group3.length; k++) {
-    //     if (!group3[k].checked) {
-    //         err3.innerText = "You must enter a value for question 3";
-    //         okay = false;
-    //     } else {
-    //         okay = true;
-    //     }
-    // }
+    for(var j = 0; j < group2.length; j++) {
+        if (group2[j].checked === true) {
+            ok = true;
+            break;
+        } else  {
+            err2.innerText = "You must enter a value for question 2";
+            ok = false;
+
+        }
+    }
+    for(var k = 0; k < group3.length; k++) {
+        if (group3[k].checked === true) {
+            ok = true;
+            break;
+        } else {
+            err3.innerText = "You must enter a value for question 3";
+            ok = false;
+        }
+    }
+
     return ok;
 
 }
@@ -358,50 +358,43 @@ function dragDropValidation() {
 
 /** Checkbox grid validation - 05 **/
 function checkboxGrid() {
-    var err = document.getElementById('err-1');
+
+    var err1 = document.getElementById('err-1');
     var err2 = document.getElementById('err2');
     var err3 = document.getElementById('err3');
+    var success = true;
 
-    err.innerText = "";
-    err2.innerText = "";
-    err3.innerText = "";
-
-    var inputs1 = document.getElementsByClassName('question1');
-    var inputs2 = document.getElementsByName('life-services');
-    var inputs3 = document.getElementsByName('advisory-services');
-
-    var success = false;
-
-    for(var i = 0; i < inputs1.length; i++) {
-        if(inputs1[i].checked === true) {
-            success = true;
-            break;
-        } else {
-            err.innerText = "You must select a value for question 1";
-            success = false;
-        }
+    var err = document.getElementsByClassName('errorMsg');
+    for(var i = 0; i < err.length; i++) {
+        err[i].innerText = "";
     }
 
-    for(var j = 0; j < inputs2.length; j++) {
-        if(inputs2[j].checked === true) {
-            success = true;
-            break;
-        } else {
-            err2.innerText = "You must select a value for the question 2";
-            success = false;
-        }
+    var ms1 = document.getElementById('wells-philanthropic');
+    var ms2 = document.getElementById('other-philanthropic');
+    var ms3 = document.getElementById('no-philanthropic');
+
+    var ms4 = document.getElementById('wells-life');
+    var ms5 = document.getElementById('other-life');
+    var ms6 = document.getElementById('not-life');
+
+    var ms7 = document.getElementById('wells-advisory');
+    var ms8 = document.getElementById('other-advisory');
+    var ms9 = document.getElementById('not-advisory');
+
+    if(!ms1.checked && !ms2.checked && !ms3.checked) {
+        err1.innerText = "Question 1 needs a response";
+        success = false;
     }
 
-    for(var k = 0; k < inputs3.length; k++) {
-        if(inputs3[k].checked === true) {
-            success = true;
-            break;
-        } else {
-            err3.innerText = "You must select a value for the question 3";
-            success = false;
-        }
+    if (!ms4.checked && !ms5.checked && !ms6.checked ) {
+        err2.innerText = "Question 2 needs a response";
+        success = false;
     }
 
-
+    if (!ms7.checked && !ms8.checked && !ms9.checked ) {
+        err3.innerText = "Question 3 needs a response";
+        success = false;
+    }
+    
     return success;
 }
