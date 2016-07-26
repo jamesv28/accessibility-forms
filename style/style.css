@@ -226,7 +226,7 @@ input[type="radio"]:focus {
 .default {
     text-decoration: none;
     color: #000;
-    background-color: lightgray;
+    background-color: #d3d3d3;
 }
 
 .purple {
