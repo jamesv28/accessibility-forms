@@ -368,6 +368,36 @@ function validateClickPhrases() {
     return ok;
 }
 
+/** validation for question 14 **/
+function validateHeat() {
+    var errs = document.getElementsByClassName('errorMsg');
+    var ok = true;
+    
+    for(var i = 0; i < errs.length; i++) {
+        errs[i].innerText = "";
+    }
+    var input1 = document.getElementById('response');
+    var input2 = document.getElementById('response-2');
+    var input3 = document.getElementById('response-3');
+
+    if(input1.value === "" || input1.value === null) {
+        document.getElementById('err1').innerText = "Please enter a response";
+        ok = false;
+    }
+    if(input2.value === "" || input2.value === null) {
+        document.getElementById('err2').innerText = "Please enter a response";
+        ok = false;
+    }
+    if(input3.value === "" || input3.value === null) {
+        document.getElementById('err3').innerText = "Please enter a response";
+        ok = false;
+    }
+    
+
+    return ok;
+    
+}
+
 /** Checkbox grid validation - 05 **/
 function checkboxGrid() {
 

@@ -14,20 +14,22 @@
     </div>
 </header>
 <main role="main">
-        <form action="15-drag-and-drop.html" onsubmit="return textAreaValidation()">
+        <form action="15-drag-and-drop.html" onsubmit="return validateHeat()">
             <fieldset class="fieldset-no-border">
                 <legend>
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                 </legend>
-                <p class="errorMsg" id="textAreaError" role="alert"></p>
+                <span class="errorMsg" id="err1" role="alert"></span>
                 <div>
                     <label for="response">Question Label</label>   <br>
                     <textarea class="lg-textarea" id="response" rows="5" aria-required="true" ></textarea>
                 </div>
+                <span class="errorMsg" id="err2" role="alert"></span>
                 <div>
                     <label for="response-2">Question Label 2</label>   <br>
                     <textarea class="lg-textarea" id="response-2" rows="5" aria-required="true" ></textarea>
                 </div>
+                <span class="errorMsg" id="err3" role="alert"></span>
                 <div>
                     <label for="response-3">Question Label 3</label>   <br>
                     <textarea class="lg-textarea" id="response-3" rows="5" aria-required="true" ></textarea>
