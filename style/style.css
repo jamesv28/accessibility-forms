@@ -142,7 +142,6 @@ input[type="radio"]:focus {
 .label-multi {
     width:30%;
     display: inline-block;
-
 }
 
 /************ likert scale, also used in grid with multiple rows *********/
@@ -320,7 +319,6 @@ input[type="radio"]:focus {
     display: inline-block;
 }
 #percent-sum {
-    /*padding: 5px 10px;*/
     text-align: center;
 }
 .total-Sum {
@@ -475,7 +473,19 @@ and (max-width: 480px)
     .ind-radio input {
         display: inline-block;
     }
-
+    /* Question 11 */
+    .multi-number-label {
+        width:50%;
+    }
+    .toAdd {
+        width:20%;
+    }
+    .total-Sum {
+        margin-left:50%;
+    }
+    .label-multi {
+        width:60%;
+    }
 
 
 } /* end of first media query */
