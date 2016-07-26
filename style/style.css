@@ -34,7 +34,7 @@ button::-moz-focus-inner {
 }
 
 button::-moz-focus-outer {
-    border:1px solid #000000;
+    border:3px solid #5fa3e6;
 }
 input[type="checkbox"]::-moz-focus-outer {
     border: 1px solid #000000;

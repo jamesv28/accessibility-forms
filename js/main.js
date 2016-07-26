@@ -20,21 +20,6 @@ function textAreaValidation() {
 }
 
 /**
- * input validation
- */
-function inputValidation() {
-    
-    var x, text;
-    
-    x = document.getElementById('otherConnections').value;
-    if(x === '') {
-        text = 'Please Enter something';
-    }
-    
-    document.getElementById('textAreaError').innerText = text;
-}
-
-/**
  * radio group validation
  * need to select one form the radio group
  **/
@@ -52,22 +37,7 @@ function validateRadio() {
     return false;
 }
 
-/**
- *likert validation
- **/
-function likertValidation() {
-    var text = "You must select one of the options";
 
-    var radios = document.getElementsByName('satisfied');
-    
-    for(var i = 0; i < radios.length; i++ ) {
-        if(radios[i].checked) {
-            return true;
-        }
-    }
-    document.getElementById('errorMsg').innerText= text;
-    return false;
-}
 
 /**
  * dropdown validation
