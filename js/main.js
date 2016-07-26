@@ -43,12 +43,16 @@ function validateRadio() {
  * dropdown validation
  **/
 function dropdownValidation() {
+    var ok = true;
     var input = document.getElementById('age-demographic').value;
-    var txt = "you must select one option from the dropdown menu";
-    
+    var err = document.getElementById('selectErr');
+    err.innerText = "";
+
     if (input === '' || input === null) {
-        document.getElementById('selectErr').innerText = txt;
+        err.innerText = "You must select a value";
+        ok = false;
     }
+    return ok;
     
 }
 /** revamped checkbox **/
