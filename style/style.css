@@ -487,6 +487,16 @@ and (max-width: 480px)
         display: block;
         width: 100%;
     }
+    /* Question 15 */
+    .ind-fruit {
+        width: 50%;
+        margin:auto;
+    }
+
+    .ind-fruit img {
+        width: 100px;
+        height: 100px;
+    }
 
 
 } /* end of first media query */
