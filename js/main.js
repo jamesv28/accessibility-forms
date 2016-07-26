@@ -194,45 +194,39 @@ function validateSelectGrid() {
     var err2 = document.getElementById('question-2-error');
     var err3 = document.getElementById('question-3-error');
 
-    err1.innerText = "";
-    err2.innerText = "";
-    err3.innerText = "";
-
-    var group1 = document.getElementsByName('question-1');
-    var group2 = document.getElementsByName('question-2');
-    var group3 = document.getElementsByName('question-3');
-
-    var ok = false;
-
-    for (var i = 0; i < group1.length; i++) {
-        if (group1[i].checked === true) {
-            ok = true;
-            break;
-        } else  {
-            err1.innerText = "You must enter a value for question onpe";
-            ok = false;
-        }
-    }
-    for(var j = 0; j < group2.length; j++) {
-        if (group2[j].checked === true) {
-            ok = true;
-            break;
-        } else  {
-            err2.innerText = "You must enter a value for question 2";
-            ok = false;
-
-        }
-    }
-    for(var k = 0; k < group3.length; k++) {
-        if (group3[k].checked === true) {
-            ok = true;
-            break;
-        } else {
-            err3.innerText = "You must enter a value for question 3";
-            ok = false;
-        }
+    var err = document.getElementsByClassName('errorMsg');
+    for(var i = 0; i < err.length; i++) {
+        err[i].innerText = "";
     }
 
+    var ok = true;
+
+    var ms1 = document.getElementById('question-1-single');
+    var ms2 = document.getElementById('question-1-multiple');
+    var ms3 = document.getElementById('question-1-no');
+
+    var ms4 = document.getElementById('question-2-single');
+    var ms5 = document.getElementById('question-2-multiple');
+    var ms6 = document.getElementById('question-2-no');
+
+    var ms7 = document.getElementById('question-3-single');
+    var ms8 = document.getElementById('question-3-multiple');
+    var ms9 = document.getElementById('question-3-no');
+
+    if(!ms1.checked && !ms2.checked && !ms3.checked) {
+        err1.innerText = "Question 1 needs a response";
+        ok = false;
+    }
+    if(!ms4.checked && !ms5.checked && !ms6.checked) {
+        err2.innerText = "Question 2 needs a response";
+        ok = false;
+    }
+
+    if(!ms7.checked && !ms8.checked && !ms9.checked) {
+        err3.innerText = "Question 3 needs a response";
+        ok = false;
+    }
+    
     return ok;
 
 }
