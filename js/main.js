@@ -320,6 +320,54 @@ function dragDropValidation() {
 
 }   //end of fruit validation
 
+/** Validation for question 13 **/
+function validateClickPhrases() {
+    var input1 = document.getElementById('response');
+    var input2 = document.getElementById('response-2');
+    var input3 = document.getElementById('response-3');
+    var input4 = document.getElementById('response-4');
+    var input5 = document.getElementById('response-5');
+    var input6 = document.getElementById('response-6');
+    var input7 = document.getElementById('response-7');
+    var ok = true;
+
+    var err = document.getElementsByClassName('errorMsg');
+    for(var i = 0; i < err.length; i++) {
+        err[i].innerText = "";
+    }
+
+    if(input1.value === "" || input1.value === null) {
+        document.getElementById('err1').innerText = "Please type a response";
+        ok = false;
+    }
+    if(input2.value === "" || input2.value === null) {
+        document.getElementById('err2').innerText = "Please type a response for second phrase";
+        ok = false;
+    }
+    if(input3.value === "" || input3.value === null) {
+        document.getElementById('err3').innerText = "Please enter in a response for the third phrase";
+        ok = false;
+    }
+    if (input4.value === "" || input4.value === null) {
+        document.getElementById('err4').innerText = "Please enter in a response for the fourth phrase";
+        ok = false;
+    }
+    if(input5.value === "" || input5.value === null) {
+        document.getElementById('err5').innerText = "Please enter in a response for fifth phrase";
+        ok = false;
+    }
+    if(input6.value === "" || input6.value === null) {
+        document.getElementById('err6').innerText = "Please enter a response for the sixth question";
+        ok = false;
+    }
+    if(input7.value === "" || input7.value === null) {
+        document.getElementById('err7').innerText = "Please enter a response for the seventh resposne ;"
+        ok = false;
+    }
+    
+    return ok;
+}
+
 /** Checkbox grid validation - 05 **/
 function checkboxGrid() {
 

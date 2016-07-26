@@ -28,6 +28,9 @@ strong {
 .clear {
     clear: both;
 }
+.block {
+    display: block;
+}
 /*** getting rid of default firefox focus element ***/
 button::-moz-focus-inner {
     border: 0;
@@ -342,7 +345,6 @@ input[type="radio"]:focus {
     float: left;
 }
 .ind-fruit input {
-    text-align: center;
     display: block;
     margin:auto;
 }
