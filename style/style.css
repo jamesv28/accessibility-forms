@@ -395,9 +395,9 @@ and (max-width: 480px)
         height: 2.5em;
         width: 100%;
     }
-    a.button.default {
+    .default {
         display: block;
-        width:100%;
+        margin:auto;
     }
     textarea.lg-textarea {
         width:100%;
