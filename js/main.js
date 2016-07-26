@@ -101,14 +101,15 @@ function getCheckedNew() {
 function validateCheckbox() {
 
     var checkboxes = document.getElementsByName('purpose');
-    var txt = 'You must select aat least one checkbox';
+    var err = document.getElementById('alertMsg');
 
+    err.innerText = "";
     for(var i = 0; i < checkboxes.length; i++) {
         if (checkboxes[i].checked) {
             return true;
         }
     }
-    document.getElementById('alertMsg').innerText = txt;
+    err.innerText = "You must select at least one checkbox";
     return false;
 }
 
@@ -197,7 +198,7 @@ function validateSelectGrid() {
     err2.innerText = "";
     err3.innerText = "";
 
-    var group1 = document.getElementsByName('q1');
+    var group1 = document.getElementsByName('question-1');
     var group2 = document.getElementsByName('question-2');
     var group3 = document.getElementsByName('question-3');
 
@@ -212,18 +213,20 @@ function validateSelectGrid() {
         if (group1[i].checked === false) {
             err1.innerText = "You must enter a value for question onpe";
             ok = false;
+        } else  {
+            ok = true;
         }
     }
     // for(var j = 0; j < group2.length; j++) {
     //     if (group2[j].checked === false) {
     //         err2.innerText = "You must enter a value for question 2";
-    //         okay = false;
+    //         ok = false;
     //     } else  {
-    //         okay = true;
+    //         ok = true;
     //     }
     // }
     // for(var k = 0; k < group3.length; k++) {
-    //     if (group3[k].checked === false) {
+    //     if (!group3[k].checked) {
     //         err3.innerText = "You must enter a value for question 3";
     //         okay = false;
     //     } else {
@@ -303,21 +306,8 @@ function mediaLabelling() {
 }
 mediaLabelling();
 
-// /** function for getting and saying total **/
-// function sayTotal() {
-//     var adding = document.getElementsByClassName('toAdd');
-//     var text = document.getElementById('totalling');
-//     var sum = 0;
-//
-//     text.innerText = "";
-//
-//     for(var i = 0; i < adding.length; i++)  {
-//         sum += adding[i].value;
-//     }
-//
-//     text.innerText = "Total: " + sum + "%";
-// }
 
+/** Ranking Question **/
 function checkRanking() {
     var txt = document.getElementById('errMsg');
     txt.innerText = "";
@@ -365,3 +355,53 @@ function dragDropValidation() {
     return okay;
 
 }   //end of fruit validation
+
+/** Checkbox grid validation - 05 **/
+function checkboxGrid() {
+    var err = document.getElementById('err-1');
+    var err2 = document.getElementById('err2');
+    var err3 = document.getElementById('err3');
+
+    err.innerText = "";
+    err2.innerText = "";
+    err3.innerText = "";
+
+    var inputs1 = document.getElementsByClassName('question1');
+    var inputs2 = document.getElementsByName('life-services');
+    var inputs3 = document.getElementsByName('advisory-services');
+
+    var success = false;
+
+    for(var i = 0; i < inputs1.length; i++) {
+        if(inputs1[i].checked === true) {
+            success = true;
+            break;
+        } else {
+            err.innerText = "You must select a value for question 1";
+            success = false;
+        }
+    }
+
+    for(var j = 0; j < inputs2.length; j++) {
+        if(inputs2[j].checked === true) {
+            success = true;
+            break;
+        } else {
+            err2.innerText = "You must select a value for the question 2";
+            success = false;
+        }
+    }
+
+    for(var k = 0; k < inputs3.length; k++) {
+        if(inputs3[k].checked === true) {
+            success = true;
+            break;
+        } else {
+            err3.innerText = "You must select a value for the question 3";
+            success = false;
+        }
+    }
+
+
+    return success;
+}

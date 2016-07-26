@@ -16,7 +16,7 @@
 <main role="main">
     <div class="container">
         <h2>Which of the following best describes your investment in the...?</h2>
-        <form action="04-multiple-select.html" >
+        <form action="04-multiple-select.html" onsubmit="return validateSelectGrid()">
             <section class="grid-selection-options" aria-hidden="true">
                 <p class="single-selection first">
                     I am the primary decision maker
@@ -28,36 +28,48 @@
                     I am not allowed
                 </p>
             </section>
+
+
+
             <p class="errorMsg" id="question-1-error" role="alert"></p>
             <fieldset class="fieldset-no-border question-block">
                 <legend class="gird-question">
                     Selection of financial services companies (banks, payment card companies, etc.)
                     your business uses
                 </legend>
+
+
                 <div class="option">
-                    <input class="option-input" id="question-1-single" type="radio" name="question-1" value="single" aria-label="primary decision maker">
+                    <input class="option-input" id="question-1-single" type="radio" name="question-1" value="single-user" aria-label="primary decision maker">
                     <label for="question-1-single" class="desktop-hide" >Primary Decision Maker</label>
                 </div>
+
+
                 <div class="option">
-                    <input class="option-input" id="question-1-multiple" type="radio" name="question-1" value="multiple" aria-label="joint decision">
+                    <input class="option-input" id="question-1-multiple" type="radio" name="question-1" value="multiple-user" aria-label="joint decision">
                     <label for="question-1-multiple" class="desktop-hide" >Joint decision</label>
                 </div>
+
+
                 <div class="option">
-                    <input class="option-input" id="question-1-no" type="radio" name="question-1" value="no" aria-label="i am not allowed">
+                    <input class="option-input" id="question-1-no" type="radio" name="question-1" value="not-allowed" aria-label="i am not allowed">
                     <label for="question-1-no" class="desktop-hide" >I am not allowed</label>
                 </div>
             </fieldset>
+
+
+
             <p class="errorMsg" id="question-2-error" role="alert"></p>
             <fieldset class="fieldset-no-border question-block">
                 <legend class="gird-question">
                     Day to day financial decisions for this business
                 </legend>
                 <div class="option">
-                    <input class="option-input" id="question-2-single" type="radio" name="question-2" value="single" aria-label="primary decision maker">
+                    <input class="option-input" id="question-2-single" type="radio" name="question-2" value="single-users" aria-label="primary decision maker">
                     <label for="question-2-single" class="desktop-hide">Primary Decision Maker</label>
                 </div>
                 <div class="option">
-                    <input class="option-input" id="question-2-multiple" type="radio" name="question-2" value="multiple" aria-label="joint decision">
+                    <input class="option-input" id="question-2-multiple" type="radio" name="question-2" value="multiple-user" aria-label="joint decision">
                     <label for="question-2-multiple" class="desktop-hide">Joint decision</label>
                 </div>
                 <div class="option">
@@ -71,11 +83,11 @@
                     Major financial decisions for the business
                 </legend>
                 <div class="option">
-                    <input class="option-input" id="question-3-single" type="radio" name="question-3" value="single" aria-label="i am the decision maker">
+                    <input class="option-input" id="question-3-single" type="radio" name="question-3" value="single-user" aria-label="i am the decision maker">
                     <label for="question-3-single" class="desktop-hide">Primary Decision Maker</label>
                 </div>
                 <div class="option">
-                    <input class="option-input" id="question-3-multiple" type="radio" name="question-3" value="multiple" aria-label="joint decision">
+                    <input class="option-input" id="question-3-multiple" type="radio" name="question-3" value="multiple-user" aria-label="joint decision">
                     <label for="question-3-multiple" class="desktop-hide">Joint decision</label>
                 </div>
                 <div class="option">
