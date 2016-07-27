@@ -286,12 +286,18 @@ function checkRanking() {
     for(var i = 0; i < rankings.length; i++) {
         rankArr.push(rankings[i].value);
     }
-    console.log('array', rankArr);
+
     for(var j = 0; j < rankArr.length; j++) {
-        for(var k = j + 1; k < rankArr.length; k++) {
-            if(rankArr[j] === rankArr[k]) {
-                txt.innerText = "There are duplicate values. Please change inputs accordingly";
-                okay = false;
+        if(rankArr[j] === "") {
+            txt.innerText = "All input fields are required";
+            okay = false;
+        }
+        else {
+            for (var k = j + 1; k < rankArr.length; k++) {
+                if (rankArr[j] === rankArr[k]) {
+                    txt.innerText = "There are duplicate values. Please change inputs accordingly";
+                    okay = false;
+                }
             }
         }
     }
@@ -444,3 +450,4 @@ function checkboxGrid() {
     
     return success;
 }
+

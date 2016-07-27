@@ -18,8 +18,8 @@
         <form action="18-dropdown-question.html">
             <fieldset class="fieldset-no-border">
                 <legend>For how many years have you been with company X?</legend>
-                <label for="years-worked">Years </label>
-                <input  id="years-worked" type="range" min="1" max="5" value="1" step="1" list="rangeList" ">
+                <label for="years-worked">Years </label> <br>
+                <input  id="years-worked" type="range" min="1" max="5" value="1" step="1" list="rangeList" >
                 <datalist id="rangeList">
                     <option label="1">1</option>
                     <option >2</option>
@@ -27,6 +27,14 @@
                     <option >4</option>
                     <option>5</option>
                 </datalist>
+                <div class="number-list">
+                    <div class="slider-label">
+                        <span>1</span>
+                    </div>
+                    <div class="slider-label">
+                        <span>5</span>
+                    </div>
+                </div>
             </fieldset>
 
             <button type="submit" class="button purple">Next Question</button>
