@@ -25,23 +25,31 @@
                     If you prefer not to answer the question, you you click "prefer not to answer" link
                 </legend>
                 <p id="errorMsg" class="errorMsg" role="alert" aria-atomic="true"></p>
-                <label class="multi-number-label" for="check">Check</label>
-                <input class="toAdd" id="check" name="check" value="0" type="number" aria-describedby="percent">  <span>%</span>  <br>
+                <div class="long-list">
+                    <label class="multi-number-label" for="check">Check</label>
+                    <input class="toAdd" id="check" name="check" value="0" type="number" aria-describedby="percent">  <span>%</span>  <br>
+                </div>
+                <div class="long-list">
+                    <label class="multi-number-label" for="creditCard">Credit Card</label>
+                    <input class="toAdd"  id="creditCard" name="creditCard" value="0" type="number" aria-describedby="percent">  <span id="percent">%</span> <br>
+                </div>
+                <div class="long-list">
+                    <label class="multi-number-label" for="debitCard">Debit Card: </label>
+                    <input class="toAdd" id="debitCard" name="debitCard" value="0" type="number" aria-describedby="percent">  <span>%</span>  <br>
+                </div>
+                <div class="long-list">
+                    <label class="multi-number-label" for="autoDeduct">Auto deduction</label>
+                    <input class="toAdd" id="autoDeduct" name="autoDeduct" value="0" type="number" aria-describedby="percent"> <span>%</span> <br>
+                </div>
+                <div class="long-list">
+                    <label class="multi-number-label" for="cash">Cash or money order</label>
+                    <input class="toAdd" type="number" id="cash" name="cash" value="0" aria-describedby="percent"> <span>%</span> <br>
+                </div>
+                <div class="long-list">
+                    <label class="multi-number-label" for="other">Other</label>
+                    <input class="toAdd" id="other" name="other" value="0" type="number" aria-describedby="percent"> <span>%</span>    <br>
+                </div>
 
-                <label class="multi-number-label" for="creditCard">Credit Card</label>
-                <input class="toAdd"  id="creditCard" name="creditCard" value="0" type="number" aria-describedby="percent">  <span id="percent">%</span> <br>
-
-                <label class="multi-number-label" for="debitCard">Debit Card: </label>
-                <input class="toAdd" id="debitCard" name="debitCard" value="0" type="number" aria-describedby="percent">  <span>%</span>  <br>
-
-                <label class="multi-number-label" for="autoDeduct">Auto deduction</label>
-                <input class="toAdd" id="autoDeduct" name="autoDeduct" value="0" type="number" aria-describedby="percent"> <span>%</span> <br>
-
-                <label class="multi-number-label" for="cash">Cash or money order</label>
-                <input class="toAdd" type="number" id="cash" name="cash" value="0" aria-describedby="percent"> <span>%</span> <br>
-
-                <label class="multi-number-label" for="other">Other</label>
-                <input class="toAdd" id="other" name="other" value="0" type="number" aria-describedby="percent"> <span>%</span>    <br>
                 <div class="total-Sum" role="status">
                     <span>Total: </span>
                     <output id="percent-sum" aria-describedby="percent-tag" name="total" for="cash creditCard check debitCard other autoDeduct" ></output>

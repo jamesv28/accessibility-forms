@@ -31,6 +31,10 @@ strong {
 .block {
     display: block;
 }
+
+.long-list {
+    padding-bottom: 10px;
+}
 /*** getting rid of default firefox focus element ***/
 /*button::-moz-focus-inner {*/
     /*border: 0;*/
