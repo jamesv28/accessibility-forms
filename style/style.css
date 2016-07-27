@@ -35,6 +35,7 @@ strong {
 .long-list {
     padding-bottom: 10px;
 }
+
 /*** getting rid of default firefox focus element ***/
 /*button::-moz-focus-inner {*/
     /*border: 0;*/
@@ -372,8 +373,8 @@ input[type="radio"]:focus {
     text-align: center;
 }
 .ind-fruit img {
-    width: 150px;
-    height: 150px;
+    width: 125px;
+    height: 125px;
 }
 /******* Responsive Design ofr inputs ************/
 @media only screen

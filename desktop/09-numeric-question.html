@@ -16,16 +16,14 @@
 <main role="main">
     <div class="container">
         <form action="10-numeric-question-date.html" onsubmit="return numValidate()">
-            <fieldset class="fieldset-no-border">
-                <legend id="num-instructions">
+                <p id="num-instructions">
                     Including yourself. how manny employees does your company have? <br>
                     Please include the number of full and part time.
-                </legend>
+                </p>
                 <p class="errorMsg"  id="errMsg" role="alert"></p>
                 <input id="numInput" type="number"  min="0">
                 <!-- # instead of number causes issues -- comes across as pound sign -->
-                <label for="numInput">number of employees</label>
-            </fieldset>
+                <label for="numInput">number of employees</label>   <br>
 
             <button type="submit" class="button purple" >Next Question</button>
         </form>
