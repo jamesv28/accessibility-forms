@@ -16,14 +16,14 @@
 <main class="row" role="main">
     <div class="container">
         <form action="07-open-end-long.html">
-            <fieldset class="fieldset-no-border">
+            <fieldset class="fieldset-no-border" id="description">
                 <legend >
                     Which of the following best describes the purpose of your most recent phone call with a bank business elite team rep?
                     <br>
                     <i>(Please Select all that apply.)</i>
                 </legend>
                 <p class="errorMsg" id="alertMsg" role="alert"></p>
-                <input class="check" type="checkbox" id="online-assistance" value="online" name="purpose">
+                <input class="check" type="checkbox" id="online-assistance" value="online" name="purpose" aria-describedby="description">
                 <label for="online-assistance">Online assistance</label> <br>
                 <input class="check" type="checkbox" id="reallocation" value="reallocation" name="purpose">
                 <label for="reallocation">Reallocation of credit line / credit limit inquiries </label> <br>
