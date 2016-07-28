@@ -37,13 +37,18 @@ strong {
 }
 
 /*** getting rid of default firefox focus element ***/
-/*button::-moz-focus-inner {*/
-    /*border: 0;*/
-/*}*/
+button::-moz-focus-inner {
+    border: none;
+}
 
 /*button::-moz-focus-outer {*/
-    /*border:3px solid #5fa3e6;*/
+    /*outline:3px solid #5fa3e6;*/
 /*}*/
+
+:-moz-focusring {
+    outline:3px solid #5fa3e6;
+}
+
 input[type="checkbox"]::-moz-focus-outer {
     border: 1px solid #000000;
 }
