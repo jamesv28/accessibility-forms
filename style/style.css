@@ -45,10 +45,13 @@ button::-moz-focus-inner {
     /*outline:3px solid #5fa3e6;*/
 /*}*/
 
+/** this is not backwards compatible unfortunately **/
 :-moz-focusring {
     outline:3px solid #5fa3e6;
 }
-
+input[type="range"]:-moz-focusring {
+    outline:none;
+}
 input[type="checkbox"]::-moz-focus-outer {
     border: 1px solid #000000;
 }
