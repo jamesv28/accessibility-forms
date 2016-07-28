@@ -191,7 +191,7 @@ input[type="radio"]:focus {
 }
 
 /********* input = range aka slider ************/
-#years-worked {
+#satisfaction {
     width:50%;
     cursor: pointer;
 }
@@ -399,7 +399,7 @@ and (max-width: 480px)
         line-height: 40px;
         /*font-size: 17px;*/
     }
-    #years-worked {
+    #satisfaction {
         width:100%;
         display: block;
         margin:0;
