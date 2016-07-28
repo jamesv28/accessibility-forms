@@ -451,3 +451,9 @@ function checkboxGrid() {
     return success;
 }
 
+// /** decreasing range value **/
+// function goDown() {
+//     var currentVal = document.getElementById('years-worked').value ;
+//     return parseInt(currentVal) - 1;
+// }
+

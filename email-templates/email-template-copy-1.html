@@ -27,7 +27,7 @@
             ELEMENTS
         ------------------------------------- */
         a {
-            color: #348eda;
+            color: #4933da;
         }
         .btn-primary {
             margin-bottom: 10px;
@@ -53,18 +53,8 @@
             line-height: 2;
             text-decoration: none;
         }
-        .last {
-            margin-bottom: 0;
-        }
-        .first {
-            margin-top: 0;
-        }
-        .padding {
-            padding: 10px 0;
-        }
-        /* -------------------------------------
-            BODY
-        ------------------------------------- */
+
+
         table.body-wrap {
             padding: 20px;
             width: 100%;
@@ -72,13 +62,7 @@
         table.body-wrap .container {
             border: 1px solid #f0f0f0;
         }
-        /* -------------------------------------
-            FOOTER
-        ------------------------------------- */
-        table.footer-wrap {
-            clear: both !important;
-            width: 100%;
-        }
+
         .footer-wrap .container p {
             color: #666666;
             font-size: 12px;
@@ -87,60 +71,7 @@
         table.footer-wrap a {
             color: #999999;
         }
-        /* -------------------------------------
-            TYPOGRAPHY
-        ------------------------------------- */
-        h1,
-        h2,
-        h3 {
-            color: #111111;
-            font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-            font-weight: 200;
-            line-height: 1.2em;
-            margin: 40px 0 10px;
-        }
-        h1 {
-            font-size: 36px;
-        }
-        h2 {
-            font-size: 28px;
-        }
-        h3 {
-            font-size: 22px;
-        }
-        p,
-        ul,
-        ol {
-            font-size: 14px;
-            font-weight: normal;
-            margin-bottom: 10px;
-        }
-        ul li,
-        ol li {
-            margin-left: 5px;
-            list-style-position: inside;
-        }
-        /* ---------------------------------------------------
-            RESPONSIVENESS
-        ------------------------------------------------------ */
-        /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
-        .container {
-            clear: both !important;
-            display: block !important;
-            Margin: 0 auto !important;
-            max-width: 600px !important;
-        }
-        /* Set the padding on the td rather than the div for Outlook compatibility */
-        .body-wrap .container {
-            padding: 20px;
-        }
-        /* This should also be a block element, so that it will fill 100% of the .container */
-        .content {
-            display: block;
-            margin: 0 auto;
-            max-width: 600px;
-        }
-        /* Let's make sure tables in the content area are 100% wide */
+
         .content table {
             width: 100%;
         }
@@ -279,11 +210,10 @@
 
         <p>&lt;OPTIONS FOR TERMINATION MESSAGE FOR WELLS FARGO BRANDED SURVEYS&gt;<br />
             &lt;Option 1&gt;</p> <br>
-        <fieldset>
-            <legend>
-            Thank you for your interest in this Wells Fargo survey. The group for which you qualify is now full. However, if you would like to leave a message for Wells Fargo, please enter your comments here:
-            </legend>
-        </fieldset>
+            Thank you for your interest in this Wells Fargo survey. The group for which you qualify is now full. However, if you would like to leave a message for Wells Fargo, please enter your comments here: <br>
+        <textarea id="comments" name="comments">
+
+        </textarea>
 
         <p>&lt;Option 2&gt; Your response indicates that the information presented in this survey will not be relevant to you. Please let us know anything about your experience with Wells Fargo Home Mortgage that you would like to share in the box below. We hope you will participate in future surveys.</p>
 
