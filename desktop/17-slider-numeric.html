@@ -21,8 +21,8 @@
                 <label for="satisfaction">Satisfaction </label> <br>
                 <!--<button onclick="addSlider()" role="button" type="button" id="goDown"><</button>-->
                 <input  name="rangeInput" oninput="amount.value=rangeInput.value"  id="satisfaction" type="range" min="0" max="100" value="0" >
-                <input oninput="rangeInput.value=amount.value" id="box" type="number" min="0" max="100" value="0" name="amount" for="rangeInput"  oninput="rangeInput.value=amount.value" />
-                <div class="number-list">
+                <input oninput="rangeInput.value=amount.value" id="box" type="number" min="0" max="100" value="0" name="amount" for="rangeInput"  oninput="rangeInput.value=amount.value" aria-label="range input"/>
+                <div class="number-list" aria-hidden="true">
                     <div class="slider-label">
                         <span>1</span>
                     </div>
