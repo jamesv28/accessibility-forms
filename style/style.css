@@ -527,6 +527,11 @@ and (max-width: 480px)
         width: 100px;
         height: 100px;
     }
+
+    .fruits-2 {
+        width:50%;
+        margin:auto;
+    }
     /* 12 rankings */
     .rankings {
         width:100%;
