@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Accessibility Surveys | Checkbox Question</title>
+    <title>Accessibility Surveys | Multiple Select</title>
     <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
@@ -18,27 +18,34 @@
         <form action="07-open-end-long.html">
             <fieldset class="fieldset-no-border" id="description">
                 <legend >
-                    Which of the following best describes the purpose of your most recent phone call with a bank business elite team rep?
+                    Which of the following best describes the purpose of your most recent phone call for customer support?
                     <br>
                     <i>(Please Select all that apply.)</i>
                 </legend>
                 <p class="errorMsg" id="alertMsg" role="alert"></p>
-                <input class="check" type="checkbox" id="online-assistance" value="online" name="purpose" aria-describedby="description">
-                <label for="online-assistance">Online assistance</label> <br>
-                <input class="check" type="checkbox" id="reallocation" value="reallocation" name="purpose">
-                <label for="reallocation">Reallocation of credit line / credit limit inquiries </label> <br>
-                <input class="check" type="checkbox" id="unable-card" value="unable" name="purpose">
-                <label for="unable-card">Unable to use card</label> <br>
-                <input class="check" type="checkbox" id="activation" value="activation" name="purpose">
-                <label for="activation">Card activation</label> <br>
-                <input class="check" type="checkbox" id="late-fee" value="late" name="purpose">
-                <label for="late-fee">Late fee charges</label><br>
+
+                <input class="check" type="checkbox" id="reason-1" value="" name="purpose" aria-describedby="description">
+                <label for="reason-1">Reason 1</label> <br>
+
+                <input class="check" type="checkbox" id="reason-2" value="" name="purpose">
+                <label for="reason-2">Reason 2</label> <br>
+
+                <input class="check" type="checkbox" id="reason-3" value="" name="purpose">
+                <label for="reason-3">Reason 3</label> <br>
+
+                <input class="check" type="checkbox" id="reason-4" value="" name="purpose">
+                <label for="reason-4">Reason 4</label> <br>
+
+                <input class="check" type="checkbox" id="reason-5" value="" name="purpose">
+                <label for="reason-5">Reason 5</label><br>
+
                 <input class="check" type="checkbox" id="other-phone" value="other" name="purpose">
-                <label for="other-phone">Other</label> <label for="otherText" class="control-label">(Please specify)</label><br>
-                &nbsp; &nbsp; &nbsp; <textarea id="otherText"></textarea> <br>
+                <label for="other-phone">Other</label>
+                <!--<label for="otherText">(Please specify)</label><br>-->
+                <!--&nbsp; &nbsp; &nbsp; <textarea id="otherText"></textarea> -->
+                <br>
                 <input type="checkbox" id="none" value="none" onclick="getCheckedNew()" name="purpose">
                 <label for="none">None of the above</label>
-
             </fieldset>
                 <button type="submit" class="button purple " onclick="return validateCheckbox()">Next Question</button>
         </form>
