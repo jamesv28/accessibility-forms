@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Accessibility Forms | Grid with multiple rows</title>
+    <title>Accessibility Forms | Single Select Grid</title>
     <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
@@ -15,7 +15,7 @@
 </header>
 <main role="main">
     <div class="container">
-        <h2>Which of the following best describes your investment in the...?</h2>
+        <h2>Which of the following best describes your role in the...?</h2>
         <form action="04-multiple-select.html" onsubmit="return validateSelectGrid()">
             <section class="grid-selection-options" aria-hidden="true">
                 <p class="single-selection first">
@@ -34,8 +34,7 @@
             <p class="errorMsg" id="question-1-error" role="alert"></p>
             <fieldset class="fieldset-no-border question-block">
                 <legend class="gird-question">
-                    Selection of financial services companies (banks, payment card companies, etc.)
-                    your business uses
+                    Attribute 1
                 </legend>
 
                 <div class="option">
@@ -59,7 +58,7 @@
             <p class="errorMsg" id="question-2-error" role="alert"></p>
             <fieldset class="fieldset-no-border question-block">
                 <legend class="gird-question">
-                    Day to day financial decisions for this business
+                    Attribute 2
                 </legend>
                 <div class="option">
                     <input class="option-input" id="question-2-single" type="radio" name="question-2" value="single-users" aria-label="primary decision maker">
@@ -78,7 +77,7 @@
             <p class="errorMsg" id="question-3-error" role="alert"></p>
             <fieldset class="fieldset-no-border question-block">
                 <legend class="gird-question">
-                    Major financial decisions for the business
+                    Attribute 3
                 </legend>
                 <div class="option">
                     <input class="option-input" id="question-3-single" type="radio" name="question-3" value="single-user" aria-label="i am the decision maker">

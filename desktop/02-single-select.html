@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Accessibility | Survey</title>
+    <title>Accessibility | Single Select</title>
     <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
@@ -11,8 +11,6 @@
     <div class="container">
         <img src="../img/logo.png" alt="wells fargo logo" class=" logo">
         <hr class="top-line" aria-hidden="true">
-        <p>Thank you for your participation in this survey.Your response will help the bank's insurance improve our customer experience.
-        We would be interested in your specific response;you will not be contacted unless you request it in the next question</p>
     </div>
 </header>
 <main  role="main">
@@ -20,15 +18,15 @@
             <form  action="03-single-select-grid.html" >
                 <fieldset class="fieldset-no-border">
                     <legend>
-                        May we include your responses, including your name, with us? <br>
+                        Are you: <br>
                         <i>Please select one response</i>
                     </legend>
                     <p id="radioError" class="errorMsg" role="alert"></p>
-                    <input type="radio" name="information" id="yes-information" value="1">
-                    <label for="yes-information">Yes you may share my responses with my name</label> <br>
+                    <input type="radio" name="information" id="male" value="1">
+                    <label for="male">Male</label> <br>
 
-                    <input type="radio" name="information" id="no-information" value="0">
-                    <label for="no-information"> No you may not use my responses with my name</label> <br>
+                    <input type="radio" name="information" id="female" value="0">
+                    <label for="female">Female</label> <br>
                 </fieldset>
                 <p>Click the 'Next Question" button to move forward in this survey.</p>
                 <button class="button purple" type="submit" onclick="return validateRadio()">Next Question</button>
