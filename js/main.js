@@ -70,7 +70,19 @@ function getCheckedNew() {
     }
 }
 
-
+function  getCheckedMultiple(className, inputId) {
+    var none = document.getElementById(inputId);
+    var inputs = document.getElementsByClassName(className);
+    
+    for(var i = 0; i < inputs.length; i++) {
+        if (none.check) {
+            inputs[i].checked = false;
+            inputs[i].disabled = true;
+        } else {
+            inputs[i].disabled = false;
+        }
+    }
+}
 /***** Validate to see if at least one checkbox is selected *****/
 function validateCheckbox() {
 

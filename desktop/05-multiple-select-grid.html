@@ -37,12 +37,10 @@
             <span class="errorMsg" id="err-1" role="alert"></span>
             <fieldset class="fieldset-no-border">
                 <legend class="horizontal-grid-legend" id="information1">
-                    <strong>Philanthropic Services</strong> - guidance to help clients
-                    achieve their charitable goals, create giving plans,
-                    and/or maintain foundation goals
+                    <strong>Service 1</strong> - [ explanation text placed here ]
                 </legend>
                 <div class="company">
-                    <input type="checkbox" class="question1" id="wells-philanthropic" name="company" value="wells-fargo" aria-label="Wells Fargo" aria-describedby="information1">
+                    <input  type="checkbox" class="question1" id="wells-philanthropic" name="company" value="wells-fargo" aria-label="Wells Fargo" aria-describedby="information1">
                     <label for="wells-philanthropic" class="desktop-hide" aria-hidden="true">Wells Fargo</label>
                 </div>
                 <div class="company">
@@ -50,16 +48,15 @@
                     <label for="other-philanthropic" class="desktop-hide" aria-hidden="true" >Another Firm</label>
                 </div>
                 <div class="company">
-                    <input type="checkbox" class="question1" id="no-philanthropic" name="company" value="do-not-use" aria-label="Do not use">
-                    <label for="no-philanthropic" class="desktop-hide" aria-hidden="true">Do not use</label>
+                    <input type="checkbox"  id="none1" name="company" value="do-not-use" aria-label="Do not use" onclick="getCheckedMultiple('question1','none1')">
+                    <label for="none1" class="desktop-hide" aria-hidden="true">Do not use</label>
                 </div>
             </fieldset>
 
             <span class="errorMsg" id="err2" role="alert"></span>
             <fieldset class="fieldset-no-border">
             <legend class="horizontal-grid-legend" id="information2">
-                <strong>Life management services</strong> - solution to help aging individuals
-                maintain personal and financial independence.
+                <strong>Service 2</strong> - [ explanation text goes here ]
             </legend>
             <div class="company">
                 <input type="checkbox" id="wells-life" name="life-services" value="wells-fargo" aria-label="Wells Fargo" aria-describedby="information2">
@@ -78,7 +75,7 @@
             <span class="errorMsg" id="err3" role="alert"></span>
             <fieldset class="fieldset-no-border">
                 <legend class="horizontal-grid-legend" id="information3">
-                    <strong>Business advisory  solutions</strong> - advising business owners on valuations, exit strategies and management of closely held businesses
+                    <strong>Service 3</strong> - [ explanation text goes here ]
                 </legend>
                 <div class="company">
                     <input type="checkbox" id="wells-advisory" name="advisory-services" value="wells-fargo" aria-label="Wells Fargo" aria-describedby="information3">
