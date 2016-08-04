@@ -70,12 +70,13 @@ function getCheckedNew() {
     }
 }
 
+/** multiple checkpoints **/
 function  getCheckedMultiple(className, inputId) {
     var none = document.getElementById(inputId);
     var inputs = document.getElementsByClassName(className);
     
     for(var i = 0; i < inputs.length; i++) {
-        if (none.check) {
+        if (none.checked) {
             inputs[i].checked = false;
             inputs[i].disabled = true;
         } else {

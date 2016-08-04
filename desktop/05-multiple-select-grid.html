@@ -59,16 +59,16 @@
                 <strong>Service 2</strong> - [ explanation text goes here ]
             </legend>
             <div class="company">
-                <input type="checkbox" id="wells-life" name="life-services" value="wells-fargo" aria-label="Wells Fargo" aria-describedby="information2">
+                <input type="checkbox" class="question2" id="wells-life" name="life-services" value="wells-fargo" aria-label="Wells Fargo" aria-describedby="information2">
                 <label for="wells-life" class="desktop-hide" aria-hidden="true">Another Firm</label>
             </div>
             <div class="company">
-                <input type="checkbox" id="other-life" name="life-services" value="other" aria-label="Another Firm">
+                <input type="checkbox" class="question2" id="other-life" name="life-services" value="other" aria-label="Another Firm">
                 <label for="other-life" class="desktop-hide" aria-hidden="true">Another Firm</label>
             </div>
             <div class="company">
-                <input type="checkbox" id="not-life" name="life-services" value="do-not-use" aria-label="Do not use">
-                <label for="not-life" class="desktop-hide" aria-hidden="true">Do not use</label>
+                <input type="checkbox" id="none2" name="life-services" value="do-not-use" aria-label="Do not use" onclick="getCheckedMultiple('question2','none2')">
+                <label for="none2" class="desktop-hide" aria-hidden="true">Do not use</label>
             </div>
         </fieldset>
 
@@ -78,16 +78,16 @@
                     <strong>Service 3</strong> - [ explanation text goes here ]
                 </legend>
                 <div class="company">
-                    <input type="checkbox" id="wells-advisory" name="advisory-services" value="wells-fargo" aria-label="Wells Fargo" aria-describedby="information3">
+                    <input type="checkbox" class="question3" id="wells-advisory" name="advisory-services" value="wells-fargo" aria-label="Wells Fargo" aria-describedby="information3">
                     <label for="wells-advisory" class="desktop-hide" aria-hidden="true">Wells Fargo</label>
                 </div>
                 <div class="company">
-                    <input type="checkbox" id="other-advisory" name="advisory-services" value="other" aria-label="Another Firm">
+                    <input type="checkbox" class="question3" id="other-advisory" name="advisory-services" value="other" aria-label="Another Firm">
                     <label for="other-advisory" class="desktop-hide" aria-hidden="true">Another Firm</label>
                 </div>
                 <div class="company">
-                    <input type="checkbox" id="not-advisory" name="advisory-services" value="do-not-use" aria-label="Do not use">
-                    <label for="not-advisory" class="desktop-hide" aria-hidden="true">Do not use</label>
+                    <input type="checkbox" id="none3" name="advisory-services" value="do-not-use" aria-label="Do not use" onclick="getCheckedMultiple('question3','none3')">
+                    <label for="none3" class="desktop-hide" aria-hidden="true">Do not use</label>
                 </div>
             </fieldset>
 
