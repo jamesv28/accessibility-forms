@@ -16,7 +16,7 @@
 <main role="main">
     <div class="container">
 
-        <form action="12-ranking-question.html" onsubmit="return getTotal()" oninput="total.value = parseInt(document.getElementById('check').value) + parseInt(document.getElementById('creditCard').value) + parseInt(document.getElementById('debitCard').value) + parseInt(document.getElementById('autoDeduct').value) + parseInt(document.getElementById('cash').value)+ parseInt(document.getElementById('other').value)">
+        <form action="12-ranking-question.html" onsubmit="return getTotal()" oninput="total.value = parseInt(document.getElementById('check').value) + parseInt(document.getElementById('creditCard').value) + parseInt(document.getElementById('debitCard').value) + parseInt(document.getElementById('autoDeduct').value) + parseInt(document.getElementById('cash').value)">
             <fieldset class="fieldset-no-border">
                 <legend>
                     We are interested in knowing the percent <abbr>(% of)</abbr> fo how you purchase items.
@@ -45,14 +45,10 @@
                     <label class="multi-number-label" for="cash">[ Source 5 ]</label>
                     <input class="toAdd" type="number" id="cash" name="cash" value="0" min="0" aria-describedby="percent"> <span>%</span> <br>
                 </div>
-                <div class="long-list">
-                    <label class="multi-number-label" for="other">Other</label>
-                    <input class="toAdd" id="other" name="other" value="0" min="0" type="number" aria-describedby="percent"> <span>%</span>    <br>
-                </div>
 
                 <div class="total-Sum" role="status">
                     <span>Total: </span>
-                    <output id="percent-sum" aria-describedby="percent-tag" name="total" for="cash creditCard check debitCard other autoDeduct" ></output>
+                    <output id="percent-sum" aria-describedby="percent-tag" name="total" for="cash creditCard check debitCard autoDeduct" ></output>
                     <span id="percent-tag">%</span>
                 </div><br>
             </fieldset>
