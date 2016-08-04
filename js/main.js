@@ -320,10 +320,7 @@ function checkRanking() {
 /** Drag drop validation **/
 function dragDropValidation() {
     var fruit1 = document.getElementsByClassName('fruitDrop');
-    var fruit2 = document.getElementsByClassName('fruits-2');
     var err1 = document.getElementById('errMsg');
-    var err2 = document.getElementById('errMsg-2');
-    err2.innerText = "";
     err1.innerText = "";
     var okay = true;
 
@@ -333,16 +330,28 @@ function dragDropValidation() {
             okay = false;
         }
     }
+
+    return okay;
+
+}   //end of fruit validation
+
+/** drag and drop validation for alternate format 2 **/
+function dragDropNumberValidate() {
+    var fruit2 = document.getElementsByClassName('fruits-2');
+    var err2 = document.getElementById('errMsg-2');
+    err2.innerText = "";
+    var okay = true;
+
     for (var j = 0; j < fruit2.length; j++) {
         if(fruit2[j].value === "" || fruit2[j].value === null) {
             err2.innerText = "All fields are required";
             okay = false;
         }
     }
+
     return okay;
 
-}   //end of fruit validation
-
+}
 /** Validation for question 13 **/
 function validateClickPhrases() {
     var input1 = document.getElementById('response');
