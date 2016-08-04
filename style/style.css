@@ -384,6 +384,45 @@ input[type="radio"]:focus {
     width: 125px;
     height: 125px;
 }
+/******* Date picker - question 10 *********/
+#datepicker {
+    margin: 0;
+    padding: 0;
+    height: 25px;
+    vertical-align: bottom;
+}
+.ui-datepicker-trigger {
+    margin: 2px;
+    padding: 0;
+    vertical-align: bottom;
+}
+.ui-datepicker-trigger img{
+    width: 25px;
+    height: 25px;
+}
+.offscreen {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+button.ui-datepicker-trigger {
+    background-color:transparent !important;
+    border:none !important;
+    margin:auto !important;
+}
+button.ui-datepicker-trigger:focus,
+button.ui-datepicker-trigger:hover,
+button.ui-datepicker-trigger:active {
+    border:none !important;
+    margin:auto !important;
+    outline:2px solid #8cc63f !important;
+    background-color:#fdf6e7 !important;
+}
 /******* Responsive Design ofr inputs ************/
 @media only screen
 and (min-width: 320px)
