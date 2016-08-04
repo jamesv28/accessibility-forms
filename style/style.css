@@ -151,9 +151,9 @@ input[type="radio"]:focus {
 .desktop-hide {
     display: none;
 }
-/******* question 12 *********/
+/******* question 12 - take note if you change the labelling of this question to longer text, you need to add a longer width  *********/
 .label-multi {
-    width:30%;
+    width:15%;
     display: inline-block;
 }
 
@@ -343,9 +343,9 @@ input[type="radio"]:focus {
     width:20%;
     display: inline-block;
 }
-/************ 11 styling *************/
+/************ 11 styling - note: if label text is longer than provided you need to account for this in width *************/
 .multi-number-label {
-    width:20%;
+    width:15%;
     display: inline-block;
 }
 #percent-sum {
