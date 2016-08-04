@@ -1135,3 +1135,21 @@ function appendOffscreenMonthText(button) {
 function firstToCap(s) {
     return s.charAt(0).toUpperCase() + s.slice(1);
 }
+
+/** validate date picker **/
+function validateDatePicker() {
+    var err = document.getElementById('errMsg');
+    err.innerText = "";
+    var input = document.getElementById('datepicker').value;
+    var success = true;
+    var re = /^\d{1,2}\/\d{1,2}\/\d{4}$/;
+    if (input === "" || input === null) {
+        err.innerText = "You must select a date";
+        success = false;
+    }
+    if(!input.match(re)) {
+        err.innerText = "Incorrect date format. Please try again";
+        success = false;
+    }
+    return success;
+}
