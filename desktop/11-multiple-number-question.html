@@ -19,30 +19,30 @@
         <form action="12-ranking-question.html" onsubmit="return getTotal()" oninput="total.value = parseInt(document.getElementById('check').value) + parseInt(document.getElementById('creditCard').value) + parseInt(document.getElementById('debitCard').value) + parseInt(document.getElementById('autoDeduct').value) + parseInt(document.getElementById('cash').value)+ parseInt(document.getElementById('other').value)">
             <fieldset class="fieldset-no-border">
                 <legend>
-                    We are interested in knowing the percent <abbr>(pct)</abbr> fo how you purchase items.
-                        Please fill out all of the inputs to where they add up to 100.<br>
+                    We are interested in knowing the percent <abbr>(% of)</abbr> fo how you purchase items.
+                        Please make sure all of your answers add up to 100.<br>
                     <!-- where to let users know if they would like to skp the question, it needs to be provided and how to do it -->
-                    If you prefer not to answer the question, you you click "prefer not to answer" link
+                    If you prefer not to answer the question, click "prefer not to answer" link
                 </legend>
                 <p id="errorMsg" class="errorMsg" role="alert" aria-atomic="true"></p>
                 <div class="long-list">
-                    <label class="multi-number-label" for="check">Check</label>
+                    <label class="multi-number-label" for="check">[ Source 1 ]</label>
                     <input class="toAdd" id="check" name="check" value="0" min="0" type="number" aria-describedby="percent">  <span>%</span>  <br>
                 </div>
                 <div class="long-list">
-                    <label class="multi-number-label" for="creditCard">Credit Card</label>
+                    <label class="multi-number-label" for="creditCard">[ Source 2 ]</label>
                     <input class="toAdd"  id="creditCard" name="creditCard" value="0" min="0" type="number" aria-describedby="percent">  <span id="percent">%</span> <br>
                 </div>
                 <div class="long-list">
-                    <label class="multi-number-label" for="debitCard">Debit Card: </label>
+                    <label class="multi-number-label" for="debitCard">[ Source 3 ]</label>
                     <input class="toAdd" id="debitCard" name="debitCard" value="0" min="0" type="number" aria-describedby="percent">  <span>%</span>  <br>
                 </div>
                 <div class="long-list">
-                    <label class="multi-number-label" for="autoDeduct">Auto deduction</label>
+                    <label class="multi-number-label" for="autoDeduct">[ Source 4 ]</label>
                     <input class="toAdd" id="autoDeduct" name="autoDeduct" value="0" min="0" type="number" aria-describedby="percent"> <span>%</span> <br>
                 </div>
                 <div class="long-list">
-                    <label class="multi-number-label" for="cash">Cash or money order</label>
+                    <label class="multi-number-label" for="cash">[ Source 5 ]</label>
                     <input class="toAdd" type="number" id="cash" name="cash" value="0" min="0" aria-describedby="percent"> <span>%</span> <br>
                 </div>
                 <div class="long-list">
