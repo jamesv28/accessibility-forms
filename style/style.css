@@ -580,6 +580,13 @@ and (max-width: 480px)
     .number-list {
         width:100%;
     }
+    #datepicker {
+        width:80%;
+        display: inline-block;
+    }
+    input#satisfaction {
+        width:80%;
+    }
 
 
 } /* end of first media query */
