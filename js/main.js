@@ -442,7 +442,7 @@ function validateHeat() {
 /** Checkbox grid validation - 05 **/
 function checkboxGrid() {
 
-    var err1 = document.getElementById('err-1');
+    var err1 = document.getElementById('err1');
     var err2 = document.getElementById('err2');
     var err3 = document.getElementById('err3');
     var success = true;
@@ -454,15 +454,15 @@ function checkboxGrid() {
 
     var ms1 = document.getElementById('wells-philanthropic');
     var ms2 = document.getElementById('other-philanthropic');
-    var ms3 = document.getElementById('no-philanthropic');
+    var ms3 = document.getElementById('none1');
 
     var ms4 = document.getElementById('wells-life');
     var ms5 = document.getElementById('other-life');
-    var ms6 = document.getElementById('not-life');
+    var ms6 = document.getElementById('none2');
 
     var ms7 = document.getElementById('wells-advisory');
     var ms8 = document.getElementById('other-advisory');
-    var ms9 = document.getElementById('not-advisory');
+    var ms9 = document.getElementById('none3');
 
     if(!ms1.checked && !ms2.checked && !ms3.checked) {
         err1.innerText = "Question 1 needs a response";
