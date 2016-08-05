@@ -586,6 +586,7 @@ and (max-width: 480px)
     }
     input#satisfaction {
         width:80%;
+        display: inline-block;
     }
 
 
