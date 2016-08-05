@@ -584,9 +584,13 @@ and (max-width: 480px)
         width:80%;
         display: inline-block;
     }
+    /** Question 17 - slider **/
     input#satisfaction {
         width:80%;
         display: inline-block;
+    }
+    .number-list {
+        width:80%;
     }
 
 
