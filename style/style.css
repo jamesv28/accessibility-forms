@@ -26,6 +26,9 @@ strong {
 #datepicker:disabled {
     cursor: not-allowed;
 }
+.ui-datepicker-trigger:disabled {
+    cursor: not-allowed;
+}
 
 #header-top {
     margin-top: 40px;

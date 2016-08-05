@@ -173,16 +173,14 @@ function notSureDate() {
     var none = document.getElementById('none');
     var numInput = document.getElementById('datepicker');
     var dateBtn = document.getElementsByClassName('ui-datepicker-trigger');
-    var imgSrc = document.getElementsByClassName('img');
 
     if (none.checked) {
         numInput.value = null;
         numInput.disabled = true;
-        dateBtn.disabled = true;
-        imgSrc.disabled = true;
+        dateBtn[0].disabled = true;
     } else {
         numInput.disabled = false;
-        dateBtn.disabled = false;
+        dateBtn[0].disabled = false;
     }
 }
 /** 03-validate **/
