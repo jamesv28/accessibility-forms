@@ -143,22 +143,32 @@ function addFocus() {
     document.getElementById('not-answer').focus();
 }
 
-/** numeric standard **/
+/** 09 numeric standard **/
 function numValidate() {
 
     var x = document.getElementById('numInput').value;
     var txt = document.getElementById('errMsg');
+    var check = document.getElementById('none');
+
     txt.innerText = "";
     
-    if(x === '') {
-        txt.innerText = "please enter in a value";
-        return false;
-    } else if (isNaN(x)) {
-        txt.innerText = "Input must be a number";
+    if((x === '' || isNaN(x)) && check.checked === false) {
+        txt.innerText = "Please either enter a number or select the checkbox";
         return false;
     }
 }
+/** 09 and 10 - make sure multiple inputs aren't selected **/
+function notSure() {
+    var none = document.getElementById('none');
+    var numInput = document.getElementById('numInput');
 
+    if (none.checked) {
+        numInput.value = null;
+        numInput.disabled = true;
+    } else {
+        numInput.disabled = false;
+    }
+}
 /** Validate 10 - date **/
 function validateDate() {
     

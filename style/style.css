@@ -18,6 +18,9 @@ strong {
 .check:disabled {
     cursor: not-allowed;
 }
+#numInput:disabled {
+    cursor: not-allowed;
+}
 #header-top {
     margin-top: 40px;
 }
@@ -34,6 +37,10 @@ strong {
 
 .long-list {
     padding-bottom: 10px;
+}
+
+.pad-top {
+    padding-top: 10px;
 }
 
 /*** getting rid of default firefox focus element ***/
