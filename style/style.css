@@ -15,12 +15,18 @@ strong {
 .container {
     padding: 0 15px 0 15px;
 }
+/** disable pointers **/
 .check:disabled {
     cursor: not-allowed;
 }
 #numInput:disabled {
     cursor: not-allowed;
 }
+
+#datepicker:disabled {
+    cursor: not-allowed;
+}
+
 #header-top {
     margin-top: 40px;
 }

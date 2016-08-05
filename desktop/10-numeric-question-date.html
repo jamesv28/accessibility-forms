@@ -24,6 +24,10 @@
                     <p class="errorMsg" id="errMsg" role="alert"></p>
                     <label id="datepickerLabel" for="datepicker">Date <abbr>(mm/dd/yyyy)</abbr>:</label><br>
                     <input type="text" id="datepicker">
+                    <div class="pad-top">
+                        <input type="checkbox" id="none" value="none" onclick="notSure('none','datepicker')">
+                        <label for="none">Not Sure</label>
+                    </div>
                 </fieldset>
             <button type="submit" class="button purple">Next Question</button>
         </form>

@@ -158,9 +158,9 @@ function numValidate() {
     }
 }
 /** 09 and 10 - make sure multiple inputs aren't selected **/
-function notSure() {
-    var none = document.getElementById('none');
-    var numInput = document.getElementById('numInput');
+function notSure(checkId, inputId) {
+    var none = document.getElementById(checkId);
+    var numInput = document.getElementById(inputId);
 
     if (none.checked) {
         numInput.value = null;
@@ -491,11 +491,13 @@ function validateDatePicker() {
     var input = document.getElementById('datepicker').value;
     var success = true;
     var re = /^\d{1,2}\/\d{1,2}\/\d{4}$/;
-    if (input === "" || input === null) {
-        err.innerText = "You must select a date";
+    var none = document.getElementById('none');
+
+    if ((input === "" || input === null) && !none.checked) {
+        err.innerText = "You must either select a date or click not sure";
         success = false;
     }
-    if (!input.match(re)) {
+    else if (!input.match(re)) {
         err.innerText = "Incorrect date format. Please try again";
         success = false;
     }
