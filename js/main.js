@@ -157,7 +157,7 @@ function numValidate() {
         return false;
     }
 }
-/** 09 and 10 - make sure multiple inputs aren't selected **/
+/** 09 and  - make sure multiple inputs aren't selected **/
 function notSure(checkId, inputId) {
     var none = document.getElementById(checkId);
     var numInput = document.getElementById(inputId);
@@ -169,21 +169,22 @@ function notSure(checkId, inputId) {
         numInput.disabled = false;
     }
 }
-/** Validate 10 - date **/
-function validateDate() {
-    
-    var month = document.getElementById('month').value;
-    var day = document.getElementById('day').value;
-    var year = document.getElementById('year').value;
-    var text = document.getElementById('errMsg');
-    text.innerText = "";
-    
-    if(month === "" || day === "" || year === "") {
-        text.innerText = "Month, day, and year are required fields";
-        return false;
+function notSureDate() {
+    var none = document.getElementById('none');
+    var numInput = document.getElementById('datepicker');
+    var dateBtn = document.getElementsByClassName('ui-datepicker-trigger');
+    var imgSrc = document.getElementsByClassName('img');
+
+    if (none.checked) {
+        numInput.value = null;
+        numInput.disabled = true;
+        dateBtn.disabled = true;
+        imgSrc.disabled = true;
+    } else {
+        numInput.disabled = false;
+        dateBtn.disabled = false;
     }
 }
-
 /** 03-validate **/
 function validateSelectGrid() {
 
