@@ -400,6 +400,9 @@ input[type="radio"]:focus {
     width: 125px;
     height: 125px;
 }
+.fruits-2 {
+    width:25%;
+}
 /******* Date picker - question 10 *********/
 #datepicker {
     margin: 0;
