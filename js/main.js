@@ -502,3 +502,14 @@ function validateDatePicker() {
     }
     return success;
 }   
+/** Get total input **/
+function sumInputs() {
+    var totals = document.getElementsByClassName('toAdd');
+    var tot = 0;
+
+    for(var i = 0; i < totals.length; i++) {
+        tot += parseInt(totals[i].value) || 0;
+    }
+    // document.getElementById('getInput').value = tot;
+    document.getElementById('textTotal').innerText  = tot;
+}
