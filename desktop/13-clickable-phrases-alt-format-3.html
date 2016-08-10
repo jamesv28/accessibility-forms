@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Accessibility Surveys | Clickable phrases alternate format part 3</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+<header id="header-top" class="row" role="banner">
+    <div class="container">
+        <img src="../img/logo.png" alt="wells fargo logo" class="img-responsive logo">
+        <hr class="top-line" aria-hidden="true">
+    </div>
+</header>
+<main role="main">
+    <div class="container">
+        <form action="14-heat-map.html" onsubmit="return validateCheckbox()">
+            <fieldset class="fieldset-no-border" id="description">
+                <legend>
+                    Which of the following phrases do you find <u>believable</u>?
+                </legend>
+                <p class="errorMsg" id="alertMsg"></p>
+                <div>
+                    <input class="check" type="checkbox" name="purpose" id="convenience" aria-describedby="description">
+                    <label for="convenience">Convenience, access and security</label>
+                </div>
+                <div>
+                    <input class="check" type="checkbox" name="purpose" id="simplify">
+                    <label for="simplify"> To simplify your banking</label>
+                </div>
+                <div>
+                    <input class="check" type="checkbox" name="purpose" id="everyday">
+                    <label for="everyday">Everyday checking is an ideal checking account</label>
+                </div>
+                <div>
+                    <input class="check" type="checkbox" name="purpose" id="basic">
+                    <label for="basic">For your basic banking needs</label>
+                </div>
+                <div>
+                    <input class="check" type="checkbox" name="purpose" id="platinum">
+                    <label for="platinum">And comes with a Platinum debit card with chip technology</label>
+                </div>
+                <div>
+                    <input class="check" type="checkbox" name="purpose" id="avoid">
+                    <label for="avoid"> Options to avoid the $10 monthly service fee</label>
+                </div>
+                <div>
+                    <input class="check" type="checkbox" name="purpose" id="including">
+                    <label for="including"> Including 10 posted debit card purchase/payment per fee period</label>
+                </div>
+            </fieldset>
+            <button type="submit" class="button purple">Next Question</button>
+        </form>
+    </div>
+</main>
+<script type="text/javascript" src="../js/main.js"></script>
+</body>
+</html>
