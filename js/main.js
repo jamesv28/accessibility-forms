@@ -127,21 +127,6 @@ function getTotal() {
     return okay;
 }
 
-/**** handling keyboard shortcut - for people who prefer not to anser the question *****/
-function key_short(e) {
-    if(e.ctrlKey && e.keyCode === 70) {
-        //  function you would like to add
-        addFocus();
-    }
-}
-
-// register the handler
-document.addEventListener('keyup', key_short, false);
-
-//simply decide which elements you would like focu on
-function addFocus() {
-    document.getElementById('not-answer').focus();
-}
 
 /** 09 numeric standard **/
 function numValidate() {
@@ -502,3 +487,14 @@ function validateDatePicker() {
     }
     return success;
 }   
+/** Get total input **/
+function sumInputs() {
+    var totals = document.getElementsByClassName('toAdd');
+    var tot = 0;
+
+    for(var i = 0; i < totals.length; i++) {
+        tot += parseInt(totals[i].value) || 0;
+    }
+    // document.getElementById('getInput').value = tot;
+    document.getElementById('textTotal').innerText  = tot;
+}
