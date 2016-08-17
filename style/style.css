@@ -16,8 +16,9 @@ strong {
     padding: 0 15px 0 15px;
 }
 
-.ie form {
+.ie fieldset legend {
     padding-right: 15px;
+    font-size: 40px;
 }
 /** disable pointers **/
 .check:disabled {
