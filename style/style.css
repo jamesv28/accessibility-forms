@@ -16,7 +16,7 @@ strong {
     padding: 0 15px 0 15px;
 }
 
-.ie legend {
+.ie fieldset {
     padding:0 15px 0 15px;
 }
 /** disable pointers **/
