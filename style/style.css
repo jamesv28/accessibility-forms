@@ -16,9 +16,10 @@ strong {
     padding: 0 15px 0 15px;
 }
 
-.ie legend {
+.ie-legend {
     display: table;
     white-space: normal;
+    width:100%;
 }
 /** disable pointers **/
 .check:disabled {
