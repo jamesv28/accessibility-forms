@@ -16,7 +16,10 @@ strong {
     padding: 0 15px 0 15px;
 }
 
-
+.ie legend {
+    display: table;
+    white-space: normal;
+}
 /** disable pointers **/
 .check:disabled {
     cursor: not-allowed;
