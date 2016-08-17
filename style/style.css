@@ -53,7 +53,10 @@ strong {
 .long-list {
     padding-bottom: 10px;
 }
-
+.short-label {
+    width:15%;
+    display: inline-block;
+}
 .pad-top {
     padding-top: 10px;
 }
@@ -621,6 +624,9 @@ and (max-width: 480px)
     /** 03 and 05 display block for input **/
     .pad-top label {
         display: block;
+    }
+    .short-label {
+        width:50%;
     }
 
 
