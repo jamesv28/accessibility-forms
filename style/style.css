@@ -17,7 +17,7 @@ strong {
 }
 
 .ie form {
-    padding:0 15px 0 15px;
+    padding-right: 15px;
 }
 /** disable pointers **/
 .check:disabled {
