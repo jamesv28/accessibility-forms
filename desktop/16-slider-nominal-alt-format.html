@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Accessibility Forms | slider nominal question - alternate format</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+<header id="header-top" class="row" role="banner">
+    <div class="container">
+        <img src="../img/logo.png" alt="wells fargo logo" class="img-responsive logo">
+        <hr class="top-line" aria-hidden="true">
+    </div>
+</header>
+<main role="main">
+    <div class="container">
+        <form action="17-slider-numeric.html" onsubmit="return validateRadio()">
+            <fieldset class="fieldset-no-border">
+                <legend>How would you rank your experience</legend>
+                <p class="errorMsg" id="radioError" role="alert"></p>
+                <div class="radio-group">
+                    <div class="ind-radio">
+                        <input type="radio" name="information" value="very-likely" id="very-likely">
+                        <label for="very-likely">Very Likely</label>
+                    </div>
+                    <div class="ind-radio">
+                        <input type="radio" name="information" value="somewhat-likely" id="somewhat-likely" aria-label="somewhat likely">
+                    </div>
+                    <div class="ind-radio">
+                        <input type="radio" name="information" value="neither" id="neither">
+                        <label for="neither">Neither Unlikely or Likely</label>
+                    </div>
+                    <div class="ind-radio">
+                        <input type="radio" name="information" value="somewhat-likely" id="somewhat-unlikely" aria-label="somewhat unlikely">
+                    </div>
+                    <div class="ind-radio">
+                        <input type="radio" name="information" value="very-unlikely" id="very-unlikely">
+                        <label for="very-unlikely">Very Unlikely</label>
+                    </div>
+                </div>
+            </fieldset>
+            <button type="submit" class="button purple">Next Question</button>
+        </form>
+    </div>
+</main>
+<script type="text/javascript" src="../js/main.js"></script>
+</body>
+</html>
