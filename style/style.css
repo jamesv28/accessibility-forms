@@ -18,8 +18,8 @@ strong {
 
 .ie-legend {
     display: table;
-    white-space: normal;
-    width:100%;
+    /*white-space: normal;*/
+    /*width:100%;*/
 }
 /** disable pointers **/
 .check:disabled {
