@@ -485,6 +485,10 @@ function validateDatePicker() {
         err.innerText = "Incorrect date format. Please try again";
         success = false;
     }
+
+    if(none.checked === true) {
+        success = true;
+    }
     return success;
 }   
 /** Get total input **/
