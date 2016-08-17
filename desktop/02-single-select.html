@@ -18,17 +18,28 @@
             <form  action="03-single-select-grid.html" >
                 <fieldset class="fieldset-no-border">
                     <legend>
-                        Are you: <br>
+                        Are you..? <br>
                         <i>Please select one response</i>
                     </legend>
                     <p id="radioError" class="errorMsg" role="alert"></p>
-                    <input type="radio" name="information" id="male" value="1">
-                    <label for="male">Male</label> <br>
+                    <input type="radio" name="information" id="primary" >
+                    <label for="primary">Primary account holder</label> <br>
 
-                    <input type="radio" name="information" id="female" value="0">
-                    <label for="female">Female</label> <br>
+                    <input type="radio" name="information" id="jointAccount" >
+                    <label for="jointAccount">Joint account holder</label> <br>
+
+                    <input type="radio" name="information" id="other">
+                    <label for="other">Other</label>    <br>
+
+                    <input type="radio" name="information" id="other2">
+                    <label for="other2">Other, </label>
+
+                    <label for="specify"> Please Specify</label>    <br>
+                    &nbsp; &nbsp; <input id="specify" type="text" name="specify">   <br>
+
+                    <input type="radio" name="information" id="none">
+                    <label for="none">None of the above </label>
                 </fieldset>
-                <p>Click the 'Next Question" button to move forward in this survey.</p>
                 <button class="button purple" type="submit" onclick="return validateRadio()">Next Question</button>
             </form>
     </div>
