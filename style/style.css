@@ -16,10 +16,7 @@ strong {
     padding: 0 15px 0 15px;
 }
 
-.ie .fieldset-no-border legend {
-    padding-right: 15px;
-    font-size: 40px;
-}
+
 /** disable pointers **/
 .check:disabled {
     cursor: not-allowed;
