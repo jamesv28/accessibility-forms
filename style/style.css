@@ -49,7 +49,10 @@ strong {
 .block {
     display: block;
 }
-
+.no-style {
+    list-style-type: none;
+    padding:0;
+}
 .long-list {
     padding-bottom: 10px;
 }

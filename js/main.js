@@ -379,24 +379,18 @@ function validateHeat() {
     for(var i = 0; i < errs.length; i++) {
         errs[i].innerText = "";
     }
-    var input1 = document.getElementById('response');
-    var input2 = document.getElementById('response-2');
-    var input3 = document.getElementById('response-3');
+    var input1 = document.getElementById('area-selection');
+    var input2 = document.getElementById('option-explained');
 
     if(input1.value === "" || input1.value === null) {
-        document.getElementById('err1').innerText = "Please enter a response";
+        document.getElementById('err1').innerText = "Please select one";
         ok = false;
     }
     if(input2.value === "" || input2.value === null) {
         document.getElementById('err2').innerText = "Please enter a response";
         ok = false;
     }
-    if(input3.value === "" || input3.value === null) {
-        document.getElementById('err3').innerText = "Please enter a response";
-        ok = false;
-    }
     
-
     return ok;
     
 }
