@@ -233,38 +233,15 @@ function validateMultiDrop() {
 
 /** 08 inputs **/
 function validateInputs() {
-    var errInputs = document.getElementsByClassName('errorMsg');
-    for(var i = 0; i < errInputs.length; i++)  {
-        errInputs[i].innerText = "";
-    }
-    var q1 = document.getElementById('question-1').value;
-    var q2 = document.getElementById('question-2').value;
-    var q3 = document.getElementById('question-3').value;
-    var q4 = document.getElementById('question-4').value;
-    var q5 = document.getElementById('question-5').value;
-    var ok = true;
 
+    var q1 = document.getElementById('question-1').value;
+    var ok = true;
 
     if(q1 === "" || q1 === null) {
         document.getElementById('err-1').innerText = "Please fill out question 1";
         ok =  false;
     }
-    if(q2 === "" || q2 === null) {
-        document.getElementById('err-2').innerText = "Please fill out question 2";
-        ok =  false;
-    }
-    if(q3 === "" || q3 === null) {
-        document.getElementById('err-3').innerText = "Please fill out question 3";
-        ok = false;
-    }
-    if(q4 === "" || q4 === null) {
-        document.getElementById('err-4').innerText = "Please fill out question 4";
-        ok =  false;
-    }
-    if(q5 === "" || q5 === null) {
-        document.getElementById('err-5').innerText = "Please fill out question 5";
-        ok = false;
-    }
+
     return ok;
 }
 
@@ -402,24 +379,18 @@ function validateHeat() {
     for(var i = 0; i < errs.length; i++) {
         errs[i].innerText = "";
     }
-    var input1 = document.getElementById('response');
-    var input2 = document.getElementById('response-2');
-    var input3 = document.getElementById('response-3');
+    var input1 = document.getElementById('area-selection');
+    var input2 = document.getElementById('option-explained');
 
     if(input1.value === "" || input1.value === null) {
-        document.getElementById('err1').innerText = "Please enter a response";
+        document.getElementById('err1').innerText = "Please select one";
         ok = false;
     }
     if(input2.value === "" || input2.value === null) {
         document.getElementById('err2').innerText = "Please enter a response";
         ok = false;
     }
-    if(input3.value === "" || input3.value === null) {
-        document.getElementById('err3').innerText = "Please enter a response";
-        ok = false;
-    }
     
-
     return ok;
     
 }
@@ -484,6 +455,10 @@ function validateDatePicker() {
     else if (!input.match(re)) {
         err.innerText = "Incorrect date format. Please try again";
         success = false;
+    }
+
+    if(none.checked === true) {
+        success = true;
     }
     return success;
 }   

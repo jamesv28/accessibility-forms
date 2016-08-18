@@ -15,6 +15,12 @@ strong {
 .container {
     padding: 0 15px 0 15px;
 }
+
+.ie-legend {
+    display: table;
+    /*white-space: normal;*/
+    /*width:100%;*/
+}
 /** disable pointers **/
 .check:disabled {
     cursor: not-allowed;
@@ -43,11 +49,17 @@ strong {
 .block {
     display: block;
 }
-
+.no-style {
+    list-style-type: none;
+    padding:0;
+}
 .long-list {
     padding-bottom: 10px;
 }
-
+.short-label {
+    width:15%;
+    display: inline-block;
+}
 .pad-top {
     padding-top: 10px;
 }
@@ -610,6 +622,14 @@ and (max-width: 480px)
     }
     .number-list {
         width:80%;
+    }
+
+    /** 03 and 05 display block for input **/
+    .pad-top label {
+        display: block;
+    }
+    .short-label {
+        width:50%;
     }
 
 

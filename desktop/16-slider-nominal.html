@@ -15,31 +15,19 @@
 </header>
 <main role="main">
     <div class="container">
-        <form action="17-slider-numeric.html" onsubmit="return validateRadio()">
+        <form action="17-slider-numeric.html">
             <fieldset class="fieldset-no-border">
-                <legend>How would you rank your experience</legend>
-                <p class="errorMsg" id="radioError" role="alert"></p>
-                <div class="radio-group">
-                    <div class="ind-radio">
-                        <input type="radio" name="information" value="very-likely" id="very-likely">
-                        <label for="very-likely">Very Likely</label>
-                    </div>
-                    <div class="ind-radio">
-                        <input type="radio" name="information" value="somewhat-likely" id="somewhat-likely" aria-label="somewhat likely">
-                    </div>
-                    <div class="ind-radio">
-                        <input type="radio" name="information" value="neither" id="neither">
-                        <label for="neither">Neither Unlikely or Likely</label>
-                    </div>
-                    <div class="ind-radio">
-                        <input type="radio" name="information" value="somewhat-likely" id="somewhat-unlikely" aria-label="somewhat unlikely">
-                    </div>
-                    <div class="ind-radio">
-                        <input type="radio" name="information" value="very-unlikely" id="very-unlikely">
-                        <label for="very-unlikely">Very Unlikely</label>
-                    </div>
-                </div>
+                <legend>
+                    If you would prefer to answer in an alternate format, pleas click the alternate format link.
+                </legend>
             </fieldset>
+            <div class="placeholder-image">
+
+            </div>
+
+            <a href="16-slider-nominal-alt-format.html" class="button default">
+                Alternate Form of question
+            </a>
             <button type="submit" class="button purple">Next Question</button>
         </form>
     </div>

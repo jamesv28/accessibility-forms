@@ -16,39 +16,28 @@
 <main role="main">
         <form action="15-drag-and-drop.html" onsubmit="return validateHeat()">
             <fieldset class="fieldset-no-border">
-                <legend>
-                    <span class="block"> Please read the following quote and answer questions below.</span> <br>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                <legend class="ie-legend">
+                    Direct mail postcard recently sent to you
                 </legend>
-                <span class="errorMsg" id="err1" role="alert"></span>
-                <div class="long-list">
-                    <label for="response">Question Label</label>   <br>
-                    <select id="response" name="question-1" aria-required="true">
-                        <option value=""></option>
-                        <option value="dislike">Dislike</option>
-                        <option value="neither">Neither dislike nor like </option>
-                        <option value="like">Like</option>
-                    </select>
-                </div>
-                <span class="errorMsg" id="err2" role="alert"></span>
-                <div class="long-list">
-                    <label for="response-2">Question Label 2</label>   <br>
-                    <select id="response-2" name="question-2" aria-required="true">
-                        <option value=""></option>
-                        <option value="dislike">Dislike</option>
-                        <option value="neither">Neither dislike nor like </option>
-                        <option value="like">Like</option>
-                    </select>                </div>
-                <span class="errorMsg" id="err3" role="alert"></span>
-                <div class="long-list">
-                    <label for="response-3">Question Label 3</label>   <br>
-                    <select id="response-3" name="question-3" aria-required="true">
-                        <option value=""></option>
-                        <option value="dislike">Dislike</option>
-                        <option value="neither">Neither dislike nor like </option>
-                        <option value="like">Like</option>
-                    </select>
-                </div>
+                <ul class="no-style">
+                    <li>Area 1 – front of the postcard includes a picture of a Wells Fargo stagecoach pulled by four horses in front of a Wells Fargo branch</li>
+                    <li>Area 2 – back of the postcard includes message with this copy on the left side:  xxxx</li>
+                    <li>Area 3 – back of the postcard, lower left includes the following Legal disclosures:  xxxx</li>
+                    <li>Area 4 – back of the postcard, right side shows your customer name and address</li>
+                </ul>
+                <span class="errorMsg block" id="err1" role="alert"></span>
+
+                <label for="area-selection">Which numbered area would you like to provide comments?</label>
+                <select id="area-selection" aria-required="true">
+                    <option value=""></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <span class="errorMsg block" id="err2"></span>
+                <label for="option-explained" class="block pad-top">For area [insert number selected], please explain what you liked, disliked and/or found confusing?</label>
+                <textarea id="option-explained" class="lg-textarea" rows="5" aria-required="true"></textarea>
             </fieldset>
 
             <button type="submit" class="button purple">Next Question</button>
