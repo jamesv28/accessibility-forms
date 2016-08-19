@@ -91,10 +91,28 @@
                     <label for="none3" class="desktop-hide" aria-hidden="true">Do not use</label>
                 </div>
             </fieldset>
-            <div class="pad-top">
-                <label for="other">Other, please specify</label>
-                <input type="text" id="other">
-            </div>
+            <fieldset class="fieldset-no-border">
+                <div class="horizontal-grid-legend small-pad">
+                    <legend class=" inline" id="information4">
+                        <strong>Other - </strong>
+                    </legend>
+                    <label class="inline" for="other-specify">please specify</label>
+                    <input id="other-specify" type="text">
+                </div>
+                <div class="company">
+                    <input type="checkbox" class="question3" id="wells-other" name="advisory-services" value="wells-fargo" aria-label="Wells Fargo" aria-describedby="information4">
+                    <label for="wells-other" class="desktop-hide" aria-hidden="true">Wells Fargo</label>
+                </div>
+                <div class="company">
+                    <input type="checkbox" class="question3" id="other-other" name="advisory-services" value="other" aria-label="Another Firm">
+                    <label for="other-other" class="desktop-hide" aria-hidden="true">Another Firm</label>
+                </div>
+                <div class="company">
+                    <input type="checkbox" id="none4" name="advisory-services" value="do-not-use" aria-label="Do not use" >
+                    <label for="none4" class="desktop-hide" aria-hidden="true">Do not use</label>
+                </div>
+            </fieldset>
+
             <button type="submit" class="button purple">Next Question</button>
         </form>
     </div>

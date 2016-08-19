@@ -188,7 +188,9 @@ input[type="radio"]:focus {
     width:40%;
     float: left;
 }
-
+.small-pad {
+    padding-right: 4px;
+}
 .desktop-hide {
     display: none;
 }
@@ -654,7 +656,6 @@ and (max-width: 480px)
 @media only screen
 and (min-width: 500px)
 and (max-width: 850px) {
-
 
     .fruitDrop {
         width:50%;
