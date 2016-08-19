@@ -91,22 +91,22 @@
 
             <fieldset class="fieldset-no-border question-block " id="add-input">
                 <div class="gird-question">
-                    <legend class="inline">Other</legend>
+                    <legend class="inline" id="other-legend">Other, </legend>
                     <div class="inline">
-                        <label for="other-specify">Please Specify</label>   <br>
-                        <input type="text" id="other-specify">
+                        <label for="other-specify">please specify</label>   <br>
+                        <input type="text" id="other-specify" aria-describedby="other-legend">
                     </div>
                 </div>
                 <div class="option">
-                    <input class="option-input" id="question-4-single" type="radio" name="question-3" value="single-user" aria-label="i am the decision maker">
+                    <input class="option-input" id="question-4-single" type="radio" name="question-4" value="single-user" aria-label="i am the decision maker" aria-describedby="other-legend">
                     <label for="question-4-single" class="desktop-hide">Primary Decision Maker</label>
                 </div>
                 <div class="option">
-                    <input class="option-input" id="question-4-multiple" type="radio" name="question-3" value="multiple-user" aria-label="joint decision">
+                    <input class="option-input" id="question-4-multiple" type="radio" name="question-4" value="multiple-user" aria-label="joint decision" aria-describedby="other-legend">
                     <label for="question-4-multiple" class="desktop-hide">Joint decision</label>
                 </div>
                 <div class="option">
-                    <input class="option-input" id="question-4-no" type="radio" name="question-3" value="not-allowed" aria-label="not applicable">
+                    <input class="option-input" id="question-4-no" type="radio" name="question-4" value="not-allowed" aria-label="not applicable" aria-describedby="other-legend">
                     <label for="question-4-no" class="desktop-hide">Not applicable</label>
                 </div>
             </fieldset>
