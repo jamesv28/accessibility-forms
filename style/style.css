@@ -25,6 +25,12 @@ strong {
 .check:disabled {
     cursor: not-allowed;
 }
+.inline {
+    display: inline;
+}
+.mar-bottom {
+    margin-bottom: 10px;
+}
 #numInput:disabled {
     cursor: not-allowed;
 }
@@ -62,6 +68,9 @@ strong {
 }
 .pad-top {
     padding-top: 10px;
+}
+.mar-top {
+    margin-top: 10px;
 }
 
 /*** getting rid of default firefox focus element ***/
@@ -150,6 +159,10 @@ input[type="radio"]:focus {
     width:100%;
     margin:0;
     padding:0;
+}
+
+#add-input {
+    margin-top: 10px;
 }
 /******* 05-multiple-select-grid *******/
 .horizontal-grid {
@@ -630,6 +643,9 @@ and (max-width: 480px)
     }
     .short-label {
         width:50%;
+    }
+    .ui-datepicker-trigger {
+        display: none;
     }
 
 

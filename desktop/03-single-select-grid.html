@@ -90,10 +90,29 @@
                     <label for="question-3-no" class="desktop-hide">Not applicable</label>
                 </div>
             </fieldset>
-            <div class="pad-top">
-                <label for="other">Other, please specify</label>
-                <input type="text" id="other">
-            </div>
+
+            <fieldset class="fieldset-no-border question-block " id="add-input">
+                <div class="gird-question">
+                    <legend class="inline">Other</legend>
+                    <div class="inline">
+                        <label for="other-specify">Please Specify</label>   <br>
+                        <input type="text" id="other-specify">
+                    </div>
+                </div>
+                <div class="option">
+                    <input class="option-input" id="question-4-single" type="radio" name="question-3" value="single-user" aria-label="i am the decision maker">
+                    <label for="question-4-single" class="desktop-hide">Primary Decision Maker</label>
+                </div>
+                <div class="option">
+                    <input class="option-input" id="question-4-multiple" type="radio" name="question-3" value="multiple-user" aria-label="joint decision">
+                    <label for="question-4-multiple" class="desktop-hide">Joint decision</label>
+                </div>
+                <div class="option">
+                    <input class="option-input" id="question-4-no" type="radio" name="question-3" value="not-allowed" aria-label="not applicable">
+                    <label for="question-4-no" class="desktop-hide">Not applicable</label>
+                </div>
+            </fieldset>
+
         <button type="submit" class="button purple ">Next Question</button>
         </form>
     </div>

@@ -216,11 +216,9 @@ function validateSelectGrid() {
 function validateMultiDrop() {
 
     document.getElementById('errMsg').innerText = "";
-    document.getElementById('errMsg').innerText = "";
     var q1 = document.getElementById('question-1').value;
     var q2 = document.getElementById('question-2').value;
     var q3 = document.getElementById('question-3').value;
-    var q4 = document.getElementById('question-4').value;
     
     if (q1 === "" || q2 === "" || q3 === "" || q4 === "") {
         document.getElementById('errMsg').innerText = "All inputs are required";
