@@ -650,3 +650,13 @@ and (max-width: 480px)
 
 
 } /* end of first media query */
+
+@media only screen
+and (min-width: 500px)
+and (max-width: 850px) {
+
+
+    .fruitDrop {
+        width:50%;
+    }
+}
