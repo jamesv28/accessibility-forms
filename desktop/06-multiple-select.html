@@ -43,10 +43,9 @@
                 <label for="other1">Other</label>   <br>
 
                 <input class="check" type="checkbox" id="other-phone" value="other" name="purpose">
-                <label for="other-phone">Other,</label>
-                <!-- make sure you give the label please specify for the input if you want a user to add more information -->
-                <label for="otherText"> please specify</label><br>
-                &nbsp; &nbsp; &nbsp; <input id="otherText">
+                <label for="other-phone">Other, please specify</label>
+
+                &nbsp; &nbsp; &nbsp; <input type="text" id="otherText" aria-label="please specify">
                 <br>
                 <input type="checkbox" id="none" value="none" onclick="getCheckedNew()" name="purpose">
                 <label for="none">None of the above</label>
