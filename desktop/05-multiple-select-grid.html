@@ -16,13 +16,13 @@
 <main role="main">
     <div class="container">
         <form action="06-multiple-select.html" onsubmit="return checkboxGrid()">
-            <fieldset class="fieldset-no-border">
-                <legend class="ie-legend">
+            <section >
+                <p >
                     For each of the following types of financial services, please tell us where, if anywhere
                     your household uses this service. <br>
                     <i>(Please select all that apply for each service.)</i>
-                </legend>
-            </fieldset>
+                </p>
+            </section>
             <section class="horizontal-grid" aria-hidden="true">
                 <div class="first-item company">
                     Wells Fargo
@@ -37,7 +37,7 @@
 
             <span class="errorMsg" id="err1" role="alert"></span>
             <fieldset class="fieldset-no-border">
-                <legend class="horizontal-grid-legend" id="information1">
+                <legend class="horizontal-grid-legend ie-legend" id="information1">
                     <strong>Service 1</strong> - [ explanation text placed here ]
                 </legend>
                 <div class="company">
@@ -56,7 +56,7 @@
 
             <span class="errorMsg" id="err2" role="alert"></span>
             <fieldset class="fieldset-no-border">
-            <legend class="horizontal-grid-legend" id="information2">
+            <legend class="horizontal-grid-legend ie-legend" id="information2">
                 <strong>Service 2</strong> - [ explanation text goes here ]
             </legend>
             <div class="company">
@@ -75,7 +75,7 @@
 
             <span class="errorMsg" id="err3" role="alert"></span>
             <fieldset class="fieldset-no-border">
-                <legend class="horizontal-grid-legend" id="information3">
+                <legend class="horizontal-grid-legend ie-legend" id="information3">
                     <strong>Service 3</strong> - [ explanation text goes here ]
                 </legend>
                 <div class="company">
@@ -93,7 +93,7 @@
             </fieldset>
             <fieldset class="fieldset-no-border">
                 <div class="horizontal-grid-legend small-pad">
-                    <legend class=" inline" id="information4">
+                    <legend class=" inline ie-legend" id="information4">
                         <strong>Other - </strong>
                     </legend>
                     <label class="inline" for="other-specify">please specify</label>
